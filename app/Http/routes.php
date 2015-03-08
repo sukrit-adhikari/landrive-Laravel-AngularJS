@@ -23,5 +23,5 @@ Route::controllers([
 
 Route::get('beacon',
   function() {
-    return "beep beep beep";
+    return response()->json(['AnswerToTheUltimateQuestionOfLife' => 42]);
  });
