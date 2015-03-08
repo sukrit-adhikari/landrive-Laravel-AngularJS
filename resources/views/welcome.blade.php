@@ -42,7 +42,9 @@
 			<div class="content">
 				<div class="title">Landrive 0.1</div>
 				{{--<div class="quote">{{ Inspiring::quote() }}</div>--}}
-				<div class="quote">Android - Laravel</div>
+				<div class="quote">Android Laravel</div>
+				<div class="quote">-</div>
+				<div class="quote">File Sharing on LAN</div>
 			</div>
 		</div>
 	</body>
