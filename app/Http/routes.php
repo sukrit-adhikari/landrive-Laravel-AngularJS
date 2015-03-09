@@ -25,3 +25,6 @@ Route::get('beacon',
   function() {
     return response()->json(['AnswerToTheUltimateQuestionOfLife' => 42]);
  });
+
+
+Route::resource('drive', 'DriveController');
