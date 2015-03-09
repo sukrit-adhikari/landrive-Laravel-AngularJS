@@ -8,14 +8,16 @@ class LandriveStorageController extends Controller {
 	 */
 	public function getLandriveStoragePath()
 	{
-    if(!is_dir(storage_path()."\landrivestorage")){
-      if(!mkdir(storage_path()."\landrivestorage")){
-        $message = "Error making the main Storage Folder.";
+    $expectedPath = "f:"."\landrivestorage";
+    $message = "Error making the main Storage Folder.";
+
+    if(!is_dir($expectedPath)){
+      if(!mkdir($expectedPath)){
         //App::abort(500, );
         die($message);
       }
     }
-    return storage_path()."\landrivestorage";
+    return $expectedPath;
 	}
 
 
