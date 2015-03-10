@@ -47,8 +47,17 @@ return [
 
 		'local' => [
 			'driver' => 'local',
-			'root'   => LandriveStorageController::getLandriveStoragePath(),
+      'name' => 'Main',
+			'root'   => LandriveStorageController::getDefaultLandriveStoragePath(),
+      'landriveAllAccess' => false,
 		],
+
+    'media' => [
+      'driver' => 'local',
+      'name' => 'Media Files and Backup',
+      'root'   => 'e:\\',
+      'landriveAllAccess' => true,
+    ],
 
 //		's3' => [
 //			'driver' => 's3',

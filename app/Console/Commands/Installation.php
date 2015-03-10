@@ -55,10 +55,9 @@ class Installation extends Command {
 
     $landriveStorage = new LandriveStorageController();
 
-    if(!is_dir($landriveStorage->getLandriveStoragePath().'\public')){
-      mkdir($landriveStorage->getLandriveStoragePath().'\public');
+    if(!is_dir($landriveStorage->getDefaultLandriveStoragePath().'\public')){
+      mkdir($landriveStorage->getDefaultLandriveStoragePath().'\public');
     }
-
 
     DB::insert('insert into variable (name, value) values (?, ?)', ['installed', 1]);
 

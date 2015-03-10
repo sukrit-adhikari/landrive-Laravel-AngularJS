@@ -6,26 +6,19 @@ class LandriveStorageController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function getLandriveStoragePath()
+	public function getDefaultLandriveStoragePath()
 	{
-    $expectedPath = "f:"."\landrivestorage";
-    $message = "Error making the main Storage Folder.";
+      $expectedPath = storage_path()."\landrivestorage";
+      $message = "Error making the default Storage Folder.";
 
-    if(!is_dir($expectedPath)){
-      if(!mkdir($expectedPath)){
-        //App::abort(500, );
-        die($message);
+      if(!is_dir($expectedPath)){
+        if(!mkdir($expectedPath)){
+          //App::abort(500, );
+          die($message);
+        }
       }
-    }
-    return $expectedPath;
-	}
 
-
-  public function createUserStorageDirectory($directoryName){
-
-    $mainStorage = $this->getLandriveStoragePath();
-
+      return $expectedPath;
   }
-
 
 }
