@@ -5,7 +5,7 @@ use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Artisan;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Input\InputArgument;
-use Illuminate\Contracts\Auth\Registrar;
+use App\Services\Registrar;
 use App\User;
 use DB;
 
@@ -43,24 +43,31 @@ class Installation extends Command {
 	public function fire()
 	{
 
+    $this->info("Migrating...");
     Artisan::call("migrate", ['--force' => 'y']); // No Confirmation
+
+
 
     $user = [
       'name' => $this->option('name'),
       'email' => $this->option('email'),
       'password' => bcrypt($this->option('password')),
     ];
-
+    $this->info("Creating User...");
     User::create($user);
+
+
 
     $landriveStorage = new LandriveStorageController();
 
+    $this->info("Creating Storage folder...");
     if(!is_dir($landriveStorage->getDefaultLandriveStoragePath().'\public')){
       mkdir($landriveStorage->getDefaultLandriveStoragePath().'\public');
     }
 
-    DB::insert('insert into variable (name, value) values (?, ?)', ['installed', 1]);
 
+    DB::insert('insert into variable (name, value) values (?, ?)', ['installed', 1]);
+    $this->info("Installation Complete...100%");
 	}
 
 	/**
