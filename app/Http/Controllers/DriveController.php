@@ -2,19 +2,19 @@
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Config;
-use Illuminate\Support\Facades\Crypt;
 use Illuminate\Support\Facades\Input;
-use Illuminate\Support\Facades\Storage;
+use Illuminate\Http\Request;
 use League\Flysystem\Exception;
+
+use App\Http\Controllers\LandriveStorageController;
 
 class DriveController extends Controller {
 
+  private $landriveStorageController;
+
 
   public function __construct(){
-//    $this->mid
+    $this->landriveStorageController = new LandriveStorageController();
   }
 
 	/**
@@ -24,27 +24,8 @@ class DriveController extends Controller {
 	 */
 	public function index()
 	{
-    return $this->getUserDrives();
+    return $this->landriveStorageController->getUserDrives();
 	}
-
-  /**
-   * Get Drives Supplied User Has access to
-   * @param null $user
-   * @return mixed
-   */
-  private function getUserDrives($user = null){
-
-    $drives = Config::get('filesystems.disks');
-
-    foreach($drives as $driveName => $driveDetail){
-      //$drives[$driveName]['root'] = Crypt::encrypt($drives[$driveName]['root']);
-      unset($drives[$driveName]['root']);
-      unset($drives[$driveName]['landriveAllAccess']);
-      unset($drives[$driveName]['driver']);
-    }
-
-    return $drives;
-  }
 
 	/**
 	 * Show the form for creating a new resource.
@@ -74,19 +55,12 @@ class DriveController extends Controller {
 	 */
 	public function show($id)
 	{
+
     $inputs = Input::all();
-    $disk = $inputs['disk'];
+    $drive = $inputs['drive'];
 
+    return $this->landriveStorageController->getContents($drive);
 
-    $directories = Storage::disk($disk)->directories();
-    $files = Storage::disk($disk)->files();
-
-    $all = [
-              'files' => $files,
-              'directories' => $directories,
-           ];
-
-    return $all;
 	}
 
 	/**
