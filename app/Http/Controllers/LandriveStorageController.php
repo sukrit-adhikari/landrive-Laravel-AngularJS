@@ -48,13 +48,21 @@ class LandriveStorageController extends Controller {
 
   public function getContents($drive = null , $path = null ){
 
-    $directories = Storage::disk($drive)->directories();
-    $files = Storage::disk($drive)->files();
+    if($path != null){
+      $directories = Storage::disk($drive)->directories($path);
+      $files = Storage::disk($drive)->files($path);
+    }else{
+      $directories = Storage::disk($drive)->directories();
+      $files = Storage::disk($drive)->files();
+    }
+
 
     $all = [
-      'files' => $files,
-      'directories' => $directories,
-    ];
+            $drive =>  [
+                        'files' => $files,
+                        'directories' => $directories,
+                       ]
+           ];
 
     return $all;
 

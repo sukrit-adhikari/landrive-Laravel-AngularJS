@@ -58,8 +58,10 @@ class DriveController extends Controller {
 
     $inputs = Input::all();
     $drive = $inputs['drive'];
+    $path = isset($inputs['path']) ? $inputs['path'] : null;
 
-    return $this->landriveStorageController->getContents($drive);
+
+    return $this->landriveStorageController->getContents($drive,$path);
 
 	}
 

@@ -59,6 +59,14 @@ return [
       'landriveAllAccess' => true,
     ],
 
+    'personal' => [
+      'driver' => 'local',
+      'name' => 'Personal Contents',
+      'root'   => 'f:\\',
+      'landriveAllAccess' => false,
+    ],
+
+
 //		's3' => [
 //			'driver' => 's3',
 //			'key'    => 'your-key',
