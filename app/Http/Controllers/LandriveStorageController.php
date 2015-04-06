@@ -45,7 +45,6 @@ class LandriveStorageController extends Controller {
 
   }
 
-
   public function getContents($drive = null , $path = null ){
 
     if($path != null){
@@ -65,6 +64,44 @@ class LandriveStorageController extends Controller {
            ];
 
     return $all;
+
+  }
+
+  public function createFile($detail = []){
+    $requestParameters = $detail;
+
+    // Check Valid request i.e contains all the parameters required
+    // Check Valid Drive
+    // Check Valid Path
+    // Check Permission
+    // Check If file/Directory already Exists
+
+    $filePath = $requestParameters['path'].'\\'.$requestParameters['name'];
+
+    $message = '';
+
+    if(!Storage::disk($requestParameters['drive'])->exists($filePath)){
+
+      $result  = Storage::disk($requestParameters['drive'])
+        ->put($requestParameters['path'].'\\'.$requestParameters['name'],$requestParameters['content']);
+
+      if($result){
+        $message = 'Created.';
+        return ['success' => 1, 'message' => $message];
+      }
+
+    }else{
+      $message = 'Already exists.';
+    }
+
+    return ['success' => 0, 'message' => $message];
+  }
+
+  public function createDirectory($detail = []){
+
+  }
+
+  public function download(){
 
   }
 

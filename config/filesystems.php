@@ -45,26 +45,26 @@ return [
 
 	'disks' => [
 
-		'local' => [
-			'driver' => 'local',
-      'name' => 'Main',
-			'root'   => LandriveStorageController::getDefaultLandriveStoragePath(),
-      'landriveAllAccess' => false,
-		],
+      'local' => [
+          'driver' => 'local',
+          'name' => 'Main',
+          'root'   => LandriveStorageController::getDefaultLandriveStoragePath(),
+          'landriveAllAccess' => false,
+      ],
 
-    'media' => [
-      'driver' => 'local',
-      'name' => 'Media Files and Backup',
-      'root'   => 'e:\\',
-      'landriveAllAccess' => true,
-    ],
+      'media' => [
+        'driver' => 'local',
+        'name' => 'Media Files and Backup',
+        'root'   => 'd:\\landrivetestarea',
+        'landriveAllAccess' => true,
+      ],
 
-    'personal' => [
-      'driver' => 'local',
-      'name' => 'Personal Contents',
-      'root'   => 'f:\\',
-      'landriveAllAccess' => false,
-    ],
+//    'personal' => [
+//      'driver' => 'local',
+//      'name' => 'Personal Contents',
+//      'root'   => 'f:\\',
+//      'landriveAllAccess' => false,
+//    ],
     
 
 //		's3' => [

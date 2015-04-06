@@ -35,6 +35,8 @@ class DriveController extends Controller {
 	public function create()
 	{
 		//
+
+      return Input::all();
 	}
 
 	/**
@@ -42,8 +44,15 @@ class DriveController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function store()
-	{
+	public function store(){
+      $inputs = Input::all();
+
+      if($inputs['create'] == 'file'){
+        return $this->landriveStorageController->createFile($inputs);
+      }else if($inputs['create'] == 'directory'){
+        return $this->landriveStorageController->createDirectory($inputs);
+      }
+
 
 	}
 
@@ -57,12 +66,16 @@ class DriveController extends Controller {
 	{
 
     $inputs = Input::all();
+
     $drive = $inputs['drive'];
-    $path = isset($inputs['path']) ? $inputs['path'] : null;
+    $path = isset($inputs['path']) && $inputs['path'] != ''  ? $inputs['path'] : null;
+    $download = isset($inputs['download']) && $inputs['download'] == 'y'  ? 'y' : 'n';
+    $downloadType = isset($inputs['downloadType'])  ? $inputs['downloadType'] : 'n';
 
-
-    return $this->landriveStorageController->getContents($drive,$path);
-
+    if( $download == 'y' ){
+      return $this->landriveStorageController->download($drive,$path,$downloadType);
+    }
+      return $this->landriveStorageController->getContents($drive,$path);
 	}
 
 	/**
@@ -97,5 +110,6 @@ class DriveController extends Controller {
 	{
 		//
 	}
+
 
 }

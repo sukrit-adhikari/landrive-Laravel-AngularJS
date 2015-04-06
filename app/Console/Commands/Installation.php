@@ -16,7 +16,7 @@ class Installation extends Command {
 	 *
 	 * @var string
 	 */
-	protected $name = 'install';
+	protected $name = 'install:landrive';
 
 	/**
 	 * The console command description.
@@ -46,8 +46,6 @@ class Installation extends Command {
     $this->info("Migrating...");
     Artisan::call("migrate", ['--force' => 'y']); // No Confirmation
 
-
-
     $user = [
       'name' => $this->option('name'),
       'email' => $this->option('email'),
@@ -56,19 +54,16 @@ class Installation extends Command {
     $this->info("Creating User...");
     User::create($user);
 
-
-
     $landriveStorage = new LandriveStorageController();
-
     $this->info("Creating Storage folder...");
     if(!is_dir($landriveStorage->getDefaultLandriveStoragePath().'\public')){
       mkdir($landriveStorage->getDefaultLandriveStoragePath().'\public');
     }
 
-
     DB::insert('insert into variable (name, value) values (?, ?)', ['installed', 1]);
     $this->info("Installation Complete...100%");
-	}
+
+    }
 
 	/**
 	 * Get the console command arguments.
