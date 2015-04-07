@@ -16,8 +16,8 @@ class createVariableTable extends Migration {
 		{
 			$table->increments('id');
 			$table->string('name')->unique();
-      $table->longText('value');
-      $table->timestamps();
+            $table->longText('value');
+            $table->timestamps();
 		});
 	}
 

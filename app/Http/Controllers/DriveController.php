@@ -15,6 +15,13 @@ class DriveController extends Controller {
 
   public function __construct(){
     $this->landriveStorageController = new LandriveStorageController();
+
+    // Attach MiddleWare //
+    $this->middleware('ValidateLanDriveUser');
+    $this->middleware('ValidateLanDriveAPIRequest');
+    $this->middleware('LanDrivePermissionCheckForRequestedAction');
+    // End of Attaching Middleware
+
   }
 
 	/**
@@ -35,7 +42,6 @@ class DriveController extends Controller {
 	public function create()
 	{
 		//
-
       return Input::all();
 	}
 
@@ -46,14 +52,11 @@ class DriveController extends Controller {
 	 */
 	public function store(){
       $inputs = Input::all();
-
       if($inputs['create'] == 'file'){
         return $this->landriveStorageController->createFile($inputs);
       }else if($inputs['create'] == 'directory'){
         return $this->landriveStorageController->createDirectory($inputs);
       }
-
-
 	}
 
 	/**
@@ -64,18 +67,17 @@ class DriveController extends Controller {
 	 */
 	public function show($id)
 	{
+      $inputs = Input::all();
 
-    $inputs = Input::all();
+      $drive = $inputs['drive'];
+      $path = isset($inputs['path']) && $inputs['path'] != ''  ? $inputs['path'] : null;
+      $download = isset($inputs['download']) && $inputs['download'] == 'y'  ? 'y' : 'n';
 
-    $drive = $inputs['drive'];
-    $path = isset($inputs['path']) && $inputs['path'] != ''  ? $inputs['path'] : null;
-    $download = isset($inputs['download']) && $inputs['download'] == 'y'  ? 'y' : 'n';
-    $downloadType = isset($inputs['downloadType'])  ? $inputs['downloadType'] : 'n';
+      if( $download == 'y' ){
+        return $this->landriveStorageController->download($drive,$path);
+      }
+        return $this->landriveStorageController->getContents($drive,$path);
 
-    if( $download == 'y' ){
-      return $this->landriveStorageController->download($drive,$path,$downloadType);
-    }
-      return $this->landriveStorageController->getContents($drive,$path);
 	}
 
 	/**

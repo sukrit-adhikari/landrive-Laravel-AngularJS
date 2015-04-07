@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Crypt;
 use Illuminate\Support\Facades\Storage;
+use PhpSpec\Exception\Exception;
 
 
 class LandriveStorageController extends Controller {
@@ -30,13 +31,18 @@ class LandriveStorageController extends Controller {
    * @param null $user
    * @return mixed
    */
-  public function getUserDrives($user = null){
+  public function getUserDrives($user = null , $getRoot = false){
 
     $drives = Config::get('filesystems.disks');
 
     foreach($drives as $driveName => $driveDetail){
-      //$drives[$driveName]['root'] = Crypt::encrypt($drives[$driveName]['root']);
-      unset($drives[$driveName]['root']);
+
+      if($getRoot){
+        $drives[$driveName]['root'] = Crypt::encrypt($drives[$driveName]['root']);
+      }else{
+        unset($drives[$driveName]['root']);
+      }
+
       unset($drives[$driveName]['landriveAllAccess']);
       unset($drives[$driveName]['driver']);
     }
@@ -87,21 +93,50 @@ class LandriveStorageController extends Controller {
 
       if($result){
         $message = 'Created.';
-        return ['success' => 1, 'message' => $message];
+        return ['success' => 1, 'message' => $message , 'Code' => 200];
       }
 
     }else{
-      $message = 'Already exists.';
+      $message = 'Problem creating file.';
     }
 
-    return ['success' => 0, 'message' => $message];
+    return ['success' => 0, 'message' => $message , 'Code' => 500];
   }
 
   public function createDirectory($detail = []){
 
   }
 
-  public function download(){
+  public function download($drive,$path){
+
+    if(!Storage::disk($drive)->exists($path)){
+      return ['Status' => 0 , 'Message' => 'Does not exist.' , 'Code' => 404 ];
+    }
+
+    $fileContent = Storage::disk($drive)->get($path);
+
+    $tmpName = tempnam(sys_get_temp_dir(), 'lan');
+    $file = fopen($tmpName, 'w');
+
+    file_put_contents( $tmpName ,$fileContent);
+    fclose($file);
+
+    $downloadName = rand(9,99999);
+
+    header('Content-Description: File Transfer');
+//    header('Content-Type: text/csv');
+    header('Content-Disposition: attachment; filename='.$downloadName);
+    header('Content-Transfer-Encoding: binary');
+    header('Expires: 0');
+    header('Cache-Control: must-revalidate');
+    header('Pragma: public');
+    header('Content-Length: ' . filesize($tmpName));
+
+    ob_clean();
+    flush();
+    readfile($tmpName);
+
+    unlink($tmpName);
 
   }
 
