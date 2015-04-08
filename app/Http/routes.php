@@ -14,17 +14,32 @@
 Route::get('/', 'WelcomeController@index');
 
 //Route::get('home', 'HomeController@index');
-
+//
 //Route::controllers([
 //	'auth' => 'Auth\AuthController',
 //	'password' => 'Auth\PasswordController',
 //]);
 
 
+// Public Server Status Beacon
 Route::get('beacon',
   function() {
-    return response()->json(['Server' => 'Landrive' , 'Landrive' => 'Dell.Freeze' ]);
+    return response()->json(['Server' => 'Landrive' , 'Name' => 'Dell.Freeze' ]);
  });
 
 
-Route::resource('drive', 'DriveController');
+// Get LanDriveAccess Route
+Route::get('getlandriveaccesstoken','LanDriveTokenController@getToken');
+
+// This route is accessible only to Authenticated Requests
+Route::group(['middleware' => 'ValidateLanDriveAPIRequest'], function()
+{
+
+  Route::resource('drive', 'DriveController');
+
+  Route::get('revokelandriveaccesstoken','LanDriveTokenController@revokeToken');
+
+});
+
+
+

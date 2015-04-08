@@ -19,7 +19,7 @@ class LanDriveRequestResponseLogger {
 
       $requestCode = time().rand(1,100).rand(100,999);
 
-      DB::table('landrivelog')->insert(
+      DB::table('landriveaccesslog')->insert(
         [
          'requestcode' => $requestCode,
          'datetime' => date('Y/m/d H:i:s'),
@@ -35,7 +35,7 @@ class LanDriveRequestResponseLogger {
 
 
 
-      DB::table('landrivelog')->insert(
+      DB::table('landriveaccesslog')->insert(
         [
           'requestcode' => $requestCode,
           'datetime' => date('Y/m/d H:i:s'),

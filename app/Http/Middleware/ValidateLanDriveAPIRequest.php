@@ -1,6 +1,9 @@
 <?php namespace App\Http\Middleware;
 
 use Closure;
+use Illuminate\Support\Facades\Input;
+use App\User;
+use App\Http\Controllers\LanDriveTokenController;
 
 class ValidateLanDriveAPIRequest {
 
@@ -13,7 +16,14 @@ class ValidateLanDriveAPIRequest {
 	 */
 	public function handle($request, Closure $next)
 	{
-		return $next($request);
+
+      if(!LanDriveTokenController::requestHasValidToken()){
+        return response()->json(['Status' => 0, 'Code' => 403, 'Message' => 'Invalid or Unauthorized Request!' ]);
+      }
+
+      return $next($request);
 	}
+
+
 
 }

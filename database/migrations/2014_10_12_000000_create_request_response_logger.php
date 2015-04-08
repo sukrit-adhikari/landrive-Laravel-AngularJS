@@ -12,7 +12,7 @@ class CreateRequestResponseLogger extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('LanDriveLog', function(Blueprint $table)
+		Schema::create('LanDriveaccessLog', function(Blueprint $table)
 		{
 			$table->increments('logid');
             $table->text('requestcode');
@@ -32,7 +32,7 @@ class CreateRequestResponseLogger extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('LanDriveLog');
+		Schema::drop('LanDriveaccessLog');
 	}
 
 }

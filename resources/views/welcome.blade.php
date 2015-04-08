@@ -42,11 +42,12 @@
 			<div class="content">
 				<div class="title">Landrive 0.9</div>
 				{{--<div class="quote">{{ Inspiring::quote() }}</div>--}}
-				<div class="quote">Android Laravel</div>
-				<div class="quote">-</div>
-				<div class="quote">File Upload / Sharing on LAN</div>
-              <div class="quote">-</div>
-              <div class="quote">{{ "IP Address : " . getHostByName(getHostName()) }}</div>
+
+<!--				<div class="quote">Android Laravel</div>-->
+<!--				<div class="quote">-</div>-->
+<!--				<div class="quote">File Upload / Sharing on LAN</div>-->
+<!--              <div class="quote">-</div>-->
+              <div class="quote">{{ "Server IP Address : " . getHostByName(getHostName()) }}</div>
 			</div>
 		</div>
 	</body>

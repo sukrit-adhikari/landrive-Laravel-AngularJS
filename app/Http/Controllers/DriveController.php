@@ -17,8 +17,6 @@ class DriveController extends Controller {
     $this->landriveStorageController = new LandriveStorageController();
 
     // Attach MiddleWare //
-    $this->middleware('ValidateLanDriveUser');
-    $this->middleware('ValidateLanDriveAPIRequest');
     $this->middleware('LanDrivePermissionCheckForRequestedAction');
     // End of Attaching Middleware
 

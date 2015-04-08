@@ -8,6 +8,7 @@ use Symfony\Component\Console\Input\InputArgument;
 use App\Services\Registrar;
 use App\User;
 use DB;
+use Illuminate\Support\Facades\Hash;
 
 class Installation extends Command {
 
@@ -49,7 +50,7 @@ class Installation extends Command {
     $user = [
       'name' => $this->option('name'),
       'email' => $this->option('email'),
-      'password' => bcrypt($this->option('password')),
+      'password' => Hash::make($this->option('password')),
     ];
     $this->info("Creating User...");
     User::create($user);
@@ -84,9 +85,9 @@ class Installation extends Command {
  protected function getOptions()
   {
     return [
-      ['name', 'Username', InputOption::VALUE_REQUIRED, 'Username', 'admin'],
-      ['email', null, InputOption::VALUE_REQUIRED, 'Email', null],
-      ['password', null, InputOption::VALUE_REQUIRED, 'Password', 'password'],
+      ['name', 'Username', InputOption::VALUE_REQUIRED, 'Username', null],
+      ['email', null, InputOption::VALUE_REQUIRED, 'Email', ''],
+      ['password', null, InputOption::VALUE_REQUIRED, 'Password', null],
     ];
   }
 

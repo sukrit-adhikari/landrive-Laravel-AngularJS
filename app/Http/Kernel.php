@@ -30,7 +30,6 @@ class Kernel extends HttpKernel {
 		'guest' => 'App\Http\Middleware\RedirectIfAuthenticated',
         'LanDrivePermissionCheckForRequestedAction' => 'App\Http\Middleware\LanDrivePermissionCheckForRequestedAction',
         'ValidateLanDriveAPIRequest' => 'App\Http\Middleware\ValidateLanDriveAPIRequest',
-        'ValidateLanDriveUser' => 'App\Http\Middleware\ValidateLanDriveUser',
 	];
 
 }

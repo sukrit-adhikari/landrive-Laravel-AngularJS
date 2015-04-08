@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="690900b1-95e0-431b-9690-571cb9884ab3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_variable_table.php" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_variable_table.php" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\landrive\app\Http\Middleware\ValidateLanDriveUser.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_request_response_logger.php" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_request_response_logger.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/DriveController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/DriveController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Console/Commands/Installation.php" afterPath="$PROJECT_DIR$/app/Console/Commands/Installation.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Kernel.php" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/LandriveStorageController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/LandriveStorageController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/app.php" afterPath="$PROJECT_DIR$/config/app.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Middleware/LanDriveRequestResponseLogger.php" afterPath="$PROJECT_DIR$/app/Http/Middleware/LanDriveRequestResponseLogger.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Middleware/ValidateLanDriveAPIRequest.php" afterPath="$PROJECT_DIR$/app/Http/Middleware/ValidateLanDriveAPIRequest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="landrive.iws" />
@@ -32,24 +36,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="2014_10_12_000000_create_request_response_logger.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_request_response_logger.php">
+      <file leaf-file-name="routes.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="5" selection-start="230" selection-end="230" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="748">
+            <state line="37" column="10" selection-start="1001" selection-end="1001" vertical-scroll-proportion="0.6" vertical-offset="272" max-vertical-offset="867">
               <folding>
-                <element signature="e#7#48#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LanDriveRequestResponseLogger.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/Middleware/LanDriveRequestResponseLogger.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="32" selection-start="1220" selection-end="1220" vertical-scroll-proportion="0.5714286" vertical-offset="425" max-vertical-offset="1020">
-              <folding>
-                <element signature="e#38#50#0" expanded="true" />
-                <marker date="1428331585316" expanded="true" signature="1242:1272" placeholder="..." />
+                <element signature="e#7#392#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -73,22 +65,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/Console/Commands/installation.php" />
-        <option value="$PROJECT_DIR$/app/Console/Kernel.php" />
-        <option value="$PROJECT_DIR$/app/Console/Commands/asdasda2r2re.php" />
-        <option value="$PROJECT_DIR$/app/Events/Event.php" />
-        <option value="$PROJECT_DIR$/app/Console/Commands/Installation.php" />
         <option value="$PROJECT_DIR$/config/filesystems.php" />
-        <option value="$PROJECT_DIR$/resources/views/welcome.blade.php" />
         <option value="$PROJECT_DIR$/config/app.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/LandriveStorageController.php" />
         <option value="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_variable_table.php" />
         <option value="$PROJECT_DIR$/app/Http/Middleware/LanDriveRequestLogger.php" />
-        <option value="$PROJECT_DIR$/app/Http/routes.php" />
-        <option value="$PROJECT_DIR$/app/Http/Kernel.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/DriveController.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_request_response_logger.php" />
+        <option value="$PROJECT_DIR$/resources/views/welcome.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Middleware/LanDriveRequestResponseLogger.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_request_response_logger.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
+        <option value="$PROJECT_DIR$/app/Console/Commands/Installation.php" />
+        <option value="$PROJECT_DIR$/app/Http/Kernel.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/LanDriveAccessController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/DriveController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/LanDriveTokenController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Middleware/ValidateLanDriveAPIRequest.php" />
+        <option value="$PROJECT_DIR$/app/Http/routes.php" />
       </list>
     </option>
   </component>
@@ -238,80 +230,18 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="landrive" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="landrive" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="landrive" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="landrive" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Console" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="landrive" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="landrive" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Console" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Commands" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="SearchEverywhereHistoryKey" value="Illuminate\supp&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="SearchEverywhereHistoryKey" value="Illuminate\supp&#9;null&#9;null" />
     <property name="options.lastSelected" value="preferences.sourceCode.PHP" />
     <property name="FullScreen" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PublishConfig" serverName="Landrive" serverId="2c74bd0e-c6da-4365-a0f6-b488172eec9b">
     <servers>
@@ -361,13 +291,13 @@
     <frame x="-8" y="-8" width="1296" height="776" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32868218" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32766616" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.47604328" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3176661" sideWeight="0.5239567" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33468395" sideWeight="0.67233384" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -405,113 +335,113 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesAndRegistersUsers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="125" column="5" selection-start="2449" selection-end="2449" vertical-scroll-proportion="0.5557491" vertical-offset="1806" max-vertical-offset="2448" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Middleware/LanDrivePermissionCheckForRequestedAction.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="35" selection-start="6" selection-end="326" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="593" />
+        <state line="13" column="18" selection-start="257" selection-end="257" vertical-scroll-proportion="0.38501742" vertical-offset="0" max-vertical-offset="574" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/ValidateLanDriveAPIRequest.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="35" selection-start="16" selection-end="35" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="425" />
+        <state line="20" column="28" selection-start="706" selection-end="706" vertical-scroll-proportion="0.31428573" vertical-offset="102" max-vertical-offset="697" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/ValidateLanDriveUser.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/PasswordController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="35" selection-start="16" selection-end="35" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="425" />
+        <state line="22" column="7" selection-start="690" selection-end="690" vertical-scroll-proportion="0.37142858" vertical-offset="102" max-vertical-offset="697" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/LandriveStorageController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="0" selection-start="673" selection-end="673" vertical-scroll-proportion="0.43001688" vertical-offset="0" max-vertical-offset="2312" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/storage/logs/laravel-2015-04-06.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="585" selection-end="585" vertical-scroll-proportion="0.3068592" vertical-offset="0" max-vertical-offset="277">
+        <state line="9" column="7" selection-start="248" selection-end="248" vertical-scroll-proportion="0.0" vertical-offset="1072" max-vertical-offset="2516">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Schema/Blueprint.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="419" column="20" selection-start="9081" selection-end="9081" vertical-scroll-proportion="1.1478992" vertical-offset="6389" max-vertical-offset="14994">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="19" selection-start="471" selection-end="471" vertical-scroll-proportion="-1.391986" vertical-offset="1071" max-vertical-offset="3468">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="44" selection-start="770" selection-end="770" vertical-scroll-proportion="0.5714286" vertical-offset="0" max-vertical-offset="595">
+        <state line="698" column="64" selection-start="15468" selection-end="15481" vertical-scroll-proportion="0.41048825" vertical-offset="11588" max-vertical-offset="14994">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="5" selection-start="554" selection-end="554" vertical-scroll-proportion="0.85714287" vertical-offset="0" max-vertical-offset="697">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_variable_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="663">
+        <state line="21" column="47" selection-start="475" selection-end="494" vertical-scroll-proportion="-7.6923075" vertical-offset="140" max-vertical-offset="714">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Console/Commands/Installation.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="32" selection-start="1275" selection-end="1275" vertical-scroll-proportion="-0.14285715" vertical-offset="952" max-vertical-offset="1564">
+        <state line="31" column="19" selection-start="693" selection-end="693" vertical-scroll-proportion="0.65384614" vertical-offset="408" max-vertical-offset="1564">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/date_c.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="20" selection-start="721" selection-end="721" vertical-scroll-proportion="0.34707904" vertical-offset="223" max-vertical-offset="6154">
+        <state line="44" column="0" selection-start="779" selection-end="779" vertical-scroll-proportion="-11.615385" vertical-offset="446" max-vertical-offset="1020">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="20" selection-start="809" selection-end="809" vertical-scroll-proportion="-7.6923075" vertical-offset="497" max-vertical-offset="4743">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="8" selection-start="512" selection-end="512" vertical-scroll-proportion="-6.0384617" vertical-offset="132" max-vertical-offset="714">
+        <state line="31" column="18" selection-start="1069" selection-end="1069" vertical-scroll-proportion="0.71649486" vertical-offset="110" max-vertical-offset="697">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="61" selection-start="393" selection-end="393" vertical-scroll-proportion="0.08571429" vertical-offset="119" max-vertical-offset="714">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/LanDriveTokenController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="0" selection-start="1656" selection-end="1656" vertical-scroll-proportion="1.2560138" vertical-offset="0" max-vertical-offset="1530">
+          <folding>
+            <element signature="e#40#77#0" expanded="true" />
+            <element signature="e#502#1402#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DriveController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="27" selection-start="469" selection-end="469" vertical-scroll-proportion="0.51428574" vertical-offset="0" max-vertical-offset="2091">
-          <folding>
-            <element signature="e#39#61#0" expanded="true" />
-          </folding>
+        <state line="18" column="27" selection-start="469" selection-end="469" vertical-scroll-proportion="-1.3428571" vertical-offset="1003" max-vertical-offset="1955">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_request_response_logger.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/ValidateLanDriveAPIRequest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="5" selection-start="230" selection-end="230" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="748">
-          <folding>
-            <element signature="e#7#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/LanDriveRequestResponseLogger.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="32" selection-start="1220" selection-end="1220" vertical-scroll-proportion="0.5714286" vertical-offset="425" max-vertical-offset="1020">
+        <state line="20" column="88" selection-start="530" selection-end="530" vertical-scroll-proportion="0.58419245" vertical-offset="0" max-vertical-offset="595">
           <folding>
             <element signature="e#38#50#0" expanded="true" />
-            <marker date="1428331585316" expanded="true" signature="1242:1272" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="10" selection-start="1001" selection-end="1001" vertical-scroll-proportion="0.6" vertical-offset="272" max-vertical-offset="867">
+          <folding>
+            <element signature="e#7#392#0" expanded="true" />
           </folding>
         </state>
       </provider>
