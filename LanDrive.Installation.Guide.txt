@@ -1,0 +1,1 @@
+php artisan install:landrive --name=admin --password=somepassword

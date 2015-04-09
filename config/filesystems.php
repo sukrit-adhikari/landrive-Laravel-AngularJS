@@ -58,14 +58,6 @@ return [
         'root'   => 'd:\\',
         'landriveAllAccess' => true,
       ],
-	  
-	  'apkbuilds' => [
-        'driver' => 'local',
-        'name' => 'Android Studio APK Build Location',
-        'root'   => 'C:\\Users\Sukrit\AndroidstudioProjects\LanDriveAndroid\app\build\outputs\apk',
-        'landriveAllAccess' => true,
-      ],
-	  
 
 //    'personal' => [
 //      'driver' => 'local',

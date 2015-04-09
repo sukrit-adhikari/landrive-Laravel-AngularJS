@@ -27,17 +27,8 @@ Route::get('beacon',
     return response()->json(['Status' => 1 , 'Code' => 200 , 'Message' => 'Landrive Server found!' ,  'Server' => 'Landrive' , 'Name' => 'Freeze' ]);
  });
 
-
-// Get the apk for landrive
-Route::get('apk',
-  function(){
-    return Redirect::to('http://'.getHostByName(getHostName()).'/drive/show?drive=apkbuilds&path=app-debug.apk&download=y&filename=app-debug.apk');
-});
-
-// http://landrive/drive/show?drive=apkbuilds&path=app-debug.apk&download=y&filename=app-debug.apk
-
 // Get LanDriveAccess Route
-Route::get('getlandriveaccesstoken','LanDriveTokenController@getToken');
+Route::post('getlandriveaccesstoken','LanDriveTokenController@getToken');
 
 // This route is accessible only to Authenticated Requests
 Route::group(['middleware' => 'ValidateLanDriveAPIRequest'], function()
@@ -45,7 +36,7 @@ Route::group(['middleware' => 'ValidateLanDriveAPIRequest'], function()
 
   Route::resource('drive', 'DriveController');
 
-  Route::get('revokelandriveaccesstoken','LanDriveTokenController@revokeToken');
+  Route::post('revokelandriveaccesstoken','LanDriveTokenController@revokeToken');
 
 });
 
