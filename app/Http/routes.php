@@ -24,9 +24,17 @@ Route::get('/', 'WelcomeController@index');
 // Public Server Status Beacon
 Route::get('beacon',
   function() {
-    return response()->json(['Server' => 'Landrive' , 'Name' => 'Dell.Freeze' ]);
+    return response()->json(['Status' => 1 , 'Code' => 200 , 'Message' => 'Landrive Server found!' ,  'Server' => 'Landrive' , 'Name' => 'Freeze' ]);
  });
 
+
+// Get the apk for landrive
+Route::get('apk',
+  function(){
+    return Redirect::to('http://'.getHostByName(getHostName()).'/drive/show?drive=apkbuilds&path=app-debug.apk&download=y&filename=app-debug.apk');
+});
+
+// http://landrive/drive/show?drive=apkbuilds&path=app-debug.apk&download=y&filename=app-debug.apk
 
 // Get LanDriveAccess Route
 Route::get('getlandriveaccesstoken','LanDriveTokenController@getToken');

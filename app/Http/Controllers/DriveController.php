@@ -50,11 +50,16 @@ class DriveController extends Controller {
 	 */
 	public function store(){
       $inputs = Input::all();
-      if($inputs['create'] == 'file'){
-        return $this->landriveStorageController->createFile($inputs);
-      }else if($inputs['create'] == 'directory'){
-        return $this->landriveStorageController->createDirectory($inputs);
+
+
+      if(!isset($inputs['type'])){
+        return ['Status' => 0 , 'Code' => 400 , 'Message' => 'File or directory not given as parameter "type".'];
+      }else if($inputs['type'] == 'file'){
+        return $this->landriveStorageController->create($inputs , 'file');
+      }elseif($inputs['type'] == 'directory'){
+        return $this->landriveStorageController->create($inputs , 'directory');
       }
+
 	}
 
 	/**
@@ -72,10 +77,11 @@ class DriveController extends Controller {
       $download = isset($inputs['download']) && $inputs['download'] == 'y'  ? 'y' : 'n';
 
       if( $download == 'y' ){
-        return $this->landriveStorageController->download($drive,$path);
+        $fileName = isset($inputs['filename']) ? $inputs['filename'] && trim($inputs['filename']) != '' : rand(99,9999);
+        return $this->landriveStorageController->download($drive,$path,$fileName);
       }
-        return $this->landriveStorageController->getContents($drive,$path);
 
+      return $this->landriveStorageController->getContents($drive,$path);
 	}
 
 	/**

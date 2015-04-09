@@ -47,11 +47,15 @@ class Installation extends Command {
     $this->info("Migrating...");
     Artisan::call("migrate", ['--force' => 'y']); // No Confirmation
 
+    $name = trim($this->option('name')) != '' ?  $this->option('name') : 'admin';
+    $password = trim($this->option('password')) != '' ?  $this->option('password') : 'admin';
+
     $user = [
-      'name' => $this->option('name'),
-      'email' => $this->option('email'),
-      'password' => Hash::make($this->option('password')),
+      'name' => $name,
+      'email' => '',
+      'password' => Hash::make($password),
     ];
+
     $this->info("Creating User...");
     User::create($user);
 
@@ -61,7 +65,9 @@ class Installation extends Command {
       mkdir($landriveStorage->getDefaultLandriveStoragePath().'\public');
     }
 
-    DB::insert('insert into variable (name, value) values (?, ?)', ['installed', 1]);
+
+    $date = date("Y-m-d H:i:s");
+    DB::insert('insert into variable (name, value, created_at, updated_at) values (?, ?, ?, ?)', ['installed', '1', $date, $date]);
     $this->info("Installation Complete...100%");
 
     }
@@ -86,7 +92,6 @@ class Installation extends Command {
   {
     return [
       ['name', 'Username', InputOption::VALUE_REQUIRED, 'Username', null],
-      ['email', null, InputOption::VALUE_REQUIRED, 'Email', ''],
       ['password', null, InputOption::VALUE_REQUIRED, 'Password', null],
     ];
   }

@@ -56,7 +56,7 @@ class LanDriveTokenController extends Controller {
     if(Hash::check($password,$userQueryResult[0]->password)){
       $tokenGeneratedString = $this->getNewToken($name.rand(100,9999).$password.time());
       $this->updateToken($name, $tokenGeneratedString);
-      $tokenGenerated = ['Status' => 1, "Message" => "New token generated.", "Token" => $tokenGeneratedString];
+      $tokenGenerated = ['Status' => 1, 'Code' => 200 , "Message" => "New token generated.", "Token" => $tokenGeneratedString];
     }
 
     return $tokenGenerated;
@@ -87,7 +87,7 @@ class LanDriveTokenController extends Controller {
 
     User::where('name', '=', $name)->update(['landriveAccessToken' => ""]);
 
-    return ['Status' => '1' , 'Message' => 'Token is reset.'];
+    return ['Status' => '1' , 'Code' => 200 , 'Message' => 'Token is reset.'];
 
   }
 

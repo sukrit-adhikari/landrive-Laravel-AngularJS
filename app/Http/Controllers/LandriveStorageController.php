@@ -73,41 +73,40 @@ class LandriveStorageController extends Controller {
 
   }
 
-  public function createFile($detail = []){
+  public function create($detail = [] , $type){
     $requestParameters = $detail;
-
-    // Check Valid request i.e contains all the parameters required
-    // Check Valid Drive
-    // Check Valid Path
-    // Check Permission
-    // Check If file/Directory already Exists
 
     $filePath = $requestParameters['path'].'\\'.$requestParameters['name'];
 
-    $message = '';
+    $message = 'Problem creating '. $type;
 
     if(!Storage::disk($requestParameters['drive'])->exists($filePath)){
 
-      $result  = Storage::disk($requestParameters['drive'])
-        ->put($requestParameters['path'].'\\'.$requestParameters['name'],$requestParameters['content']);
+      if($type == 'file'){
+        $result  = Storage::disk($requestParameters['drive'])
+          ->put($requestParameters['path'].'\\'.$requestParameters['name'],$requestParameters['content']);
 
-      if($result){
-        $message = 'Created.';
-        return ['success' => 1, 'message' => $message , 'Code' => 200];
+        if($result){
+          $message = 'Created.';
+          return ['Status' => 1, 'Code' => 200 , 'Message' => $message ];
+        }
+      }else{
+
+
+
       }
 
+
+
     }else{
-      $message = 'Problem creating file.';
+      // Already Exist
     }
 
-    return ['success' => 0, 'message' => $message , 'Code' => 500];
+    return ['Status' => 0, 'Code' => 500 , 'Message' => $message ];
   }
 
-  public function createDirectory($detail = []){
 
-  }
-
-  public function download($drive,$path){
+  public function download($drive,$path,$fileName){
 
     if(!Storage::disk($drive)->exists($path)){
       return ['Status' => 0 , 'Message' => 'Does not exist.' , 'Code' => 404 ];
@@ -121,11 +120,10 @@ class LandriveStorageController extends Controller {
     file_put_contents( $tmpName ,$fileContent);
     fclose($file);
 
-    $downloadName = rand(9,99999);
 
     header('Content-Description: File Transfer');
 //    header('Content-Type: text/csv');
-    header('Content-Disposition: attachment; filename='.$downloadName);
+    header('Content-Disposition: attachment; filename='.$fileName);
     header('Content-Transfer-Encoding: binary');
     header('Expires: 0');
     header('Cache-Control: must-revalidate');

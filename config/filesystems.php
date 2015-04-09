@@ -55,9 +55,17 @@ return [
       'media' => [
         'driver' => 'local',
         'name' => 'Media Files and Backup',
-        'root'   => 'd:\\landrivetestarea',
+        'root'   => 'd:\\',
         'landriveAllAccess' => true,
       ],
+	  
+	  'apkbuilds' => [
+        'driver' => 'local',
+        'name' => 'Android Studio APK Build Location',
+        'root'   => 'C:\\Users\Sukrit\AndroidstudioProjects\LanDriveAndroid\app\build\outputs\apk',
+        'landriveAllAccess' => true,
+      ],
+	  
 
 //    'personal' => [
 //      'driver' => 'local',

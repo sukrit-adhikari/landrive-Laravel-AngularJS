@@ -18,7 +18,7 @@ class ValidateLanDriveAPIRequest {
 	{
 
       if(!LanDriveTokenController::requestHasValidToken()){
-        return response()->json(['Status' => 0, 'Code' => 403, 'Message' => 'Invalid or Unauthorized Request!' ]);
+//        return response()->json(['Status' => 0, 'Code' => 403, 'Message' => 'Invalid or Unauthorized Request!' ]);
       }
 
       return $next($request);
