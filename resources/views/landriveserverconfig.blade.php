@@ -7,6 +7,6 @@
 
 @foreach ($config as $configName => $configValue)
     @if(gettype($configValue) == 'boolean')
-      {{ Form::checkbox($configName, 'value', true)}}
+      {{Form::checkbox($configName, 'value', $configValue)}}
     @endif
 @endforeach
