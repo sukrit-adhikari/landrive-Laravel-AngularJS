@@ -34,7 +34,8 @@
 	<body>
 		<div class="container">
 			<div class="content">
-				<div class="title">Be right back.</div>
+              <div class="title">Landrive Server is in maintenance mode.</div>
+              <div class="title">Be right back.</div>
 			</div>
 		</div>
 	</body>

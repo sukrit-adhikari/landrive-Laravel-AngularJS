@@ -92,7 +92,13 @@ class LandriveStorageController extends Controller {
         }
       }else{
 
+        $result  = Storage::disk($requestParameters['drive'])
+          ->createDir($requestParameters['path'].'\\'.$requestParameters['name']);
 
+        if($result){
+          $message = 'Created.';
+          return ['Status' => 1, 'Code' => 200 , 'Message' => $message ];
+        }
 
       }
 

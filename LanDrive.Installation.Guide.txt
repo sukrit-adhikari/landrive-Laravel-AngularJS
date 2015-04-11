@@ -1,1 +1,3 @@
-php artisan install:landrive --name=admin --password=somepassword
+1.) Installation Commands
+    php artisan install:landrive --name=adminname --password=somepassword
+    php artisan install:landrive (default name/password : admin/admin)

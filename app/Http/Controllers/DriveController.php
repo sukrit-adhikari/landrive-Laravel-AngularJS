@@ -18,6 +18,7 @@ class DriveController extends Controller {
 
     // Attach MiddleWare //
     $this->middleware('LanDrivePermissionCheckForRequestedAction');
+    $this->middleware('LanDriveRequestResponseLogger');
     // End of Attaching Middleware
 
   }

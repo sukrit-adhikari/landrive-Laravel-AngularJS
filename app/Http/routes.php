@@ -24,7 +24,10 @@ Route::get('/', 'WelcomeController@index');
 // Public Server Status Beacon
 Route::get('beacon',
   function() {
-    return response()->json(['Status' => 1 , 'Code' => 200 , 'Message' => 'Landrive Server found!' ,  'Server' => 'Landrive' , 'Name' => 'Freeze' ]);
+
+    $serverConfig = config('landrive');
+
+    return response()->json(['Status' => 1 , 'Code' => 200 , 'Message' => 'Landrive Server found!' ,  'Server' => 'Landrive' , 'Name' => $serverConfig['servername'] ]);
  });
 
 // Get LanDriveAccess Route
@@ -37,6 +40,8 @@ Route::group(['middleware' => 'ValidateLanDriveAPIRequest'], function()
   Route::resource('drive', 'DriveController');
 
   Route::post('revokelandriveaccesstoken','LanDriveTokenController@revokeToken');
+
+  Route::get('server/config' , 'LanDriveServerConfigController@index');
 
 });
 

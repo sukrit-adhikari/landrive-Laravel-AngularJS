@@ -11,11 +11,10 @@ class Kernel extends HttpKernel {
 	 */
 	protected $middleware = [
 		'Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode',
-		'Illuminate\Cookie\Middleware\EncryptCookies',
-		'Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse',
-		'Illuminate\Session\Middleware\StartSession',
-		'Illuminate\View\Middleware\ShareErrorsFromSession',
-        'LanDriveRequestResponseLogger' => 'App\Http\Middleware\LanDriveRequestResponseLogger',
+//		'Illuminate\Cookie\Middleware\EncryptCookies',
+//		'Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse',
+//		'Illuminate\Session\Middleware\StartSession',
+//		'Illuminate\View\Middleware\ShareErrorsFromSession',
 		//'App\Http\Middleware\VerifyCsrfToken',
 	];
 
@@ -30,6 +29,7 @@ class Kernel extends HttpKernel {
 		'guest' => 'App\Http\Middleware\RedirectIfAuthenticated',
         'LanDrivePermissionCheckForRequestedAction' => 'App\Http\Middleware\LanDrivePermissionCheckForRequestedAction',
         'ValidateLanDriveAPIRequest' => 'App\Http\Middleware\ValidateLanDriveAPIRequest',
+        'LanDriveRequestResponseLogger' => 'App\Http\Middleware\LanDriveRequestResponseLogger',
 	];
 
 }

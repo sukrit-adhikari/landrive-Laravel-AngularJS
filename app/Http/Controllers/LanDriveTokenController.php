@@ -15,7 +15,7 @@ class LanDriveTokenController extends Controller {
    */
   public function __construct()
   {
-
+    $this->middleware('LanDriveRequestResponseLogger');
   }
 
   /**
@@ -66,13 +66,13 @@ class LanDriveTokenController extends Controller {
 
   private function getNewToken($data = ""){
 
-    $string = Hash::make($data);
+    $string = Hash::make(str_shuffle($data));
 
     $string = str_replace(' ', '-', $string); // Replaces all spaces with hyphens.
 
      $string = preg_replace('/[^A-Za-z0-9\-]/', '', $string); // Removes special chars.
 
-    return $string;
+    return str_shuffle($string);
 
   }
 
@@ -87,7 +87,7 @@ class LanDriveTokenController extends Controller {
 
     User::where('name', '=', $name)->update(['landriveAccessToken' => ""]);
 
-    return ['Status' => '1' , 'Code' => 200 , 'Message' => 'Token is reset.'];
+    return ['Status' => '1' , 'Code' => 200 , 'Message' => 'Token is revoked.'];
 
   }
 

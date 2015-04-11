@@ -1,11 +1,12 @@
 <?php
 
-return array(
+return [
 
-	    'servername' => 'Landrive Server',
+        'servername' => 'Freeze',
 
-	    'validatelandriveapirequest' => true,
+        'validatelandriveapirequest' => false,
 
-	    'logrequestresponse' => true,
+        'logrequestresponse' => false,
 
-	);
+
+	];

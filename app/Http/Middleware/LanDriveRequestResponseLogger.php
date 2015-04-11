@@ -16,14 +16,22 @@ class LanDriveRequestResponseLogger {
 	 */
 	public function handle($request, Closure $next)
 	{
+      if(!config('landrive.logrequestresponse')){
+        $response =  $next($request);
+        return $response;
+      }
 
       $requestCode = time().rand(1,100).rand(100,999);
+
+
+      $datetime = date('Y/m/d H:i:s');
+      $requestURL = Request::url();
 
       DB::table('landriveaccesslog')->insert(
         [
          'requestcode' => $requestCode,
-         'datetime' => date('Y/m/d H:i:s'),
-         'url' => Request::url(),
+         'datetime' => $datetime,
+         'url' => $requestURL,
          'clientipaddress' => $_SERVER['REMOTE_ADDR'],
          'requestorresponse' => 'request',
          'header' => serialize(apache_request_headers()),
@@ -33,17 +41,15 @@ class LanDriveRequestResponseLogger {
 
       $response =  $next($request);
 
-
-
       DB::table('landriveaccesslog')->insert(
         [
           'requestcode' => $requestCode,
-          'datetime' => date('Y/m/d H:i:s'),
-          'url' => Request::url(),
+          'datetime' => $datetime,
+          'url' => $requestURL,
           'clientipaddress' => $_SERVER['REMOTE_ADDR'],
           'requestorresponse' => 'response',
-          'header' => serialize([]),
-          'data' => serialize([]),
+          'header' =>'' , // serialize([])
+          'data' => '', //serialize([])
         ]
       );
 
