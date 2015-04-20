@@ -2,6 +2,61 @@
 
 use App\Http\Controllers\LandriveStorageController;
 
+$fso = new COM('Scripting.FileSystemObject');
+$D = $fso->Drives;
+$type = ["Unknown","Removable","Fixed","Network","CD-ROM","RAM Disk"];
+
+$systemDrives = [];
+
+foreach($D as $d ){
+
+  $dO = $fso->GetDrive($d);
+  $s = "";
+  if($dO->DriveType == 3){
+    $n = $dO->Sharename;
+  }else if($dO->IsReady){
+    $n = $dO->VolumeName;
+    $s = drive_size($dO->FreeSpace) . " free of: " . drive_size($dO->TotalSize);
+  }else{
+    $n = "[Drive not ready]";
+  }
+
+  $systemDrives[$dO->DriveLetter] = [
+    'driver' => 'local',
+    'name' => $type[$dO->DriveType].' '.$s,
+    'root' => ($dO->DriveLetter).':\\',
+  ];
+
+}
+
+function drive_size($size)
+{
+  $filesizename = array(" Bytes", " KB", " MB", " GB", " TB", " PB", " EB", " ZB", " YB");
+  return $size ? round($size/pow(1024, ($i = floor(log($size, 1024)))), 2) . $filesizename[$i] : '0 Bytes';
+}
+
+$defaultDrives = [
+
+  'My Drive' => [
+    'driver' => 'local',
+    'name' => 'My Private drive.',
+    'root'   => LandriveStorageController::getDefaultLandriveStoragePath(),
+  ],
+
+
+  'Shared' => [
+    'driver' => 'local',
+    'name' => 'Shared drive.',
+    'root'   => LandriveStorageController::getSharedLandriveStoragePath(),
+  ],
+
+
+
+];
+
+
+$disks = array_merge($defaultDrives,$systemDrives);
+
 return [
 
 	/*
@@ -43,48 +98,6 @@ return [
 	|
 	*/
 
-	'disks' => [
-
-      'local' => [
-          'driver' => 'local',
-          'name' => 'Main',
-          'root'   => LandriveStorageController::getDefaultLandriveStoragePath(),
-          'landriveAllAccess' => false,
-      ],
-
-      'media' => [
-        'driver' => 'local',
-        'name' => 'Media Files and Backup',
-        'root'   => 'd:\\',
-        'landriveAllAccess' => true,
-      ],
-
-//    'personal' => [
-//      'driver' => 'local',
-//      'name' => 'Personal Contents',
-//      'root'   => 'f:\\',
-//      'landriveAllAccess' => false,
-//    ],
-    
-
-//		's3' => [
-//			'driver' => 's3',
-//			'key'    => 'your-key',
-//			'secret' => 'your-secret',
-//			'region' => 'your-region',
-//			'bucket' => 'your-bucket',
-//		],
-
-//		'rackspace' => [
-//			'driver'    => 'rackspace',
-//			'username'  => 'your-username',
-//			'key'       => 'your-key',
-//			'container' => 'your-container',
-//			'endpoint'  => 'https://identity.api.rackspacecloud.com/v2.0/',
-//			'region'    => 'IAD',
-//			'url_type'  => 'publicURL'
-//		],
-
-	],
+	'disks' => $disks
 
 ];

@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateRequestResponseLogger extends Migration {
+class CreateLandriveLogger extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,15 +12,15 @@ class CreateRequestResponseLogger extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('LanDriveaccessLog', function(Blueprint $table)
+		Schema::create('landrivelog', function(Blueprint $table)
 		{
-			$table->increments('logid');
-            $table->text('requestcode');
-            $table->text('requestorresponse');
+			$table->increments('logID');
+            $table->text('RequestCode');
+            $table->text('LogType');
             $table->dateTime('datetime');
             $table->text('url');
             $table->longText('data');
-			$table->text('clientipaddress');
+			$table->text('ClientIPaddress');
             $table->text('header');
 		});
 	}
@@ -32,7 +32,7 @@ class CreateRequestResponseLogger extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('LanDriveaccessLog');
+		Schema::drop('landrivelog');
 	}
 
 }

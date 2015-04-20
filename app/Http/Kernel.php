@@ -27,9 +27,9 @@ class Kernel extends HttpKernel {
 		'auth' => 'App\Http\Middleware\Authenticate',
 		'auth.basic' => 'Illuminate\Auth\Middleware\AuthenticateWithBasicAuth',
 		'guest' => 'App\Http\Middleware\RedirectIfAuthenticated',
-        'LanDrivePermissionCheckForRequestedAction' => 'App\Http\Middleware\LanDrivePermissionCheckForRequestedAction',
-        'ValidateLanDriveAPIRequest' => 'App\Http\Middleware\ValidateLanDriveAPIRequest',
-        'LanDriveRequestResponseLogger' => 'App\Http\Middleware\LanDriveRequestResponseLogger',
+        'LanDrivePermissionCheckForRequestedAction' => 'App\Http\Middleware\landrive\LanDrivePermissionCheckForRequestedAction',
+        'ValidateLanDriveAPIRequest' => 'App\Http\Middleware\landrive\ValidateLanDriveAPIRequest',
+        'LanDriveRequestResponseLogger' => 'App\Http\Middleware\landrive\LanDriveRequestResponseLogger',
 	];
 
 }

@@ -2,133 +2,357 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="690900b1-95e0-431b-9690-571cb9884ab3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/.gitattributes" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/.gitattributes" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/.gitignore" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/.travis.yml" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/.travis.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/BankAccount-clover.xml" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/BankAccount-clover.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/BankAccount.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/BankAccount.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/BankAccountTest.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/BankAccountTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Util/Blacklist.php" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Util/Blacklist.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/CONTRIBUTING.md" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/CONTRIBUTING.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/ChangeLog-4.6.md" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/ChangeLog-4.6.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/Clover.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/Clover.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/PHP/CodeCoverage/Report/CloverTest.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/PHP/CodeCoverage/Report/CloverTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/PHP/CodeCoverageTest.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/PHP/CodeCoverageTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/File/Coverage.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/File/Coverage.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/CoverageClassExtendedTest.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/CoverageClassExtendedTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/CoverageClassTest.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/CoverageClassTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/CoverageFunctionParenthesesTest.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/CoverageFunctionParenthesesTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/CoverageFunctionParenthesesWhitespaceTest.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/CoverageFunctionParenthesesWhitespaceTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/CoverageFunctionTest.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/CoverageFunctionTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/CoverageMethodOneLineAnnotationTest.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/CoverageMethodOneLineAnnotationTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/CoverageMethodParenthesesTest.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/CoverageMethodParenthesesTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/CoverageMethodParenthesesWhitespaceTest.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/CoverageMethodParenthesesWhitespaceTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/CoverageMethodTest.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/CoverageMethodTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/CoverageNoneTest.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/CoverageNoneTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/CoverageNotPrivateTest.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/CoverageNotPrivateTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/CoverageNotProtectedTest.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/CoverageNotProtectedTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/CoverageNotPublicTest.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/CoverageNotPublicTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/CoverageNothingTest.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/CoverageNothingTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/CoveragePrivateTest.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/CoveragePrivateTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/CoverageProtectedTest.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/CoverageProtectedTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/CoveragePublicTest.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/CoveragePublicTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/CoverageTwoDefaultClassAnnotations.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/CoverageTwoDefaultClassAnnotations.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/CoveredClass.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/CoveredClass.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/CoveredFunction.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/CoveredFunction.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/Crap4j.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/Crap4j.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Dashboard.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Dashboard.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Directory.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Directory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/Node/Directory.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/Node/Directory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/Directory.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/Directory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Driver.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Driver.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Exception.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Exception.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/Factory.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/Factory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/PHP/CodeCoverage/Report/FactoryTest.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/PHP/CodeCoverage/Report/FactoryTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/File.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/File.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/Node/File.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/Node/File.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/File.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/File.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Filter.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Filter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/PHP/CodeCoverage/FilterTest.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/PHP/CodeCoverage/FilterTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Driver/HHVM.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Driver/HHVM.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Util/InvalidArgumentHelper.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Util/InvalidArgumentHelper.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/Node/Iterator.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/Node/Iterator.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/LICENSE" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/File/Method.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/File/Method.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/NamespaceCoverageClassExtendedTest.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/NamespaceCoverageClassExtendedTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/NamespaceCoverageClassTest.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/NamespaceCoverageClassTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/NamespaceCoverageCoversClassPublicTest.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/NamespaceCoverageCoversClassPublicTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/NamespaceCoverageCoversClassTest.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/NamespaceCoverageCoversClassTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/NamespaceCoverageMethodTest.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/NamespaceCoverageMethodTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/NamespaceCoverageNotPrivateTest.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/NamespaceCoverageNotPrivateTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/NamespaceCoverageNotProtectedTest.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/NamespaceCoverageNotProtectedTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/NamespaceCoverageNotPublicTest.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/NamespaceCoverageNotPublicTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/NamespaceCoveragePrivateTest.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/NamespaceCoveragePrivateTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/NamespaceCoverageProtectedTest.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/NamespaceCoverageProtectedTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/NamespaceCoveragePublicTest.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/NamespaceCoveragePublicTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/NamespaceCoveredClass.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/NamespaceCoveredClass.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/Node.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/Node.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/Node.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/Node.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/NotExistingCoveredElementTest.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/NotExistingCoveredElementTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/PHP.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/PHP.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/Project.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/Project.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/README.md" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/File/Report.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/File/Report.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/TestCase.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/TestCase.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/TextUI/TestRunner.php" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/TextUI/TestRunner.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/Tests.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/Tests.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/Text.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/Text.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/Totals.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/Totals.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Exception/UnintentionallyCoveredCode.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Exception/UnintentionallyCoveredCode.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/File/Unit.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML/File/Unit.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Util.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Util.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/PHP/CodeCoverage/UtilTest.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/PHP/CodeCoverage/UtilTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Runner/Version.php" afterPath="$PROJECT_DIR$/vendor/phpunit/phpunit/src/Runner/Version.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/XML.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Driver/Xdebug.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Driver/Xdebug.php" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\landrive\app\Http\Middleware\LanDrivePermissionCheckForRequestedAction.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\landrive\app\Http\Middleware\LanDriveRequestResponseLogger.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\landrive\app\Http\Middleware\ValidateLanDriveAPIRequest.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\landrive\vendor\phpspec\phpspec\features\bootstrap\Fake\DialogHelper.php" afterPath="" />
+      <change type="MOVED" beforePath="C:\xampp\htdocs\landrive\database\migrations\2014_10_12_000000_create_request_response_logger.php" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_landrivelogger.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/landrivedatabase/landrivedatabase.sqlite" afterPath="$PROJECT_DIR$/database/landrivedatabase/landrivedatabase.sqlite" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/.gitattributes" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/.gitattributes" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/.gitignore" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/.scrutinizer.yml" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/.scrutinizer.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/.travis.yml" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/classpreloader/classpreloader/src/Parser/AbstractNodeVisitor.php" afterPath="$PROJECT_DIR$/vendor/classpreloader/classpreloader/src/Parser/AbstractNodeVisitor.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/classpreloader/classpreloader/src/Application.php" afterPath="$PROJECT_DIR$/vendor/classpreloader/classpreloader/src/Application.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Console/Application.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Console/Application.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/bootstrap/ApplicationContext.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/bootstrap/ApplicationContext.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/bootstrap/Matcher/ApplicationOutputMatcher.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/bootstrap/Matcher/ApplicationOutputMatcher.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Console/ApplicationSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Console/ApplicationSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Matcher/ArrayContainMatcher.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Matcher/ArrayContainMatcher.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Matcher/ArrayContainMatcherSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Matcher/ArrayContainMatcherSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Matcher/ArrayCountMatcher.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Matcher/ArrayCountMatcher.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Matcher/ArrayCountMatcherSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Matcher/ArrayCountMatcherSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Formatter/Presenter/Differ/ArrayEngine.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Formatter/Presenter/Differ/ArrayEngine.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Formatter/Presenter/Differ/ArrayEngineSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Formatter/Presenter/Differ/ArrayEngineSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Matcher/ArrayKeyMatcher.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Matcher/ArrayKeyMatcher.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Matcher/ArrayKeyMatcherSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Matcher/ArrayKeyMatcherSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Formatter/BasicFormatter.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Formatter/BasicFormatter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Formatter/BasicFormatterSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Formatter/BasicFormatterSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Matcher/BasicMatcher.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Matcher/BasicMatcher.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Listener/BootstrapListener.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Listener/BootstrapListener.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/CHANGES.md" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/CHANGES.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Matcher/CallbackMatcher.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Matcher/CallbackMatcher.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Matcher/CallbackMatcherSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Matcher/CallbackMatcherSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Wrapper/Subject/Caller.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Wrapper/Subject/Caller.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Wrapper/Subject/CallerSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Wrapper/Subject/CallerSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/CodeGenerator/Generator/ClassGenerator.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/CodeGenerator/Generator/ClassGenerator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/CodeGenerator/Generator/ClassGeneratorSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/CodeGenerator/Generator/ClassGeneratorSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/classpreloader/classpreloader/src/ClassList.php" afterPath="$PROJECT_DIR$/vendor/classpreloader/classpreloader/src/ClassList.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/classpreloader/classpreloader/src/ClassLoader.php" afterPath="$PROJECT_DIR$/vendor/classpreloader/classpreloader/src/ClassLoader.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/classpreloader/classpreloader/src/ClassNode.php" afterPath="$PROJECT_DIR$/vendor/classpreloader/classpreloader/src/ClassNode.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Exception/Fracture/ClassNotFoundException.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Exception/Fracture/ClassNotFoundException.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Exception/Fracture/ClassNotFoundExceptionSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Exception/Fracture/ClassNotFoundExceptionSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Listener/ClassNotFoundListener.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Listener/ClassNotFoundListener.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Listener/ClassNotFoundListenerSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Listener/ClassNotFoundListenerSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Wrapper/Collaborator.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Wrapper/Collaborator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Exception/Wrapper/CollaboratorException.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Exception/Wrapper/CollaboratorException.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Runner/CollaboratorManager.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Runner/CollaboratorManager.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Runner/CollaboratorManagerSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Runner/CollaboratorManagerSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Runner/Maintainer/CollaboratorsMaintainer.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Runner/Maintainer/CollaboratorsMaintainer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Matcher/ComparisonMatcher.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Matcher/ComparisonMatcher.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Matcher/ComparisonMatcherSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Matcher/ComparisonMatcherSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Process/ReRunner/CompositeReRunner.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Process/ReRunner/CompositeReRunner.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Process/ReRunner/CompositeReRunnerSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Process/ReRunner/CompositeReRunnerSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/classpreloader/classpreloader/src/Config.php" afterPath="$PROJECT_DIR$/vendor/classpreloader/classpreloader/src/Config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Formatter/ConsoleFormatter.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Formatter/ConsoleFormatter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Wrapper/Subject/Expectation/ConstructorDecorator.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Wrapper/Subject/Expectation/ConstructorDecorator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Wrapper/Subject/Expectation/ConstructorDecoratorSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Wrapper/Subject/Expectation/ConstructorDecoratorSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Console/ContainerAssembler.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Console/ContainerAssembler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/CodeGenerator/Generator/CreateObjectTemplate.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/CodeGenerator/Generator/CreateObjectTemplate.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Wrapper/Subject/Expectation/Decorator.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Wrapper/Subject/Expectation/Decorator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Wrapper/Subject/Expectation/DecoratorSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Wrapper/Subject/Expectation/DecoratorSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Wrapper/DelayedCall.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Wrapper/DelayedCall.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Console/Command/DescribeCommand.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Console/Command/DescribeCommand.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Formatter/Presenter/Differ/Differ.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Formatter/Presenter/Differ/Differ.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Formatter/Presenter/Differ/DifferSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Formatter/Presenter/Differ/DifferSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/classpreloader/classpreloader/src/Parser/DirVisitor.php" afterPath="$PROJECT_DIR$/vendor/classpreloader/classpreloader/src/Parser/DirVisitor.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Wrapper/Subject/Expectation/DispatcherDecorator.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Wrapper/Subject/Expectation/DispatcherDecorator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Wrapper/Subject/Expectation/DispatcherDecoratorSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Wrapper/Subject/Expectation/DispatcherDecoratorSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Formatter/DotFormatter.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Formatter/DotFormatter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Wrapper/Subject/Expectation/DuringCall.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Wrapper/Subject/Expectation/DuringCall.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Formatter/Presenter/Differ/EngineInterface.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Formatter/Presenter/Differ/EngineInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Exception/Example/ErrorException.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Exception/Example/ErrorException.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Runner/Maintainer/ErrorMaintainer.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Runner/Maintainer/ErrorMaintainer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Event/EventInterface.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Event/EventInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Support/Providers/EventServiceProvider.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Support/Providers/EventServiceProvider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Event/ExampleEvent.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Event/ExampleEvent.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Event/ExampleEventSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Event/ExampleEventSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Exception/Example/ExampleException.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Exception/Example/ExampleException.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Loader/Node/ExampleNode.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Loader/Node/ExampleNode.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Loader/Node/ExampleNodeSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Loader/Node/ExampleNodeSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Runner/ExampleRunner.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Runner/ExampleRunner.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Runner/ExampleRunnerSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Runner/ExampleRunnerSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Exception/Exception.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Exception/Exception.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Exception/ExceptionFactory.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Exception/ExceptionFactory.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Exception/ExceptionFactorySpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Exception/ExceptionFactorySpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Exception/ExceptionSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Exception/ExceptionSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/CodeGenerator/Generator/ExistingConstructorTemplate.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/CodeGenerator/Generator/ExistingConstructorTemplate.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Event/ExpectationEvent.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Event/ExpectationEvent.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Event/ExpectationEventSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Event/ExpectationEventSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Wrapper/Subject/ExpectationFactory.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Wrapper/Subject/ExpectationFactory.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Wrapper/Subject/ExpectationFactorySpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Wrapper/Subject/ExpectationFactorySpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Wrapper/Subject/Expectation/ExpectationInterface.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Wrapper/Subject/Expectation/ExpectationInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Extension/ExtensionInterface.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Extension/ExtensionInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Exception/Fracture/FactoryDoesNotReturnObjectException.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Exception/Fracture/FactoryDoesNotReturnObjectException.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Exception/Example/FailureException.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Exception/Example/FailureException.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/bootstrap/Matcher/FileExistsMatcher.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/bootstrap/Matcher/FileExistsMatcher.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/bootstrap/Matcher/FileHasContentsMatcher.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/bootstrap/Matcher/FileHasContentsMatcher.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/classpreloader/classpreloader/src/Parser/FileVisitor.php" afterPath="$PROJECT_DIR$/vendor/classpreloader/classpreloader/src/Parser/FileVisitor.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Util/Filesystem.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Util/Filesystem.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/bootstrap/FilesystemContext.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/bootstrap/FilesystemContext.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Console/Formatter.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Console/Formatter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Exception/Fracture/FractureException.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Exception/Fracture/FractureException.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/CodeGenerator/Generator/GeneratorInterface.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/CodeGenerator/Generator/GeneratorInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/CodeGenerator/GeneratorManager.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/CodeGenerator/GeneratorManager.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/CodeGenerator/GeneratorManagerSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/CodeGenerator/GeneratorManagerSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Formatter/HtmlFormatter.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Formatter/HtmlFormatter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Formatter/HtmlFormatterSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Formatter/HtmlFormatterSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Formatter/Html/HtmlPresenter.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Formatter/Html/HtmlPresenter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Formatter/Html/HtmlPresenterSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Formatter/Html/HtmlPresenterSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Console/IO.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Console/IO.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Formatter/Html/IO.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Formatter/Html/IO.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/IO/IOInterface.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/IO/IOInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Console/IOSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Console/IOSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Formatter/Html/IOSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Formatter/Html/IOSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Matcher/IdentityMatcher.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Matcher/IdentityMatcher.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Matcher/IdentityMatcherSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Matcher/IdentityMatcherSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Util/Instantiator.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Util/Instantiator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Util/InstantiatorSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Util/InstantiatorSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Exception/Fracture/InterfaceNotImplementedException.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Exception/Fracture/InterfaceNotImplementedException.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Exception/Fracture/InterfaceNotImplementedExceptionSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Exception/Fracture/InterfaceNotImplementedExceptionSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Formatter/Html/InvalidExampleResultException.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Formatter/Html/InvalidExampleResultException.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Formatter/JUnitFormatter.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Formatter/JUnitFormatter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Formatter/JUnitFormatterSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Formatter/JUnitFormatterSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Kernel.php" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/classpreloader/classpreloader/LICENSE" afterPath="$PROJECT_DIR$/vendor/classpreloader/classpreloader/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/LICENSE" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LanDrive.Installation.Guide.txt" afterPath="$PROJECT_DIR$/LanDrive.Installation.Guide.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LanDrive.Server.Settings.php" afterPath="$PROJECT_DIR$/LanDrive.Server.Settings.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/LanDriveServerConfigController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/LanDriveServerConfigController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/LanDriveTokenController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/LanDriveTokenController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/LandriveStorageController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/LandriveStorageController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Runner/Maintainer/LetAndLetgoMaintainer.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Runner/Maintainer/LetAndLetgoMaintainer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Runner/Maintainer/MaintainerInterface.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Runner/Maintainer/MaintainerInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/Makefile" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Exception/Example/MatcherException.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Exception/Example/MatcherException.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Matcher/MatcherInterface.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Matcher/MatcherInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Runner/MatcherManager.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Runner/MatcherManager.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Runner/MatcherManagerSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Runner/MatcherManagerSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Exception/Wrapper/MatcherNotFoundException.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Exception/Wrapper/MatcherNotFoundException.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Runner/Maintainer/MatchersMaintainer.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Runner/Maintainer/MatchersMaintainer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Runner/Maintainer/MatchersMaintainerSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Runner/Maintainer/MatchersMaintainerSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Matcher/MatchersProviderInterface.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Matcher/MatchersProviderInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Util/MethodAnalyser.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Util/MethodAnalyser.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Util/MethodAnalyserSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Util/MethodAnalyserSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Event/MethodCallEvent.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Event/MethodCallEvent.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Event/MethodCallEventSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Event/MethodCallEventSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/CodeGenerator/Generator/MethodGenerator.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/CodeGenerator/Generator/MethodGenerator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/CodeGenerator/Generator/MethodGeneratorSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/CodeGenerator/Generator/MethodGeneratorSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Exception/Fracture/MethodInvocationException.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Exception/Fracture/MethodInvocationException.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Exception/Fracture/MethodNotFoundException.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Exception/Fracture/MethodNotFoundException.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Exception/Fracture/MethodNotFoundExceptionSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Exception/Fracture/MethodNotFoundExceptionSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Listener/MethodNotFoundListener.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Listener/MethodNotFoundListener.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Listener/MethodNotFoundListenerSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Listener/MethodNotFoundListenerSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Exception/Fracture/MethodNotVisibleException.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Exception/Fracture/MethodNotVisibleException.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Exception/Fracture/MethodNotVisibleExceptionSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Exception/Fracture/MethodNotVisibleExceptionSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Listener/MethodReturnedNullListener.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Listener/MethodReturnedNullListener.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Listener/MethodReturnedNullListenerSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Listener/MethodReturnedNullListenerSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/CodeGenerator/Generator/NamedConstructorGenerator.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/CodeGenerator/Generator/NamedConstructorGenerator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/CodeGenerator/Generator/NamedConstructorGeneratorSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/CodeGenerator/Generator/NamedConstructorGeneratorSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Exception/Fracture/NamedConstructorNotFoundException.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Exception/Fracture/NamedConstructorNotFoundException.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Exception/Fracture/NamedConstructorNotFoundExceptionSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Exception/Fracture/NamedConstructorNotFoundExceptionSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Listener/NamedConstructorNotFoundListener.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Listener/NamedConstructorNotFoundListener.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Listener/NamedConstructorNotFoundListenerSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Listener/NamedConstructorNotFoundListenerSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Wrapper/Subject/Expectation/Negative.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Wrapper/Subject/Expectation/Negative.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Wrapper/Subject/Expectation/NegativeSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Wrapper/Subject/Expectation/NegativeSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Wrapper/Subject/Expectation/NegativeThrow.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Wrapper/Subject/Expectation/NegativeThrow.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/classpreloader/classpreloader/src/Parser/NodeTraverser.php" afterPath="$PROJECT_DIR$/vendor/classpreloader/classpreloader/src/Parser/NodeTraverser.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Exception/Example/NotEqualException.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Exception/Example/NotEqualException.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Exception/Example/NotEqualExceptionSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Exception/Example/NotEqualExceptionSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/ObjectBehavior.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/ObjectBehavior.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Formatter/Presenter/Differ/ObjectEngine.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Formatter/Presenter/Differ/ObjectEngine.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Formatter/Presenter/Differ/ObjectEngineSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Formatter/Presenter/Differ/ObjectEngineSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Matcher/ObjectStateMatcher.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Matcher/ObjectStateMatcher.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Matcher/ObjectStateMatcherSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Matcher/ObjectStateMatcherSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Process/ReRunner/OptionalReRunner.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Process/ReRunner/OptionalReRunner.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Process/ReRunner/OptionalReRunnerSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Process/ReRunner/OptionalReRunnerSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Config/OptionsConfig.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Config/OptionsConfig.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Config/OptionsConfigSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Config/OptionsConfigSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Locator/PSR0/PSR0Locator.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Locator/PSR0/PSR0Locator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Locator/PSR0/PSR0LocatorSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Locator/PSR0/PSR0LocatorSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Locator/PSR0/PSR0Resource.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Locator/PSR0/PSR0Resource.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Locator/PSR0/PSR0ResourceSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Locator/PSR0/PSR0ResourceSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Process/ReRunner/PassthruReRunner.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Process/ReRunner/PassthruReRunner.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Process/ReRunner/PassthruRerunnerSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Process/ReRunner/PassthruRerunnerSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Process/ReRunner/PcntlReRunner.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Process/ReRunner/PcntlReRunner.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Process/ReRunner/PcntlReRunnerSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Process/ReRunner/PcntlReRunnerSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Exception/Example/PendingException.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Exception/Example/PendingException.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Process/ReRunner/PhpExecutableReRunner.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Process/ReRunner/PhpExecutableReRunner.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Process/ReRunner/PlatformSpecificReRunner.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Process/ReRunner/PlatformSpecificReRunner.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Wrapper/Subject/Expectation/Positive.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Wrapper/Subject/Expectation/Positive.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Wrapper/Subject/Expectation/PositiveSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Wrapper/Subject/Expectation/PositiveSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Wrapper/Subject/Expectation/PositiveThrow.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Wrapper/Subject/Expectation/PositiveThrow.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/classpreloader/classpreloader/src/Command/PreCompileCommand.php" afterPath="$PROJECT_DIR$/vendor/classpreloader/classpreloader/src/Command/PreCompileCommand.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Formatter/Presenter/PresenterInterface.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Formatter/Presenter/PresenterInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Formatter/PrettyFormatter.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Formatter/PrettyFormatter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Formatter/ProgressFormatter.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Formatter/ProgressFormatter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Formatter/ProgressFormatterSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Formatter/ProgressFormatterSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/CodeGenerator/Generator/PromptingGenerator.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/CodeGenerator/Generator/PromptingGenerator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Exception/Fracture/PropertyNotFoundException.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Exception/Fracture/PropertyNotFoundException.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Exception/Fracture/PropertyNotFoundExceptionSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Exception/Fracture/PropertyNotFoundExceptionSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/README.rst" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/README.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/bootstrap/Fake/ReRunner.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/bootstrap/Fake/ReRunner.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Process/ReRunner.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Process/ReRunner.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Factory/ReflectionFactory.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Factory/ReflectionFactory.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Formatter/Html/Template/ReportFailed.html" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Formatter/Html/Template/ReportFailed.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Formatter/Html/ReportFailedItem.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Formatter/Html/ReportFailedItem.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Formatter/Html/ReportFailedItemSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Formatter/Html/ReportFailedItemSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Formatter/Html/Template/ReportFooter.html" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Formatter/Html/Template/ReportFooter.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Formatter/Html/Template/ReportHeader.html" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Formatter/Html/Template/ReportHeader.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Formatter/Html/ReportItem.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Formatter/Html/ReportItem.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Formatter/Html/ReportItemFactory.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Formatter/Html/ReportItemFactory.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Formatter/Html/ReportItemFactorySpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Formatter/Html/ReportItemFactorySpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Formatter/Html/ReportPassedItem.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Formatter/Html/ReportPassedItem.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Formatter/Html/ReportPassedItemSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Formatter/Html/ReportPassedItemSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Formatter/Html/Template/ReportPending.html" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Formatter/Html/Template/ReportPending.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Formatter/Html/ReportPendingItem.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Formatter/Html/ReportPendingItem.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Formatter/Html/ReportPendingItemSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Formatter/Html/ReportPendingItemSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Formatter/Html/Template/ReportRed.html" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Formatter/Html/Template/ReportRed.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Formatter/Html/Template/ReportSkipped.html" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Formatter/Html/Template/ReportSkipped.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Formatter/Html/ReportSkippedItem.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Formatter/Html/ReportSkippedItem.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Formatter/Html/Template/ReportSpecificationEnds.html" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Formatter/Html/Template/ReportSpecificationEnds.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Formatter/Html/Template/ReportSpecificationStarts.html" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Formatter/Html/Template/ReportSpecificationStarts.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Formatter/Html/Template/ReportSummary.html" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Formatter/Html/Template/ReportSummary.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Listener/RerunListener.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Listener/RerunListener.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Listener/RerunListenerSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Listener/RerunListenerSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Locator/ResourceInterface.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Locator/ResourceInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Loader/ResourceLoader.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Loader/ResourceLoader.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Locator/ResourceLocatorInterface.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Locator/ResourceLocatorInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Locator/ResourceManager.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Locator/ResourceManager.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Locator/ResourceManagerInterface.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Locator/ResourceManagerInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Locator/ResourceManagerSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Locator/ResourceManagerSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Console/ResultConverter.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Console/ResultConverter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Console/ResultConverterSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Console/ResultConverterSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/CodeGenerator/Generator/ReturnConstantGenerator.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/CodeGenerator/Generator/ReturnConstantGenerator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/CodeGenerator/Generator/ReturnConstantGeneratorSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/CodeGenerator/Generator/ReturnConstantGeneratorSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Console/Command/RunCommand.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Console/Command/RunCommand.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Matcher/ScalarMatcher.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Matcher/ScalarMatcher.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/ServiceContainer.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/ServiceContainer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/ServiceContainerSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/ServiceContainerSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/classpreloader/classpreloader/src/Exception/SkipFileException.php" afterPath="$PROJECT_DIR$/vendor/classpreloader/classpreloader/src/Exception/SkipFileException.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Exception/Example/SkippingException.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Exception/Example/SkippingException.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Event/SpecificationEvent.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Event/SpecificationEvent.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Event/SpecificationEventSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Event/SpecificationEventSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/CodeGenerator/Generator/SpecificationGenerator.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/CodeGenerator/Generator/SpecificationGenerator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/CodeGenerator/Generator/SpecificationGeneratorSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/CodeGenerator/Generator/SpecificationGeneratorSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/SpecificationInterface.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/SpecificationInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Loader/Node/SpecificationNode.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Loader/Node/SpecificationNode.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Loader/Node/SpecificationNodeSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Loader/Node/SpecificationNodeSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Runner/SpecificationRunner.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Runner/SpecificationRunner.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Runner/SpecificationRunnerSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Runner/SpecificationRunnerSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Listener/StatisticsCollector.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Listener/StatisticsCollector.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Listener/StatisticsCollectorSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Listener/StatisticsCollectorSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Exception/Example/StopOnFailureException.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Exception/Example/StopOnFailureException.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Exception/Example/StopOnFailureExceptionSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Exception/Example/StopOnFailureExceptionSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Listener/StopOnFailureListener.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Listener/StopOnFailureListener.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Listener/StopOnFailureListenerSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Listener/StopOnFailureListenerSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Matcher/StringEndMatcher.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Matcher/StringEndMatcher.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Matcher/StringEndMatcherSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Matcher/StringEndMatcherSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Formatter/Presenter/Differ/StringEngine.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Formatter/Presenter/Differ/StringEngine.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Formatter/Presenter/Differ/StringEngineSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Formatter/Presenter/Differ/StringEngineSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Formatter/Presenter/StringPresenter.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Formatter/Presenter/StringPresenter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Formatter/Presenter/StringPresenterSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Formatter/Presenter/StringPresenterSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Matcher/StringRegexMatcher.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Matcher/StringRegexMatcher.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Matcher/StringRegexMatcherSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Matcher/StringRegexMatcherSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Matcher/StringStartMatcher.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Matcher/StringStartMatcher.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Matcher/StringStartMatcherSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Matcher/StringStartMatcherSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Wrapper/Subject.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Wrapper/Subject.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Wrapper/SubjectContainerInterface.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Wrapper/SubjectContainerInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Exception/Wrapper/SubjectException.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Exception/Wrapper/SubjectException.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Runner/Maintainer/SubjectMaintainer.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Runner/Maintainer/SubjectMaintainer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Wrapper/SubjectSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Wrapper/SubjectSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Wrapper/Subject/SubjectWithArrayAccess.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Wrapper/Subject/SubjectWithArrayAccess.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Loader/Suite.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Loader/Suite.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Event/SuiteEvent.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Event/SuiteEvent.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Event/SuiteEventSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Event/SuiteEventSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Runner/SuiteRunner.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Runner/SuiteRunner.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Runner/SuiteRunnerSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Runner/SuiteRunnerSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Loader/SuiteSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Loader/SuiteSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Formatter/Presenter/TaggedPresenter.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Formatter/Presenter/TaggedPresenter.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Formatter/Presenter/TaggedPresenterSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Formatter/Presenter/TaggedPresenterSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Formatter/Template.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Formatter/Template.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Formatter/Html/Template.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Formatter/Html/Template.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/CodeGenerator/TemplateRenderer.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/CodeGenerator/TemplateRenderer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/CodeGenerator/TemplateRendererSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/CodeGenerator/TemplateRendererSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Formatter/Html/TemplateSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Formatter/Html/TemplateSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Wrapper/Subject/Expectation/ThrowExpectation.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Wrapper/Subject/Expectation/ThrowExpectation.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Matcher/ThrowMatcher.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Matcher/ThrowMatcher.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Matcher/ThrowMatcherSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Matcher/ThrowMatcherSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Matcher/TypeMatcher.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Matcher/TypeMatcher.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Matcher/TypeMatcherSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Matcher/TypeMatcherSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Wrapper/Subject/Expectation/UnwrapDecorator.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Wrapper/Subject/Expectation/UnwrapDecorator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Wrapper/Unwrapper.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Wrapper/Unwrapper.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/bootstrap/Matcher/ValidJUnitXmlMatcher.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/bootstrap/Matcher/ValidJUnitXmlMatcher.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Wrapper/Subject/WrappedObject.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Wrapper/Subject/WrappedObject.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Wrapper/Subject/WrappedObjectSpec.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/spec/PhpSpec/Wrapper/Subject/WrappedObjectSpec.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Wrapper/Wrapper.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Wrapper/Wrapper.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Wrapper/WrapperInterface.php" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Wrapper/WrapperInterface.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/app.php" afterPath="$PROJECT_DIR$/config/app.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/scripts/auto_append.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/scripts/auto_append.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/scripts/auto_prepend.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/scripts/auto_prepend.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/css/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/js/bootstrap.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/build.xml" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/build.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/class-with-anonymous-function-clover.xml" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/class-with-anonymous-function-clover.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/behat.yml.dist" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/behat.yml.dist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/box.json" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/box.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/CodeGenerator/Generator/templates/class.template" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/CodeGenerator/Generator/templates/class.template" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bin/classpreloader.php" afterPath="$PROJECT_DIR$/vendor/bin/classpreloader.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/classpreloader/classpreloader/classpreloader.php" afterPath="$PROJECT_DIR$/vendor/classpreloader/classpreloader/classpreloader.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/compiled.php" afterPath="$PROJECT_DIR$/vendor/compiled.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/composer.json" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/classpreloader/classpreloader/composer.json" afterPath="$PROJECT_DIR$/vendor/classpreloader/classpreloader/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/composer.json" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/composer.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/coverage_bar.html.dist" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/coverage_bar.html.dist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/js/d3.min.js" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/js/d3.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/dashboard.html.dist" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/dashboard.html.dist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/directory.html.dist" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/directory.html.dist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/directory_item.html.dist" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/directory_item.html.dist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/file.html.dist" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/file.html.dist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/file_item.html.dist" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/file_item.html.dist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/fonts/glyphicons-halflings-regular.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/js/holder.js" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/js/holder.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/js/html5shiv.min.js" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/js/html5shiv.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/ignored-lines-clover.xml" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/ignored-lines-clover.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/options/developer_chooses_no_code_generation.feature" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/options/developer_chooses_no_code_generation.feature" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/options/developer_chooses_stop_on_failure.feature" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/options/developer_chooses_stop_on_failure.feature" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/code_generation/developer_generates_class.feature" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/code_generation/developer_generates_class.feature" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/code_generation/developer_generates_method.feature" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/code_generation/developer_generates_method.feature" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/code_generation/developer_generates_named_constructor.feature" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/code_generation/developer_generates_named_constructor.feature" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/code_generation/developer_generates_return_constant.feature" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/code_generation/developer_generates_return_constant.feature" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/code_generation/developer_generates_spec.feature" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/code_generation/developer_generates_spec.feature" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/formatter/developer_is_shown_diffs.feature" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/formatter/developer_is_shown_diffs.feature" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/runner/developer_is_told_about_pending_specs.feature" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/runner/developer_is_told_about_pending_specs.feature" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/code_generation/developer_reruns_features.feature" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/code_generation/developer_reruns_features.feature" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/runner/developer_runs_specs.feature" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/runner/developer_runs_specs.feature" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/runner/developer_runs_specs_with_bootstrap.feature" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/runner/developer_runs_specs_with_bootstrap.feature" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/runner/developer_skips_specs.feature" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/runner/developer_skips_specs.feature" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/exception_handling/developer_specifies_exceptions.feature" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/exception_handling/developer_specifies_exceptions.feature" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/construction/developer_specifies_object_construction.feature" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/construction/developer_specifies_object_construction.feature" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/matchers/developer_uses_array_contain_matcher.feature" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/matchers/developer_uses_array_contain_matcher.feature" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/matchers/developer_uses_array_key_matcher.feature" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/matchers/developer_uses_array_key_matcher.feature" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/matchers/developer_uses_comparison_matcher.feature" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/matchers/developer_uses_comparison_matcher.feature" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/matchers/developer_uses_count_matcher.feature" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/matchers/developer_uses_count_matcher.feature" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/matchers/developer_uses_identity_matcher.feature" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/matchers/developer_uses_identity_matcher.feature" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/matchers/developer_uses_inline_matcher.feature" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/matchers/developer_uses_inline_matcher.feature" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/matchers/developer_uses_object_state_matcher.feature" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/matchers/developer_uses_object_state_matcher.feature" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/matchers/developer_uses_scalar_matcher.feature" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/matchers/developer_uses_scalar_matcher.feature" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/matchers/developer_uses_string_end_matcher.feature" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/matchers/developer_uses_string_end_matcher.feature" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/matchers/developer_uses_string_regex_matcher.feature" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/matchers/developer_uses_string_regex_matcher.feature" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/matchers/developer_uses_string_start_matcher.feature" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/matchers/developer_uses_string_start_matcher.feature" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/matchers/developer_uses_throw_matcher.feature" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/matchers/developer_uses_throw_matcher.feature" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/matchers/developer_uses_type_matcher.feature" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/matchers/developer_uses_type_matcher.feature" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/filesystems.php" afterPath="$PROJECT_DIR$/config/filesystems.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/installed.json" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/js/jquery.min.js" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/js/jquery.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Resources/schema/junit.xsd" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/Resources/schema/junit.xsd" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/landriveserverconfig.blade.php" afterPath="$PROJECT_DIR$/resources/views/landriveserverconfig.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/method_item.html.dist" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/method_item.html.dist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/css/nv.d3.css" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/css/nv.d3.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/js/nv.d3.min.js" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/js/nv.d3.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/phpunit.xml.dist" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/phpunit.xml.dist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/js/respond.min.js" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/js/respond.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/CodeGenerator/Generator/templates/method.template" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/CodeGenerator/Generator/templates/method.template" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/CodeGenerator/Generator/templates/named_constructor_create_object.template" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/CodeGenerator/Generator/templates/named_constructor_create_object.template" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/CodeGenerator/Generator/templates/named_constructor_exception.template" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/CodeGenerator/Generator/templates/named_constructor_exception.template" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/phpspec.yml" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/phpspec.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bin/phpspec" afterPath="$PROJECT_DIR$/vendor/bin/phpspec" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/bin/phpspec" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/bin/phpspec" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/CodeGenerator/Generator/templates/returnconstant.template" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/CodeGenerator/Generator/templates/returnconstant.template" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/services.json" afterPath="$PROJECT_DIR$/vendor/services.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/source_with_class_and_anonymous_function.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/source_with_class_and_anonymous_function.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/source_with_ignore.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/source_with_ignore.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/source_with_namespace.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/source_with_namespace.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/source_with_oneline_annotations.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/source_with_oneline_annotations.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/source_without_ignore.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/source_without_ignore.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/source_without_namespace.php" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/tests/_files/source_without_namespace.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/css/style.css" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/src/CodeCoverage/Report/HTML/Renderer/Template/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/build/travis-ci.xml" afterPath="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/build/travis-ci.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/CodeGenerator/Generator/templates/specification.template" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/src/PhpSpec/CodeGenerator/Generator/templates/specification.template" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/formatter/use_the_junit_formatter.feature" afterPath="$PROJECT_DIR$/vendor/phpspec/phpspec/features/formatter/use_the_junit_formatter.feature" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="landrive.iws" />
@@ -147,83 +371,33 @@
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
   </component>
+  <component name="DatabaseView">
+    <flatten value="false" />
+    <groupTables value="false" />
+    <sortChildren value="false" />
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="landrive" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="routes.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <file leaf-file-name="EventServiceProvider.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Support/Providers/EventServiceProvider.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="0" selection-start="1167" selection-end="1167" vertical-scroll-proportion="-11.769231" vertical-offset="221" max-vertical-offset="782">
+            <state line="12" column="17" selection-start="314" selection-end="314" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="1258">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="laravel-2015-04-11.log" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/storage/logs/laravel-2015-04-11.log">
-          <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-            <state />
-          </provider>
+      <file leaf-file-name="AccessTokenWasProvided.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Handlers/Events/AccessTokenWasProvided.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="182" column="0" selection-start="27428" selection-end="27428" vertical-scroll-proportion="-18.4" vertical-offset="2634" max-vertical-offset="3196">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="landriveserverconfig.blade.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/landriveserverconfig.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="25" selection-start="244" selection-end="244" vertical-scroll-proportion="0.2665505" vertical-offset="0" max-vertical-offset="574">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="welcome.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="18" selection-start="164" selection-end="164" vertical-scroll-proportion="11.576923" vertical-offset="420" max-vertical-offset="1020">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Kernel.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="25" selection-start="219" selection-end="219" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="697">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/app.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="178" column="8" selection-start="6274" selection-end="6274" vertical-scroll-proportion="-5.076923" vertical-offset="2894" max-vertical-offset="3519">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="composer.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/composer.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="6" selection-start="781" selection-end="781" vertical-scroll-proportion="-26.153847" vertical-offset="0" max-vertical-offset="867">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="artisan" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/artisan">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="8" selection-start="1070" selection-end="1070" vertical-scroll-proportion="-6.3846154" vertical-offset="225" max-vertical-offset="799">
-              <folding />
+            <state line="8" column="0" selection-start="220" selection-end="220" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="697">
+              <folding>
+                <element signature="e#38#53#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -231,17 +405,80 @@
       <file leaf-file-name="LanDriveTokenController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/LanDriveTokenController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="38" selection-end="38" vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="1989">
+            <state line="78" column="0" selection-start="2200" selection-end="2200" vertical-scroll-proportion="-51.0" vertical-offset="0" max-vertical-offset="2414">
+              <folding>
+                <element signature="e#39#77#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Kernel.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="6" selection-start="1179" selection-end="1179" vertical-scroll-proportion="0.71666664" vertical-offset="157" max-vertical-offset="697">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LanDriveServerConfigController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/LanDriveServerConfigController.php">
+      <file leaf-file-name="laravel-2015-04-20.log" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/storage/logs/laravel-2015-04-20.log">
+          <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="74" selection-start="784" selection-end="784" vertical-scroll-proportion="-15.538462" vertical-offset="140" max-vertical-offset="714">
+            <state line="61" column="12" selection-start="9963" selection-end="9963" vertical-scroll-proportion="-26.4" vertical-offset="377" max-vertical-offset="1156">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="13" selection-start="523" selection-end="523" vertical-scroll-proportion="-1.3076923" vertical-offset="119" max-vertical-offset="731">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AccessTokenWasProvided.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Events/AccessTokenWasProvided.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="5" selection-start="428" selection-end="428" vertical-scroll-proportion="-14.384615" vertical-offset="0" max-vertical-offset="527">
+              <folding>
+                <element signature="e#29#50#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Event.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Event.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="357">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ServiceProvider.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/ServiceProvider.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="42" selection-start="370" selection-end="370" vertical-scroll-proportion="27.461538" vertical-offset="1071" max-vertical-offset="3995">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PushbulletNotification.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Commands/PushbulletNotification.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="31" column="27" selection-start="591" selection-end="591" vertical-scroll-proportion="-10.307693" vertical-offset="259" max-vertical-offset="833">
+              <folding>
+                <element signature="e#31#56#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -257,6 +494,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitLogSettings">
+    <option name="myStructureFilterPaths" />
     <option name="myDateState">
       <MyDateState />
     </option>
@@ -264,22 +502,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/resources/views/errors/503.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Kernel.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/DriveController.php" />
-        <option value="$PROJECT_DIR$/config/landrive.php" />
-        <option value="$PROJECT_DIR$/app/Http/Middleware/LanDriveRequestResponseLogger.php" />
-        <option value="$PROJECT_DIR$/app/Http/Middleware/ValidateLanDriveAPIRequest.php" />
-        <option value="$PROJECT_DIR$/LanDrive.Installation.Guide.txt" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/LandriveStorageController.php" />
         <option value="$PROJECT_DIR$/LanDrive.Server.Settings.php" />
-        <option value="$PROJECT_DIR$/resources/views/landrive.server.config.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/LanDriveTokenController.php" />
-        <option value="$PROJECT_DIR$/app/Http/routes.php" />
+        <option value="$PROJECT_DIR$/storage/logs/laravel-2015-04-19.log" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/LanDriveServerConfigController.php" />
-        <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/config/app.php" />
-        <option value="$PROJECT_DIR$/resources/views/landriveserverconfig.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/LandriveStorageController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Middleware/LanDriveRequestResponseLogger.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_landrivelogger.php" />
+        <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Support/Providers/EventServiceProvider.php" />
+        <option value="$PROJECT_DIR$/public/index.php" />
+        <option value="$PROJECT_DIR$/config/filesystems.php" />
+        <option value="$PROJECT_DIR$/LanDrive.Installation.Guide.txt" />
+        <option value="$PROJECT_DIR$/app/Events/AccessTokenWasProvided.php" />
+        <option value="$PROJECT_DIR$/app/Handlers/Events/AccessTokenWasProvided.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/LanDriveTokenController.php" />
+        <option value="$PROJECT_DIR$/app/Commands/PushbulletNotification.php" />
+        <option value="$PROJECT_DIR$/app/Http/Kernel.php" />
+        <option value="$PROJECT_DIR$/storage/logs/laravel-2015-04-20.log" />
       </list>
     </option>
   </component>
@@ -324,6 +562,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -384,114 +623,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="storage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="landrive" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="landrive" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="landrive" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="landrive" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="errors" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="landrive" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="landrive" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="auth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="landrive" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="landrive" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="landrive" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="landrive" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="landrive" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="landrive" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -511,34 +642,11 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Http" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="landrive" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="landrive" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -611,29 +719,51 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="776" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32766616" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32921174" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39258114" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298217" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.273906" sideWeight="0.38639876" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29335493" sideWeight="0.60741884" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32921174" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6136012" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32766616" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32921174" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39258114" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32921174" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28363046" sideWeight="0.60741884" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -657,126 +787,127 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DriveController.php">
+    <entry file="file://$PROJECT_DIR$/app/Events/Event.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="107" column="5" selection-start="2475" selection-end="2475" vertical-scroll-proportion="0.40106952" vertical-offset="1492" max-vertical-offset="2074">
+        <state line="6" column="6" selection-start="109" selection-end="109" vertical-scroll-proportion="0.17770036" vertical-offset="0" max-vertical-offset="574">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Console/Commands/Installation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="39" selection-end="39" vertical-scroll-proportion="-2.2273602" vertical-offset="1190" max-vertical-offset="1785">
+          <folding>
+            <element signature="e#39#90#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Commands/Command.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Queue.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="579">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Event.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="579">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="6" selection-start="295" selection-end="295" vertical-scroll-proportion="0.24593128" vertical-offset="0" max-vertical-offset="782">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/ServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="42" selection-start="370" selection-end="370" vertical-scroll-proportion="27.461538" vertical-offset="1071" max-vertical-offset="3995">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LanDrive.Server.Settings.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="6" selection-start="144" selection-end="144" vertical-scroll-proportion="0.32578397" vertical-offset="0" max-vertical-offset="574">
+        <state line="4" column="8" selection-start="25" selection-end="25" vertical-scroll-proportion="0.12781955" vertical-offset="0" max-vertical-offset="532">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/auth/login.blade.php">
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Support/Providers/EventServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="28" selection-start="394" selection-end="394" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="1139">
+        <state line="12" column="17" selection-start="314" selection-end="314" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="1258">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/auth/register.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/Handlers/Events/AccessTokenWasProvided.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="12" selection-start="311" selection-end="311" vertical-scroll-proportion="16.346153" vertical-offset="612" max-vertical-offset="1207">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
+        <state line="8" column="0" selection-start="220" selection-end="220" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="697">
           <folding>
-            <marker date="1426343307567" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1426343307567" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1426343307567" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1426343307567" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1426343307567" expanded="true" signature="-1:-1" placeholder="..." />
+            <element signature="e#38#53#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
+    <entry file="file://$PROJECT_DIR$/app/Commands/PushbulletNotification.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="25" selection-start="219" selection-end="219" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="697">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/artisan">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="8" selection-start="1070" selection-end="1070" vertical-scroll-proportion="-6.3846154" vertical-offset="225" max-vertical-offset="799">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.lock">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="11" selection-start="107" selection-end="107" vertical-scroll-proportion="-0.54448396" vertical-offset="357" max-vertical-offset="48212">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/LanDriveServerConfigController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="74" selection-start="784" selection-end="784" vertical-scroll-proportion="-15.538462" vertical-offset="140" max-vertical-offset="714">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="6" selection-start="781" selection-end="781" vertical-scroll-proportion="-26.153847" vertical-offset="0" max-vertical-offset="867">
-          <folding />
+        <state line="31" column="27" selection-start="591" selection-end="591" vertical-scroll-proportion="-10.307693" vertical-offset="259" max-vertical-offset="833">
+          <folding>
+            <element signature="e#31#56#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/LanDriveTokenController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="38" selection-end="38" vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="1989">
-          <folding />
+        <state line="78" column="0" selection-start="2200" selection-end="2200" vertical-scroll-proportion="-51.0" vertical-offset="0" max-vertical-offset="2414">
+          <folding>
+            <element signature="e#39#77#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/app.php">
+    <entry file="file://$PROJECT_DIR$/app/Events/AccessTokenWasProvided.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="178" column="8" selection-start="6274" selection-end="6274" vertical-scroll-proportion="-5.076923" vertical-offset="2894" max-vertical-offset="3519">
-          <folding />
+        <state line="22" column="5" selection-start="428" selection-end="428" vertical-scroll-proportion="-14.384615" vertical-offset="0" max-vertical-offset="527">
+          <folding>
+            <element signature="e#29#50#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
+    <entry file="file://$PROJECT_DIR$/storage/logs/laravel-2015-04-20.log">
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="18" selection-start="164" selection-end="164" vertical-scroll-proportion="11.576923" vertical-offset="420" max-vertical-offset="1020">
+        <state line="61" column="12" selection-start="9963" selection-end="9963" vertical-scroll-proportion="-26.4" vertical-offset="377" max-vertical-offset="1156">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="0" selection-start="1167" selection-end="1167" vertical-scroll-proportion="-11.769231" vertical-offset="221" max-vertical-offset="782">
+        <state line="18" column="13" selection-start="523" selection-end="523" vertical-scroll-proportion="-1.3076923" vertical-offset="119" max-vertical-offset="731">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/storage/logs/laravel-2015-04-11.log">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="182" column="0" selection-start="27428" selection-end="27428" vertical-scroll-proportion="-18.4" vertical-offset="2634" max-vertical-offset="3196">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/landriveserverconfig.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="25" selection-start="244" selection-end="244" vertical-scroll-proportion="0.2665505" vertical-offset="0" max-vertical-offset="574">
+        <state line="32" column="6" selection-start="1179" selection-end="1179" vertical-scroll-proportion="0.71666664" vertical-offset="157" max-vertical-offset="697">
           <folding />
         </state>
       </provider>

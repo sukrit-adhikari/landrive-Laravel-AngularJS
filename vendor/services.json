@@ -1,7 +1,6 @@
 {
     "providers": [
         "Illuminate\\Foundation\\Providers\\ArtisanServiceProvider",
-        "Illuminate\\Auth\\AuthServiceProvider",
         "Illuminate\\Bus\\BusServiceProvider",
         "Illuminate\\Cache\\CacheServiceProvider",
         "Illuminate\\Foundation\\Providers\\ConsoleSupportServiceProvider",
@@ -13,12 +12,8 @@
         "Illuminate\\Foundation\\Providers\\FoundationServiceProvider",
         "Illuminate\\Hashing\\HashServiceProvider",
         "Collective\\Html\\HtmlServiceProvider",
-        "Illuminate\\Mail\\MailServiceProvider",
-        "Illuminate\\Pagination\\PaginationServiceProvider",
         "Illuminate\\Pipeline\\PipelineServiceProvider",
         "Illuminate\\Queue\\QueueServiceProvider",
-        "Illuminate\\Redis\\RedisServiceProvider",
-        "Illuminate\\Auth\\Passwords\\PasswordResetServiceProvider",
         "Illuminate\\Session\\SessionServiceProvider",
         "Illuminate\\Translation\\TranslationServiceProvider",
         "Illuminate\\Validation\\ValidationServiceProvider",
@@ -30,14 +25,12 @@
         "App\\Providers\\RouteServiceProvider"
     ],
     "eager": [
-        "Illuminate\\Auth\\AuthServiceProvider",
         "Illuminate\\Routing\\ControllerServiceProvider",
         "Illuminate\\Cookie\\CookieServiceProvider",
         "Illuminate\\Database\\DatabaseServiceProvider",
         "Illuminate\\Encryption\\EncryptionServiceProvider",
         "Illuminate\\Filesystem\\FilesystemServiceProvider",
         "Illuminate\\Foundation\\Providers\\FoundationServiceProvider",
-        "Illuminate\\Pagination\\PaginationServiceProvider",
         "Illuminate\\Session\\SessionServiceProvider",
         "Illuminate\\Validation\\ValidationServiceProvider",
         "Illuminate\\View\\ViewServiceProvider",
@@ -108,9 +101,6 @@
         "hash": "Illuminate\\Hashing\\HashServiceProvider",
         "html": "Collective\\Html\\HtmlServiceProvider",
         "form": "Collective\\Html\\HtmlServiceProvider",
-        "mailer": "Illuminate\\Mail\\MailServiceProvider",
-        "swift.mailer": "Illuminate\\Mail\\MailServiceProvider",
-        "swift.transport": "Illuminate\\Mail\\MailServiceProvider",
         "Illuminate\\Contracts\\Pipeline\\Hub": "Illuminate\\Pipeline\\PipelineServiceProvider",
         "queue": "Illuminate\\Queue\\QueueServiceProvider",
         "queue.worker": "Illuminate\\Queue\\QueueServiceProvider",
@@ -121,9 +111,6 @@
         "command.queue.restart": "Illuminate\\Queue\\QueueServiceProvider",
         "command.queue.subscribe": "Illuminate\\Queue\\QueueServiceProvider",
         "queue.connection": "Illuminate\\Queue\\QueueServiceProvider",
-        "redis": "Illuminate\\Redis\\RedisServiceProvider",
-        "auth.password": "Illuminate\\Auth\\Passwords\\PasswordResetServiceProvider",
-        "auth.password.tokens": "Illuminate\\Auth\\Passwords\\PasswordResetServiceProvider",
         "translator": "Illuminate\\Translation\\TranslationServiceProvider",
         "translation.loader": "Illuminate\\Translation\\TranslationServiceProvider"
     },
@@ -134,11 +121,8 @@
         "Illuminate\\Foundation\\Providers\\ConsoleSupportServiceProvider": [],
         "Illuminate\\Hashing\\HashServiceProvider": [],
         "Collective\\Html\\HtmlServiceProvider": [],
-        "Illuminate\\Mail\\MailServiceProvider": [],
         "Illuminate\\Pipeline\\PipelineServiceProvider": [],
         "Illuminate\\Queue\\QueueServiceProvider": [],
-        "Illuminate\\Redis\\RedisServiceProvider": [],
-        "Illuminate\\Auth\\Passwords\\PasswordResetServiceProvider": [],
         "Illuminate\\Translation\\TranslationServiceProvider": []
     }
 }

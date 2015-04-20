@@ -1,3 +1,23 @@
 1.) Installation Commands
     php artisan install:landrive --name=adminname --password=somepassword
     php artisan install:landrive (default name/password : admin/admin)
+
+2.) PHP.ini
+    1.) Enable COM Extension
+    [COM_DOT_NET]
+    extension=php_com_dotnet.dll
+    2.
+
+3.) Vhost Settings
+
+    <VirtualHost *:80>
+        ServerAdmin landrive
+        DocumentRoot "c:\xampp\htdocs\landrive\public"
+        ServerName landrive
+        ServerAlias landive
+    </VirtualHost>
+
+4.) C:\Windows\System32\drivers\etc\hosts File
+    127.0.0.1       landrive (for accessing as http://landrive from local computer)
+
+

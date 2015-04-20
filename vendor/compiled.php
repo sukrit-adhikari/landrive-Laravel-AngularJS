@@ -4940,7 +4940,7 @@ use Illuminate\Support\ServiceProvider;
 use Illuminate\Contracts\Events\Dispatcher as DispatcherContract;
 class EventServiceProvider extends ServiceProvider
 {
-    protected $listen = array();
+    protected $listen = array('App\\Events\\AccessTokenWasProvided' => array('App\\Handlers\\Events\\AccessTokenWasProvided'));
     protected $subscribe = array();
     public function boot(DispatcherContract $events)
     {
