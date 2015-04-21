@@ -1,16 +1,16 @@
 <?php
 
-use App\Http\Controllers\LandriveStorageController;
+use App\Http\Controllers\Landrive\Bin\LandriveStorageController;
 
-$fso = new COM('Scripting.FileSystemObject');
-$D = $fso->Drives;
+$FSO = new COM('Scripting.FileSystemObject');
+$Drives = $FSO->Drives;
 $type = ["Unknown","Removable","Fixed","Network","CD-ROM","RAM Disk"];
 
 $systemDrives = [];
 
-foreach($D as $d ){
+foreach($Drives as $d ){
 
-  $dO = $fso->GetDrive($d);
+  $dO = $FSO->GetDrive($d);
   $s = "";
   if($dO->DriveType == 3){
     $n = $dO->Sharename;

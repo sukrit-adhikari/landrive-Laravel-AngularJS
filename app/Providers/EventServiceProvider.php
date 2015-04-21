@@ -1,5 +1,17 @@
 <?php namespace App\Providers;
 
+
+// Events //
+use App\Events\AccessTokenWasProvided;
+// Events //
+
+
+
+// Handlers //
+use App\Handlers\Events\AccessTokenWasProvidedHandler;
+// Handlers //
+
+
 use Illuminate\Contracts\Events\Dispatcher as DispatcherContract;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 
@@ -11,9 +23,15 @@ class EventServiceProvider extends ServiceProvider {
 	 * @var array
 	 */
 	protected $listen = [
-		'event.name' => [
-			'EventListener',
-		],
+
+    'event.name' => [
+        'EventListener',
+    ],
+
+      AccessTokenWasProvided::class => [
+        AccessTokenWasProvidedHandler::class,
+      ],
+
 	];
 
 	/**

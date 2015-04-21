@@ -39,5 +39,4 @@ class PushbulletNotification extends Command implements SelfHandling {
       }
 
 	}
-
 }

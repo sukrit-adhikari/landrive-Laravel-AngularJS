@@ -1,4 +1,4 @@
-<?php namespace App\Http\Controllers;
+<?php namespace App\Http\Controllers\Landrive\Token;
 
 use App\Events\AccessTokenWasProvided;
 use Illuminate\Support\Facades\Request;
@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\DB;
 use App\User;
 use Illuminate\Support\Facades\Event;
+use App\Http\Controllers\controller;
 use App\Commands\PushbulletNotification;
 
 class LanDriveTokenController extends Controller {

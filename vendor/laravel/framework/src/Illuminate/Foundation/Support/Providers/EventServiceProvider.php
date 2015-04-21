@@ -10,14 +10,7 @@ class EventServiceProvider extends ServiceProvider {
 	 *
 	 * @var array
 	 */
-	protected $listen = [
-
-      'App\Events\AccessTokenWasProvided' => [
-        'App\Handlers\Events\AccessTokenWasProvided',
-      ],
-
-
-    ];
+	protected $listen = [];
 
 	/**
 	 * The subscriber classes to register.

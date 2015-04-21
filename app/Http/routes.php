@@ -32,13 +32,13 @@ Route::get('beacon',
  });
 
 // Get LanDriveAccess Route
-Route::post('getlandriveaccesstoken','LanDriveTokenController@getToken');
+Route::post('getlandriveaccesstoken','Landrive\Token\LanDriveTokenController@getToken');
 
 // This route is accessible only to Authenticated Requests
 Route::group(['middleware' => 'ValidateLanDriveAPIRequest'], function()
 {
 
-  Route::resource('drive', 'DriveController');
+  Route::resource('drive', 'Landrive\Driveapi\DriveController');
 
   Route::post('revokelandriveaccesstoken','LanDriveTokenController@revokeToken');
 

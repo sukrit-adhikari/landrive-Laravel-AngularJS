@@ -1,4 +1,4 @@
-<?php namespace App\Http\Controllers;
+<?php namespace App\Http\Controllers\Landrive\Driveapi;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
@@ -6,7 +6,17 @@ use Illuminate\Support\Facades\Input;
 use Illuminate\Http\Request;
 use League\Flysystem\Exception;
 
-use App\Http\Controllers\LandriveStorageController;
+use App\Http\Controllers\Landrive\Bin\LandriveStorageController;
+
+//Verb	      Path	                Action	      Route Name
+//_______________________________________________________________________________________________________________________________________
+//GET	      /drive	            index	      drive.index   ^^^ List all drives
+//GET	      /drive/create	        create	      drive.create  ---
+//POST	      /drive	            store	      drive.store   ^^^ Create Folder or File
+//GET	      /drive/{drive}	    show	      drive.show    ^^^ Show File (Image Display) or Download File or Download Folder as Zip
+//GET	      /drive/{drive}/edit	edit	      drive.edit    ---
+//PUT/PATCH	  /drive/{drive}	    update	      drive.update  ^^^ Copy Paste / Cut Paste
+//DELETE	  /drive/{drive}	    destroy	      drive.destroy ^^^ Hard Delete / Soft Delete (Rename as DELETED_mypic.jpg)
 
 class DriveController extends Controller {
 
@@ -51,7 +61,6 @@ class DriveController extends Controller {
 	 */
 	public function store(){
       $inputs = Input::all();
-
 
       if(!isset($inputs['type'])){
         return ['Status' => 0 , 'Code' => 400 , 'Message' => 'File or directory not given as parameter "type".'];

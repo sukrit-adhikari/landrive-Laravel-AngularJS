@@ -2,14 +2,14 @@
 
 return [
 
-        'servername' => 'Freeze',
+  'servername' => 'Freeze',
 
-        'validatelandriveapirequest' => false,
+  'validatelandriveapirequest' => false,
 
-        'logrequestresponse' => true,
+  'logrequestresponse' => true,
 
-        'pushbulletnotification' => true,
+  'pushbulletnotification' => true,
 
-        'pushbulletapikey' => 'p4K29eQ5LEENdDkHIyleNno9OQDIRbuE',
+  'pushbulletapikey' => 'p4K29eQ5LEENdDkHIyleNno9OQDIRbuE',
 
-	];
+];

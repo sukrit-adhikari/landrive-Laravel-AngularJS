@@ -1,10 +1,10 @@
-<?php namespace App\Http\Controllers;
+<?php namespace App\Http\Controllers\Landrive\Bin;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Crypt;
 use Illuminate\Support\Facades\Storage;
 use PhpSpec\Exception\Exception;
-use Illuminate\Support\Facades\Input;
 use Illuminate\Http\Request;
 
 

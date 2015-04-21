@@ -1,9 +1,9 @@
-<?php namespace App\Http\Middleware;
+<?php namespace App\Http\Middleware\Landrive;
 
 use Closure;
 use Illuminate\Support\Facades\Input;
 use App\User;
-use App\Http\Controllers\LanDriveTokenController;
+use App\Http\Controllers\Landrive\Token\LanDriveTokenController;
 
 class ValidateLanDriveAPIRequest {
 

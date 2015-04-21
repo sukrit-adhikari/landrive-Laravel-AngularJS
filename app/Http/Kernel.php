@@ -24,12 +24,12 @@ class Kernel extends HttpKernel {
 	 * @var array
 	 */
 	protected $routeMiddleware = [
-		'auth' => 'App\Http\Middleware\Authenticate',
-		'auth.basic' => 'Illuminate\Auth\Middleware\AuthenticateWithBasicAuth',
-		'guest' => 'App\Http\Middleware\RedirectIfAuthenticated',
-        'LanDrivePermissionCheckForRequestedAction' => 'App\Http\Middleware\landrive\LanDrivePermissionCheckForRequestedAction',
-        'ValidateLanDriveAPIRequest' => 'App\Http\Middleware\landrive\ValidateLanDriveAPIRequest',
-        'LanDriveRequestResponseLogger' => 'App\Http\Middleware\landrive\LanDriveRequestResponseLogger',
+//		'auth' => 'App\Http\Middleware\Authenticate',
+//		'auth.basic' => 'Illuminate\Auth\Middleware\AuthenticateWithBasicAuth',
+//		'guest' => 'App\Http\Middleware\RedirectIfAuthenticated',
+        'LanDrivePermissionCheckForRequestedAction' => 'App\Http\Middleware\Landrive\LanDrivePermissionCheckForRequestedAction',
+        'ValidateLanDriveAPIRequest' => 'App\Http\Middleware\Landrive\ValidateLanDriveAPIRequest',
+        'LanDriveRequestResponseLogger' => 'App\Http\Middleware\Landrive\LanDriveRequestResponseLogger',
 	];
 
 }

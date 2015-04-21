@@ -1,6 +1,6 @@
 <?php namespace App\Console\Commands;
 
-use App\Http\Controllers\LandriveStorageController;
+use App\Http\Controllers\Bin\LandriveStorageController;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Artisan;
 use Symfony\Component\Console\Input\InputOption;

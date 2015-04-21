@@ -4940,7 +4940,7 @@ use Illuminate\Support\ServiceProvider;
 use Illuminate\Contracts\Events\Dispatcher as DispatcherContract;
 class EventServiceProvider extends ServiceProvider
 {
-    protected $listen = array('App\\Events\\AccessTokenWasProvided' => array('App\\Handlers\\Events\\AccessTokenWasProvided'));
+    protected $listen = array();
     protected $subscribe = array();
     public function boot(DispatcherContract $events)
     {
@@ -17267,11 +17267,13 @@ class ConfigServiceProvider extends ServiceProvider
 }
 namespace App\Providers;
 
+use App\Events\AccessTokenWasProvided;
+use App\Handlers\Events\AccessTokenWasProvidedHandler;
 use Illuminate\Contracts\Events\Dispatcher as DispatcherContract;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 class EventServiceProvider extends ServiceProvider
 {
-    protected $listen = array('event.name' => array('EventListener'));
+    protected $listen = array('event.name' => array('EventListener'), AccessTokenWasProvided::class => array(AccessTokenWasProvidedHandler::class));
     public function boot(DispatcherContract $events)
     {
         parent::boot($events);
