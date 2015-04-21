@@ -1,17 +1,8 @@
-<?php namespace App\Http\Controllers;
+<?php namespace App\Http\Controllers\Landrive\Server;
+
+use App\Http\Controllers\Controller;
 
 class LanDriveServerConfigController extends Controller {
-
-	/*
-	|--------------------------------------------------------------------------
-	| Home Controller
-	|--------------------------------------------------------------------------
-	|
-	| This controller renders your application's "dashboard" for users that
-	| are authenticated. Of course, you are free to change or remove the
-	| controller as you wish. It is just here to get your app started!
-	|
-	*/
 
 	/**
 	 * Create a new controller instance.
@@ -30,7 +21,7 @@ class LanDriveServerConfigController extends Controller {
 	 */
 	public function index()
 	{
-		return view('landriveserverconfig' , ['config' => $this->decorateConfiguration(Config('landrive'))]);
+		return view('server\landriveserverconfig' , ['config' => $this->decorateConfiguration(Config('landrive'))]);
 	}
 
     private function decorateConfiguration($config = []){

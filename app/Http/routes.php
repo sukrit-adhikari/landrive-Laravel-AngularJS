@@ -40,8 +40,12 @@ Route::group(['middleware' => 'ValidateLanDriveAPIRequest'], function()
 
   Route::resource('drive', 'Landrive\Driveapi\DriveController');
 
-  Route::post('revokelandriveaccesstoken','LanDriveTokenController@revokeToken');
+  Route::post('revokelandriveaccesstoken','Landrive\Token\LanDriveTokenController@revokeToken');
 
-  Route::get('server/config' , 'LanDriveServerConfigController@index');
+  Route::get('server/config' , 'Landrive\Server\LanDriveServerConfigController@index');
 
 });
+
+
+// Mobile i.e Single Page Application for browsing Landrive
+Route::get('mobile','LanDriveSPAController@index');

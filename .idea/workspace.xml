@@ -2,27 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="690900b1-95e0-431b-9690-571cb9884ab3" name="Default" comment="">
+      <change type="DELETED" beforePath="C:\xampp\htdocs\landrive\resources\views\landriveserverconfig.blade.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/landrivedatabase/landrivedatabase.sqlite" afterPath="$PROJECT_DIR$/database/landrivedatabase/landrivedatabase.sqlite" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Handlers/Events/AccessTokenWasProvided.php" afterPath="$PROJECT_DIR$/app/Handlers/Events/AccessTokenWasProvided.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Events/Event.php" afterPath="$PROJECT_DIR$/app/Events/Event.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" afterPath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Support/Providers/EventServiceProvider.php" afterPath="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Support/Providers/EventServiceProvider.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Console/Commands/Installation.php" afterPath="$PROJECT_DIR$/app/Console/Commands/Installation.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Console/Kernel.php" afterPath="$PROJECT_DIR$/app/Console/Kernel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Kernel.php" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LanDrive.Server.Settings.php" afterPath="$PROJECT_DIR$/LanDrive.Server.Settings.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Middleware/Landrive/LanDrivePermissionCheckForRequestedAction.php" afterPath="$PROJECT_DIR$/app/Http/Middleware/Landrive/LanDrivePermissionCheckForRequestedAction.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Middleware/Landrive/LanDriveRequestResponseLogger.php" afterPath="$PROJECT_DIR$/app/Http/Middleware/Landrive/LanDriveRequestResponseLogger.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Landrive/Token/LanDriveTokenController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Landrive/Token/LanDriveTokenController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Landrive/Bin/LandriveStorageController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Landrive/Bin/LandriveStorageController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Commands/PushbulletNotification.php" afterPath="$PROJECT_DIR$/app/Commands/PushbulletNotification.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Landrive/Server/LanDriveServerConfigController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Landrive/Server/LanDriveServerConfigController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Middleware/Landrive/ValidateLanDriveAPIRequest.php" afterPath="$PROJECT_DIR$/app/Http/Middleware/Landrive/ValidateLanDriveAPIRequest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/WelcomeController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/WelcomeController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/compiled.php" afterPath="$PROJECT_DIR$/vendor/compiled.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.php" afterPath="$PROJECT_DIR$/config/database.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/app.php" afterPath="$PROJECT_DIR$/config/app.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/filesystems.php" afterPath="$PROJECT_DIR$/config/filesystems.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/queue.php" afterPath="$PROJECT_DIR$/config/queue.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -53,88 +38,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="LandriveStorageController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Landrive/Bin/LandriveStorageController.php">
+      <file leaf-file-name="app.blade.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/app.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="28" selection-start="1558" selection-end="1558" vertical-scroll-proportion="-38.576923" vertical-offset="0" max-vertical-offset="2924">
-              <folding>
-                <element signature="e#52#88#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AccessTokenWasProvided.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Handlers/Events/AccessTokenWasProvided.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="29" selection-start="539" selection-end="539" vertical-scroll-proportion="-18.961538" vertical-offset="0" max-vertical-offset="833">
-              <folding>
-                <element signature="e#38#76#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="landrive.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/landrive.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="119">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="filesystems.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/filesystems.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="27" selection-start="289" selection-end="289" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="1853">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LanDrive.Server.Settings.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/LanDrive.Server.Settings.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="22" selection-start="68" selection-end="68" vertical-scroll-proportion="0.17770036" vertical-offset="0" max-vertical-offset="574">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DriveController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Landrive/Driveapi/DriveController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="0" selection-start="1937" selection-end="1937" vertical-scroll-proportion="-41.192307" vertical-offset="0" max-vertical-offset="2329">
-              <folding>
-                <element signature="e#57#79#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Kernel.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="13" selection-start="1090" selection-end="1090" vertical-scroll-proportion="-15.846154" vertical-offset="115" max-vertical-offset="697">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AccessTokenWasProvided.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Events/AccessTokenWasProvided.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="7" selection-start="278" selection-end="278" vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="493">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/app.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="146" column="45" selection-start="5072" selection-end="5072" vertical-scroll-proportion="-88.26923" vertical-offset="187" max-vertical-offset="3519">
+            <state line="9" column="0" selection-start="274" selection-end="274" vertical-scroll-proportion="0.26288658" vertical-offset="0" max-vertical-offset="1156">
               <folding />
             </state>
           </provider>
@@ -159,22 +66,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/Http/Middleware/Landrive/ValidateLanDriveAPIRequest.php" />
-        <option value="$PROJECT_DIR$/app/Commands/PushbulletNotification.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Landrive/Token/LanDriveTokenController.php" />
-        <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Support/Providers/EventServiceProvider.php" />
-        <option value="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" />
-        <option value="$PROJECT_DIR$/config/database.php" />
-        <option value="$PROJECT_DIR$/app/Handlers/Events/AccessTokenWasProvided.php" />
-        <option value="$PROJECT_DIR$/config/queue.php" />
-        <option value="$PROJECT_DIR$/app/Console/Kernel.php" />
-        <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Queue/QueueManager.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Landrive/Bin/LandriveStorageController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Middleware/Landrive/LanDriveRequestResponseLogger.php" />
+        <option value="$PROJECT_DIR$/resources/views/landrivespa/landrivespa.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/MobileSPAController.php" />
+        <option value="$PROJECT_DIR$/resources/views/mobile/css/main.css" />
+        <option value="$PROJECT_DIR$/public/mobile/css/main.css" />
+        <option value="$PROJECT_DIR$/public/mobile/scripts/main.js" />
+        <option value="$PROJECT_DIR$/resources/views/mobile/landrivespa.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Kernel.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Landrive/Server/LanDriveServerConfigController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/LanDriveSPAController.php" />
+        <option value="$PROJECT_DIR$/resources/views/vendor/landrivebrowser/landrivebrowser.blade.php" />
+        <option value="$PROJECT_DIR$/public/landrivebrowser/appscripts/controllers.js" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
-        <option value="$PROJECT_DIR$/storage/logs/laravel-2015-04-21.log" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Landrive/Driveapi/DriveController.php" />
         <option value="$PROJECT_DIR$/config/filesystems.php" />
-        <option value="$PROJECT_DIR$/LanDrive.Server.Settings.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Landrive/Bin/LandriveStorageController.php" />
+        <option value="$PROJECT_DIR$/resources/views/vendor/landrivebrowser/landrivebrowser.php" />
       </list>
     </option>
   </component>
@@ -219,6 +126,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -247,99 +155,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="storage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="landrive" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="landrive" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="landrive" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="landrive" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="landrive" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="landrive" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Handlers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Events" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="landrive" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="landrive" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Handlers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="landrive" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="landrive" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Events" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -411,16 +232,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="776" extended-state="6" />
+    <frame x="-8" y="-8" width="1296" height="776" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32766616" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32921174" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39258114" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298217" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29821718" sideWeight="0.60741884" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23743922" sideWeight="0.60741884" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -429,6 +249,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39258114" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -480,125 +301,100 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Console/Scheduling/Event.php">
+    <entry file="file://$PROJECT_DIR$/app/Providers/RouteServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="468" column="29" selection-start="8175" selection-end="8191" vertical-scroll-proportion="0.7878788" vertical-offset="7378" max-vertical-offset="12818">
-          <folding />
-        </state>
+        <state line="38" column="9" selection-start="878" selection-end="878" vertical-scroll-proportion="1.0571429" vertical-offset="0" max-vertical-offset="833" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Console/Kernel.php">
+    <entry file="file://$PROJECT_DIR$/app/Services/Registrar.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="696" selection-end="696" vertical-scroll-proportion="0.70383275" vertical-offset="106" max-vertical-offset="680">
-          <folding>
-            <element signature="e#30#73#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="39" column="0" selection-start="834" selection-end="834" vertical-scroll-proportion="0.82857144" vertical-offset="136" max-vertical-offset="731" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/queue.php">
+    <entry file="file://$PROJECT_DIR$/config/session.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="30" selection-start="1102" selection-end="1102" vertical-scroll-proportion="-0.71428573" vertical-offset="1088" max-vertical-offset="1683">
-          <folding />
-        </state>
+        <state line="103" column="8" selection-start="3321" selection-end="3321" vertical-scroll-proportion="-12.423077" vertical-offset="1428" max-vertical-offset="2703" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/composer/autoload_classmap.php">
+    <entry file="file://$PROJECT_DIR$/app/Providers/BusServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="24" selection-start="381" selection-end="381" vertical-scroll-proportion="0.19243987" vertical-offset="58" max-vertical-offset="7463">
-          <folding />
-        </state>
+        <state line="18" column="65" selection-start="465" selection-end="465" vertical-scroll-proportion="0.5034843" vertical-offset="0" max-vertical-offset="663" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/Landrive/LanDrivePermissionCheckForRequestedAction.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/Landrive/LanDriveRequestResponseLogger.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="12" selection-start="59" selection-end="59" vertical-scroll-proportion="0.057142857" vertical-offset="0" max-vertical-offset="595">
-          <folding />
-        </state>
+        <state line="34" column="24" selection-start="839" selection-end="839" vertical-scroll-proportion="0.2857143" vertical-offset="357" max-vertical-offset="1071" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/Landrive/ValidateLanDriveAPIRequest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="50" selection-start="1252" selection-end="1252" vertical-scroll-proportion="1.0" vertical-offset="0" max-vertical-offset="731">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/storage/logs/laravel-2015-04-21.log">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="596">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="13" selection-start="1090" selection-end="1090" vertical-scroll-proportion="-15.846154" vertical-offset="115" max-vertical-offset="697">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="146" column="45" selection-start="5072" selection-end="5072" vertical-scroll-proportion="-88.26923" vertical-offset="187" max-vertical-offset="3519">
-          <folding />
-        </state>
+        <state line="24" column="0" selection-start="665" selection-end="665" vertical-scroll-proportion="0.7010309" vertical-offset="0" max-vertical-offset="629" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Landrive/Driveapi/DriveController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="0" selection-start="1937" selection-end="1937" vertical-scroll-proportion="-41.192307" vertical-offset="0" max-vertical-offset="2329">
-          <folding>
-            <element signature="e#57#79#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="32" column="0" selection-start="1295" selection-end="1478" vertical-scroll-proportion="0.7594502" vertical-offset="0" max-vertical-offset="2227" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/landrive.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="621">
+        <state line="17" column="22" selection-start="528" selection-end="528" vertical-scroll-proportion="0.34364262" vertical-offset="89" max-vertical-offset="697">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Events/AccessTokenWasProvided.php">
+    <entry file="file://$PROJECT_DIR$/public/landrivebrowser/appscripts/controllers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="7" selection-start="278" selection-end="278" vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="493">
+        <state line="0" column="43" selection-start="43" selection-end="43" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/LanDriveSPAController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="27" selection-start="506" selection-end="506" vertical-scroll-proportion="-14.384615" vertical-offset="0" max-vertical-offset="578">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Landrive/Bin/LandriveStorageController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="0" selection-start="1878" selection-end="1878" vertical-scroll-proportion="-7.1923075" vertical-offset="952" max-vertical-offset="3213">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/vendor/landrivebrowser/landrivebrowser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="102" column="57" selection-start="4468" selection-end="4468" vertical-scroll-proportion="-7.1923075" vertical-offset="1547" max-vertical-offset="2482">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/filesystems.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="27" selection-start="289" selection-end="289" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="1853">
+        <state line="2" column="46" selection-start="53" selection-end="53" vertical-scroll-proportion="35.307693" vertical-offset="952" max-vertical-offset="1853">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Handlers/Events/AccessTokenWasProvided.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="29" selection-start="539" selection-end="539" vertical-scroll-proportion="-18.961538" vertical-offset="0" max-vertical-offset="833">
-          <folding>
-            <element signature="e#38#76#0" expanded="true" />
-          </folding>
+        <state line="20" column="5" selection-start="596" selection-end="596" vertical-scroll-proportion="-0.09090909" vertical-offset="238" max-vertical-offset="799">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Landrive/Bin/LandriveStorageController.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Landrive/Server/LanDriveServerConfigController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="28" selection-start="1558" selection-end="1558" vertical-scroll-proportion="-38.576923" vertical-offset="0" max-vertical-offset="2924">
-          <folding>
-            <element signature="e#52#88#0" expanded="true" />
-          </folding>
+        <state line="37" column="0" selection-start="792" selection-end="792" vertical-scroll-proportion="0.6386555" vertical-offset="249" max-vertical-offset="867">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LanDrive.Server.Settings.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/app.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="22" selection-start="68" selection-end="68" vertical-scroll-proportion="0.17770036" vertical-offset="0" max-vertical-offset="574">
+        <state line="9" column="0" selection-start="274" selection-end="274" vertical-scroll-proportion="0.26288658" vertical-offset="0" max-vertical-offset="1156">
           <folding />
         </state>
       </provider>

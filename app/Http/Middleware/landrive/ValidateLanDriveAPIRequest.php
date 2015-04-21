@@ -23,8 +23,6 @@ class ValidateLanDriveAPIRequest {
          }
        }
 
-
-
       return $next($request);
 	}
 

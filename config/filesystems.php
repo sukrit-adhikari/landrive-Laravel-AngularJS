@@ -8,23 +8,23 @@ $type = ["Unknown","Removable","Fixed","Network","CD-ROM","RAM Disk"];
 
 $systemDrives = [];
 
-foreach($Drives as $d ){
+foreach($Drives as $drive ){
 
-  $dO = $FSO->GetDrive($d);
+  $driveDetail = $FSO->GetDrive($drive);
   $s = "";
-  if($dO->DriveType == 3){
-    $n = $dO->Sharename;
-  }else if($dO->IsReady){
-    $n = $dO->VolumeName;
-    $s = drive_size($dO->FreeSpace) . " free of: " . drive_size($dO->TotalSize);
+  if($driveDetail->DriveType == 3){
+    $n = $driveDetail->Sharename;
+  }else if($driveDetail->IsReady){
+    $n = $driveDetail->VolumeName;
+    $s = drive_size($driveDetail->FreeSpace) . " free of: " . drive_size($driveDetail->TotalSize);
   }else{
     $n = "[Drive not ready]";
   }
 
-  $systemDrives[$dO->DriveLetter] = [
+  $systemDrives[$driveDetail->DriveLetter] = [
     'driver' => 'local',
-    'name' => $type[$dO->DriveType].' '.$s,
-    'root' => ($dO->DriveLetter).':\\',
+    'name' => $driveDetail->DriveLetter . ":\\\ " . $type[$driveDetail->DriveType].' '.$s,
+    'root' => ($driveDetail->DriveLetter).':\\',
   ];
 
 }
@@ -39,14 +39,14 @@ $defaultDrives = [
 
   'My Drive' => [
     'driver' => 'local',
-    'name' => 'My Private drive.',
+    'name' => 'My Private drive',
     'root'   => LandriveStorageController::getDefaultLandriveStoragePath(),
   ],
 
 
   'Shared' => [
     'driver' => 'local',
-    'name' => 'Shared drive.',
+    'name' => 'Shared drive',
     'root'   => LandriveStorageController::getSharedLandriveStoragePath(),
   ],
 

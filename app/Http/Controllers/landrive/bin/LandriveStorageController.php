@@ -9,10 +9,10 @@ use Illuminate\Http\Request;
 
 
 class LandriveStorageController extends Controller {
-	/**
-	 * Show the application dashboard to the user.
-	 *
-	 * @return Response
+
+    /**
+	 * Get user's default storage path
+	 * @return String
 	 */
 	public function getDefaultLandriveStoragePath()
 	{
@@ -30,10 +30,14 @@ class LandriveStorageController extends Controller {
           die($message);
         }
       }
+
       return $expectedPath;
   }
 
-
+  /**
+   * Get Shared Drive (Accessible to all people) Path
+   * @return string
+   */
   public function getSharedLandriveStoragePath()
   {
     $expectedPath = storage_path()."\landrivestorage\public";
@@ -73,6 +77,12 @@ class LandriveStorageController extends Controller {
 
   }
 
+  /**
+   * Get files and folders of given Drive
+   * @param null $drive
+   * @param null $path
+   * @return array
+   */
   public function getContents($drive = null , $path = null ){
 
     if($path != null){
@@ -95,6 +105,12 @@ class LandriveStorageController extends Controller {
 
   }
 
+  /**
+   * Create Directory or File with given contents
+   * @param array $detail
+   * @param $type
+   * @return array
+   */
   public function create($detail = [] , $type){
     $requestParameters = $detail;
 
@@ -131,7 +147,13 @@ class LandriveStorageController extends Controller {
     return ['Status' => 0, 'Code' => 500 , 'Message' => $message ];
   }
 
-
+  /**
+   * Download the file or files as zip or folder as zip
+   * @param $drive
+   * @param $path
+   * @param $fileName
+   * @return array
+   */
   public function download($drive,$path,$fileName){
 
     if(!Storage::disk($drive)->exists($path)){
