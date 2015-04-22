@@ -63,14 +63,16 @@ class LandriveStorageController extends Controller {
 
     foreach($drives as $driveName => $driveDetail){
 
-//      if($getRoot){
-//        $drives[$driveName]['root'] = Crypt::encrypt($drives[$driveName]['root']);
-//      }else{
-//        unset($drives[$driveName]['root']);
-//      }
+      if($getRoot){
+        $drives[$driveName]['root'] = Crypt::encrypt($drives[$driveName]['root']);
+      }else{
+        unset($drives[$driveName]['root']);
+      }
 
       unset($drives[$driveName]['driver']);
 
+
+      $drives[$driveName]['name'] = $driveName;
     }
 
     return $drives;

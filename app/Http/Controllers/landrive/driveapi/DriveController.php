@@ -78,11 +78,11 @@ class DriveController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function show($id)
+	public function show($drive)
 	{
       $inputs = Input::all();
 
-      $drive = $inputs['drive'];
+//      $drive = $inputs['drive'];
       $path = isset($inputs['path']) && $inputs['path'] != ''  ? $inputs['path'] : null;
       $download = isset($inputs['download']) && $inputs['download'] == 'y'  ? 'y' : 'n';
 

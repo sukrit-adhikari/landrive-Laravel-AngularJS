@@ -23,7 +23,7 @@ foreach($Drives as $drive ){
 
   $systemDrives[$driveDetail->DriveLetter] = [
     'driver' => 'local',
-    'name' => $driveDetail->DriveLetter . ":\\\ " . $type[$driveDetail->DriveType].' '.$s,
+    'info' => $driveDetail->DriveLetter . ":\\\ " . $type[$driveDetail->DriveType].' '.$s,
     'root' => ($driveDetail->DriveLetter).':\\',
   ];
 
@@ -39,14 +39,14 @@ $defaultDrives = [
 
   'My Drive' => [
     'driver' => 'local',
-    'name' => 'My Private drive',
+    'info' => 'My Private drive',
     'root'   => LandriveStorageController::getDefaultLandriveStoragePath(),
   ],
 
 
   'Shared' => [
     'driver' => 'local',
-    'name' => 'Shared drive',
+    'info' => 'Shared drive',
     'root'   => LandriveStorageController::getSharedLandriveStoragePath(),
   ],
 

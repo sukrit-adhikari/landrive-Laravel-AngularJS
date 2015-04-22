@@ -38,7 +38,7 @@ Route::post('getlandriveaccesstoken','Landrive\Token\LanDriveTokenController@get
 Route::group(['middleware' => 'ValidateLanDriveAPIRequest'], function()
 {
 
-  Route::resource('drive', 'Landrive\Driveapi\DriveController');
+  Route::resource('api/drive', 'Landrive\Driveapi\DriveController');
 
   Route::post('revokelandriveaccesstoken','Landrive\Token\LanDriveTokenController@revokeToken');
 

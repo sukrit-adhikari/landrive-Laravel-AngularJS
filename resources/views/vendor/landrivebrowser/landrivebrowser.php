@@ -14,6 +14,8 @@
   <script type="text/javascript" src="landrivebrowser/js/jquery-1.10.2.min.js"></script>
 
   <script type="text/javascript" src="landrivebrowser/angular/angular.js"></script>
+  <script type="text/javascript" src="landrivebrowser/angular/angular-resource.js"></script>
+
   <script type="text/javascript" src="landrivebrowser/appscripts/controllers.js"></script>
 
   <script type="text/javascript" src="landrivebrowser/bootstrap/js/bootstrap.min.js"></script>
@@ -31,100 +33,61 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">Landrive</a>
+      <a class="navbar-brand" href="#">Landrive</a>
     </div>
 
     <div class="collapse navbar-collapse navbar-ex1-collapse">
       <ul id="active" class="nav navbar-nav side-nav">
         <li class="selected"><a href="/mobile"><i class="fa fa-bullseye"></i> Home</a></li>
-        <li><a href="#"><i class="fa fa-tasks"></i> Logout</a></li>
-        <li><a href="#"><i class="fa fa-globe"></i> About Server</a></li>
-<!--        <li><a href="signup.html"><i class="fa fa-list-ol"></i> SignUp</a></li>-->
-<!--        <li><a href="register.html"><i class="fa fa-font"></i> Register</a></li>-->
-<!--        <li><a href="timeline.html"><i class="fa fa-font"></i> Timeline</a></li>-->
-<!--        <li><a href="forms.html"><i class="fa fa-list-ol"></i> Forms</a></li>-->
-<!--        <li><a href="typography.html"><i class="fa fa-font"></i> Typography</a></li>-->
-<!--        <li><a href="bootstrap-elements.html"><i class="fa fa-list-ul"></i> Bootstrap Elements</a></li>-->
-<!--        <li><a href="bootstrap-grid.html"><i class="fa fa-table"></i> Bootstrap Grid</a></li>-->
+        <li><a href="#"><i class="fa fa-tasks"></i> Logout </a></li>
+        <li><a href="#"><i class="fa fa-globe"></i> About Server </a></li>
       </ul>
-
-      <!--<ul class="nav navbar-nav navbar-right navbar-user">-->
-      <!--<li class="dropdown messages-dropdown">-->
-      <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> Messages <span class="badge">2</span> <b class="caret"></b></a>-->
-      <!--<ul class="dropdown-menu">-->
-      <!--<li class="dropdown-header">2 New Messages</li>-->
-      <!--<li class="message-preview">-->
-      <!--<a href="#">-->
-      <!--<span class="avatar"><i class="fa fa-bell"></i></span>-->
-      <!--<span class="message">Security alert</span>-->
-      <!--</a>-->
-      <!--</li>-->
-      <!--<li class="divider"></li>-->
-      <!--<li class="message-preview">-->
-      <!--<a href="#">-->
-      <!--<span class="avatar"><i class="fa fa-bell"></i></span>-->
-      <!--<span class="message">Security alert</span>-->
-      <!--</a>-->
-      <!--</li>-->
-      <!--<li class="divider"></li>-->
-      <!--<li><a href="#">Go to Inbox <span class="badge">2</span></a></li>-->
-      <!--</ul>-->
-      <!--</li>-->
-      <!--<li class="dropdown user-dropdown">-->
-      <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Steve Miller<b class="caret"></b></a>-->
-      <!--<ul class="dropdown-menu">-->
-      <!--<li><a href="#"><i class="fa fa-user"></i> Profile</a></li>-->
-      <!--<li><a href="#"><i class="fa fa-gear"></i> Settings</a></li>-->
-      <!--<li class="divider"></li>-->
-      <!--<li><a href="#"><i class="fa fa-power-off"></i> Log Out</a></li>-->
-
-      <!--</ul>-->
-      <!--</li>-->
-      <!--<li class="divider-vertical hidden"></li>-->
-      <!--<li class="hidden">-->
-      <!--<form class="navbar-search">-->
-      <!--<input type="text" placeholder="Search" class="form-control">-->
-      <!--</form>-->
-      <!--</li>-->
-      <!--</ul>-->
     </div>
   </nav>
 
-  <div id="page-wrapper">
+  <div id="page-wrapper" ng-controller="BrowseCtrl">
 
     <div class="row">
 
-    </div>
-
-    <div class="row">
       <div class="col-lg-12">
         <div class="panel panel-primary">
           <div class="panel-heading">
-            <h3 class="panel-title"><i class="fa fa-cloud"></i> Drives </h3>
+<!--            <h3 class="panel-title">-->
+              <span ng-click="home()"> <i class="fa fa-home"></i> Home </span>
+              <span ng-hide="isHome"><i class="fa fa-cloud" ></i> {{selectedDrive}}</span>
+<!--            </h3>-->
+            <span style="float:right;">
+            <i class="fa fa-arrow-left"></i>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <i class="fa fa-arrow-right"></i>
+            </span>
           </div>
           <div class="panel-body">
-            <ul class="server-stats" ng-controller="DriveListCtrl">
-              <!--<li>-->
-
-
+            <ul class="drive-list" >
 
               <div class="col-lg-8 text-center" ng-repeat="drive in drives">
-                <div class="panel panel-default">
+                <div class="panel panel-default" ng-click="browseDrive(drive.name)">
                   <div class="panel-body">
-                    {{drive.name}}
+                   <span> {{drive.info}} </span>
                   </div>
                 </div>
               </div>
 
+              <div class="col-lg-8 text-center" ng-repeat="directory in directories">
+                <div class="panel panel-default" ng-click="browseDirectory(drive.name)">
+                  <div class="panel-body">
+                    <span> {{directory}} </span>
+                  </div>
+                </div>
+              </div>
 
-              <!--<div class="key pull-right">LAN</div>-->
-              <!--<div class="stat">-->
-              <!--<div class="info">6 Mb/s <i class="fa fa-caret-down"></i>&nbsp; 3 Mb/s <i class="fa fa-caret-up"></i></div>-->
-              <!--<div class="progress progress-small">-->
-              <!--<div style="width: 48%;" class="progress-bar progress-bar-inverse"></div>-->
-              <!--</div>-->
-              <!--</div>-->
-              <!--</li>-->
+              <div class="col-lg-8 text-center" ng-repeat="file in files">
+                <div class="panel panel-default">
+                  <div class="panel-body">
+                    <span> {{file}} </span>
+                  </div>
+                </div>
+              </div>
 
 
             </ul>
