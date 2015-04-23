@@ -41,14 +41,14 @@ class LanDriveTokenController extends Controller {
 
     $inputs = Input::all();
 
-    if(!isset($inputs['name'])){
+    if(!isset($inputs['landriveusername'])){
       return $tokenGenerated;
     }
     if(!isset($inputs['password'])){
       return $tokenGenerated;
     }
 
-    $name = $inputs['name'];
+    $name = $inputs['landriveusername'];
     $password = ($inputs['password']);
 
     $userQueryResult = DB::select('SELECT password FROM users WHERE name = :name LIMIT 1', ['name' => $name]);

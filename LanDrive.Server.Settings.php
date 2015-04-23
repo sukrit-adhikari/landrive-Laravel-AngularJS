@@ -6,9 +6,9 @@ return [
 
   'validatelandriveapirequest' => false,
 
-  'logrequestresponse' => true,
+  'logrequestresponse' => false,
 
-  'pushbulletnotification' => true,
+  'pushbulletnotification' => false,
 
   'pushbulletapikey' => 'p4K29eQ5LEENdDkHIyleNno9OQDIRbuE',
 

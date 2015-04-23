@@ -32,7 +32,7 @@ Route::get('beacon',
  });
 
 // Get LanDriveAccess Route
-Route::post('getlandriveaccesstoken','Landrive\Token\LanDriveTokenController@getToken');
+Route::post('api/token/new','Landrive\Token\LanDriveTokenController@getToken');
 
 // This route is accessible only to Authenticated Requests
 Route::group(['middleware' => 'ValidateLanDriveAPIRequest'], function()
@@ -40,12 +40,24 @@ Route::group(['middleware' => 'ValidateLanDriveAPIRequest'], function()
 
   Route::resource('api/drive', 'Landrive\Driveapi\DriveController');
 
-  Route::post('revokelandriveaccesstoken','Landrive\Token\LanDriveTokenController@revokeToken');
+  Route::post('api/token/revoke','Landrive\Token\LanDriveTokenController@revokeToken');
 
   Route::get('server/config' , 'Landrive\Server\LanDriveServerConfigController@index');
 
 });
 
 
-// Mobile i.e Single Page Application for browsing Landrive
-Route::get('mobile','LanDriveSPAController@index');
+// Mobile i.e
+//Single Page Application for browsing Landrive
+
+  //Main
+  Route::get('mobile','LanDriveSPAController@index');
+
+  // Partials
+  Route::get('mobile/angular/partials/home' , 'LanDriveSPAController@getPartialHome');
+
+  Route::get('mobile/angular/partials/browse' , 'LanDriveSPAController@getPartialBrowse');
+
+  Route::get('mobile/angular/partials/viewfile' , 'LanDriveSPAController@getPartialViewFile');
+
+  Route::get('mobile/angular/partials/login' , 'LanDriveSPAController@getPartialLogin');

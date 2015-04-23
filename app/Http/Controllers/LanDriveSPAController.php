@@ -16,7 +16,7 @@ class LanDriveSPAController extends Controller {
     }
 
 	/**
-	 * Show the application welcome screen to the user.
+	 * Single Page Application's main page
 	 *
 	 * @return Response
 	 */
@@ -25,4 +25,32 @@ class LanDriveSPAController extends Controller {
 		return view('vendor\landrivebrowser\landrivebrowser');
 	}
 
+    /**
+    * @return \Illuminate\View\View\
+    */
+    public function getPartialHome(){
+      return view('vendor\landrivebrowser\angular\partials\tabs\home');
+    }
+
+    /**
+    * @return \Illuminate\View\View
+    */
+    public function getPartialBrowse(){
+      return view('vendor\landrivebrowser\angular\partials\main\browse');
+    }
+
+    /**
+    * @return \Illuminate\View\View
+    */
+    public function getPartialViewFile(){
+      return view('vendor\landrivebrowser\angular\partials\main\viewfile');
+    }
+
+
+    /**
+     * @return \Illuminate\View\View
+     */
+    public function getPartialLogin(){
+      return view('vendor\landrivebrowser\angular\partials\tabs\login');
+    }
 }
