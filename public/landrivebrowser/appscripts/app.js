@@ -1,5 +1,6 @@
 angular.module('landriveBrowser', ['ngRoute' ,
-                                   'landriveBrowser.RESTService',
-                                   'landriveBrowser.AuthenticationService'
+                                   'landriveBrowser.Drive.REST',        // Dependency List
+                                   'landriveBrowser.Authentication',
+                                   'landriveBrowser.Browser.Services',
                                   ]
 );

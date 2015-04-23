@@ -4601,7 +4601,7 @@ a.thumbnail.active {
   padding: 10px 15px;
   margin-bottom: -1px;
   background-color: #222222;
-  border: 1px solid #282828;
+  border: 1px solid #337ab7;
 }
 .list-group-item:first-child {
   border-top-right-radius: 4px;
@@ -6276,3 +6276,7 @@ table.tablesorter thead tr th:hover {
                     right: auto;
                 }
         }
+
+* {
+    cursor: pointer;
+   }

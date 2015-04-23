@@ -12,7 +12,6 @@ class LanDriveSPAController extends Controller {
       $this->middleware('LanDrivePermissionCheckForRequestedAction');
       $this->middleware('LanDriveRequestResponseLogger');
       // End of Attaching Middleware
-
     }
 
 	/**

@@ -28,9 +28,7 @@ include('tabsheader.php');
       <div class="col-md-9">
         <input type="password" class="form-control" id="password" ng-model="password" placeholder="Password">
         <p class="help-block">
-          <input type="submit" class="btn btn-info" id="submit" value="Submit" />
-
-
+          <input type="submit" class="btn btn-primary btn-sm" id="submit" value="Submit" />
         </p>
       </div>
     </div>

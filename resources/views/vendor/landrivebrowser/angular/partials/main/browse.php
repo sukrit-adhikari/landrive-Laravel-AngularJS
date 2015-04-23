@@ -1,22 +1,52 @@
-hahahah
-<div class="panel-body">
-  <ul class="browse-list" >
+<div style= "margin-left: -35px;">
 
-<div class="col-lg-8 text-center" ng-repeat="directory in directories">
-  <div class="panel panel-default" ng-click="browseDirectory(drive.name)">
-    <div class="panel-body">
-      <span> {{directory}} </span>
-    </div>
-  </div>
-</div>
+<ul class="directory-list">
 
-<div class="col-lg-8 text-center" ng-repeat="file in files">
-  <div class="panel panel-default">
-    <div class="panel-body">
-      <span> {{file}} </span>
-    </div>
-  </div>
-</div>
+  <li class="list-group-item active">
 
-  </ul>
+    <span ng-click="browse(getDriveName(),'')">
+      <i class="fa fa-cloud"></i> {{getDriveName()}}
+    </span>
+
+    <span>
+      <i class="fa fa-terminal"></i> {{getPath()}}
+    </span>
+
+     <span style="float: right;">
+       <span>
+        <i class="fa fa-search"></i>
+       </span>
+       <span>
+        <i class="fa fa-refresh"></i>
+       </span>
+
+    </span>
+
+    <form class="navbar-search hidden">
+      <input class="form-control" ng-model="searchQuery" placeholder="Search">
+    </form>
+
+
+</li>
+
+
+
+
+  <li ng-click="browse(getDriveName(),directory)" class="list-group-item" ng-repeat="directory in data.directories | filter:searchQuery">
+    <span>
+    <i class="fa fa-folder"></i>
+    <span>{{directory}}</span>
+    </span>
+  </li>
+
+  <li class="list-group-item" ng-repeat="file in data.files | filter:searchQuery">
+    <span ng-click="browse(getDriveName(),file)">
+    <i class="fa fa-file"></i>
+    <span> {{file}} </span>
+    </span>
+  </li>
+
+</ul>
+
+
 </div>

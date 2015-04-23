@@ -2,7 +2,9 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--  <base href="/mobile">-->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Landrive Browser</title>
 
   <link rel="stylesheet" type="text/css" href="landrivebrowser/bootstrap/css/bootstrap.min.css" />
@@ -49,14 +51,7 @@
     </div>
   </nav>
 
-
-
-
-
           <div ng-view></div> <!-- Main Content Display -->
-
-
-
 
 </div>
 </body>
