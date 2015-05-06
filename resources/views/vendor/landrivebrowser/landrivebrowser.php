@@ -29,30 +29,32 @@
 </head>
 <body>
 
-<div id="wrapper">
+<!--<div id="wrapper">-->
+<!---->
+<!--  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">-->
+<!--    <div class="navbar-header">-->
+<!--      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">-->
+<!--        <span class="sr-only">Toggle navigation</span>-->
+<!--        <span class="icon-bar"></span>-->
+<!--        <span class="icon-bar"></span>-->
+<!--        <span class="icon-bar"></span>-->
+<!--      </button>-->
+<!--      <a class="navbar-brand" href="#">Landrive</a>-->
+<!--    </div>-->
+<!---->
+<!--    <div class="collapse navbar-collapse navbar-ex1-collapse">-->
+<!--      <ul id="active" class="nav navbar-nav side-nav">-->
+<!--        <li class="selected"><a href="/mobile"><i class="fa fa-bullseye"></i> Home</a></li>-->
+<!--        <li><a href="#"><i class="fa fa-tasks"></i> Logout </a></li>-->
+<!--        <li><a href="#"><i class="fa fa-globe"></i> About Server </a></li>-->
+<!--      </ul>-->
+<!--    </div>-->
+<!--  </nav>-->
+<!---->
+<!--</div>-->
 
-  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Landrive</a>
-    </div>
 
-    <div class="collapse navbar-collapse navbar-ex1-collapse">
-      <ul id="active" class="nav navbar-nav side-nav">
-        <li class="selected"><a href="/mobile"><i class="fa fa-bullseye"></i> Home</a></li>
-        <li><a href="#"><i class="fa fa-tasks"></i> Logout </a></li>
-        <li><a href="#"><i class="fa fa-globe"></i> About Server </a></li>
-      </ul>
-    </div>
-  </nav>
+<div ng-view></div> <!-- Main Content Display -->
 
-          <div ng-view></div> <!-- Main Content Display -->
-
-</div>
 </body>
 </html>

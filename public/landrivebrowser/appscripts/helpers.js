@@ -1,9 +1,9 @@
 // Factories
 
-angular.module('landriveBrowser.Drive.REST', ['ngResource']).factory('Drive', function($resource) {
-    return $resource('/api/drive/:driveName', {driveName:'@driveName'}, {
-        index:  {method:'GET'},
-        query:  {method:'GET' , params:{path: '@path'}, isArray:false},
+angular.module('landriveBrowser.Drive.REST', ['ngResource']).service('Drive', function($resource , $cacheFactory) {
+    this.request = $resource('/api/drive/:driveName', {driveName:'@driveName'}, {
+        index:  {method:'GET' , actions:{cache:true}},
+        query:  {method:'GET' , params:{path: '@path'}, actions:{cache:$cacheFactory} , isArray:false},
         post:   {method:'POST'},
         update: {method:'PUT'},
         remove: {method:'DELETE'}
@@ -23,6 +23,11 @@ angular.module('landriveBrowser.Authentication', []).factory('Authentication', f
         }
     };
 });
+
+
+//angular.module('landriveBrowser.RequestCache', []).factory('RequestCache', function ($cacheFactory) {
+//    return $cacheFactory('requestCache');
+//});
 
 
 // Services
@@ -52,3 +57,5 @@ angular.module('landriveBrowser.Browser.Services', []).service('BrowseState', fu
         }
 
 });
+
+

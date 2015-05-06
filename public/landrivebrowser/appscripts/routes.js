@@ -6,7 +6,7 @@ landriveBrowserApp.config(function($routeProvider , $locationProvider) {
             templateUrl: 'mobile/angular/partials/home',
             controller: 'HomeCtrl'
         })
-        .when('/browse/:drivename', {
+        .when('/browse', {
             templateUrl: 'mobile/angular/partials/browse',
             controller: 'BrowseCtrl'
         })

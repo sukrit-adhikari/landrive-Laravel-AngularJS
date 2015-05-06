@@ -47,7 +47,9 @@
 <!--				<div class="quote">-</div>-->
 <!--				<div class="quote">File Upload / Sharing on LAN</div>-->
 <!--              <div class="quote">-</div>-->
-              <div class="quote">{{ "Server IP Address : " . getHostByName(getHostName()) }}</div>
+              <div class="quote">{{ "Server Address : " . getHostByName(getHostName()) }}</div>
+              <br>
+              <div class="quote">{{ "Mobile : " . 'http://'. getHostByName(getHostName()) . '/mobile' }}</div>
 			</div>
 		</div>
 	</body>

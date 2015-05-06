@@ -335,17 +335,27 @@ class Local extends AbstractAdapter
      */
     protected function normalizeFileInfo(SplFileInfo $file)
     {
+      try{
         $normalized = [
-            'type' => $file->getType(),
-            'path' => $this->getFilePath($file),
-            'timestamp' => $file->getMTime(),
+          'type' => $file->getType(),
+          'path' => $this->getFilePath($file),
+          'timestamp' => $file->getMTime(),
         ];
 
         if ($normalized['type'] === 'file') {
-            $normalized['size'] = $file->getSize();
+          $normalized['size'] = $file->getSize();
         }
-
-        return $normalized;
+      }catch(\Exception $e){
+//        if(!$file->isReadable()){
+          // Unreadable due to some reason
+          return $normalized = [
+            'type' => 'file',
+            'path' => $this->getFilePath($file),
+            'timestamp' => time(),
+          ];
+//        }
+      }
+      return $normalized;
     }
 
     /**

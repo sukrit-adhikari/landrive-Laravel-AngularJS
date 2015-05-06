@@ -8,7 +8,6 @@ include('tabsheader.php');
   <ul class="drive-list" >
 
     <div class="well " ng-repeat="drive in drives">
-
     <span ng-click="browseDrive(drive.name)">
       <span> {{drive.info}} </span>
     </span>
