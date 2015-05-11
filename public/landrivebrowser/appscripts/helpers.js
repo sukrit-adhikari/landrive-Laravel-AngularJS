@@ -44,7 +44,6 @@ angular.module('landriveBrowser.Browser.Services', []).service('BrowseState', fu
         }
 
         this.setDrive = function(newDrive){
-            console.log("New Drive Set : " +newDrive);
             drive = newDrive;
         }
 
@@ -54,6 +53,11 @@ angular.module('landriveBrowser.Browser.Services', []).service('BrowseState', fu
 
         this.setPath = function(newPath){
             path = newPath;
+        }
+
+
+        this.getPathArray = function(path){
+
         }
 
 });

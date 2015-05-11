@@ -95,12 +95,9 @@ class LandriveStorageController extends Controller {
       $files = Storage::disk($drive)->files();
     }
 
-
     $all = [
-            $drive =>  [
-                        'files' => $files,
-                        'directories' => $directories,
-                       ]
+              'files' => $files,
+              'directories' => $directories,
            ];
 
     return $all;
@@ -156,7 +153,13 @@ class LandriveStorageController extends Controller {
    * @param $fileName
    * @return array
    */
-  public function download($drive,$path,$fileName){
+  public function download($drive,$path,$fileName =  null){
+
+    if($fileName == null){
+      $pathArray = explode("\\",$path);
+      $fileName = $pathArray[(sizeof($pathArray) - 1) ];
+    }
+
 
     if(!Storage::disk($drive)->exists($path)){
       return ['Status' => 0 , 'Message' => 'Does not exist.' , 'Code' => 404 ];

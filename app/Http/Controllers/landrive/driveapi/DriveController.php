@@ -87,7 +87,7 @@ class DriveController extends Controller {
       $download = isset($inputs['download']) && $inputs['download'] == 'y'  ? 'y' : 'n';
 
       if( $download == 'y' ){
-        $fileName = isset($inputs['filename']) ? $inputs['filename'] && trim($inputs['filename']) != '' : rand(99,9999);
+        $fileName = isset($inputs['filename']) ? $inputs['filename'] && trim($inputs['filename']) != '' : null;
         return $this->landriveStorageController->download($drive,$path,$fileName);
       }
 

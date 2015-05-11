@@ -51,7 +51,7 @@ Route::group(['middleware' => 'ValidateLanDriveAPIRequest'], function()
 //Single Page Application for browsing Landrive
 
   //Main
-  Route::get('mobile','LanDriveSPAController@index');
+  Route::get('m','LanDriveSPAController@index');
 
   // Partials
   Route::get('mobile/angular/partials/home' , 'LanDriveSPAController@getPartialHome');

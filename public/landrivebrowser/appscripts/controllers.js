@@ -23,12 +23,18 @@ angular.module('landriveBrowser').controller('HomeCtrl', function ($scope , $loc
 
 });
 
-angular.module('landriveBrowser').controller('BrowseCtrl',  function ($scope , $location , $cacheFactory ,Drive , BrowseState) {
+angular.module('landriveBrowser').controller('BrowseCtrl',  function ($scope ,
+                                                                      $location ,
+                                                                      $cacheFactory ,
+                                                                      Drive ,
+                                                                      BrowseState) {
 
     var locationParams = $location.search();
 
     $scope.driveName = locationParams.driveName;
     $scope.path = '';
+
+    $scope.pathArray = [];
 
     $scope.getDriveName = function(){
         return $scope.driveName;
@@ -39,31 +45,78 @@ angular.module('landriveBrowser').controller('BrowseCtrl',  function ($scope , $
     }
 
     $scope.getDownloadPath = function(filePath){
-        var downloadPath = 'api/drive/'+$scope.getDriveName()+'?path='+$scope.getPath()+'&download=y';
+        var downloadPath = 'api/drive/'+$scope.getDriveName()+'?path='+filePath+'&download=y';
         return downloadPath;
+    }
+
+    $scope.isBrowsing = function(path){
+        if($scope.browsingPath == path){
+
+//            alert(path)
+            return true;
+        }
+        return false;
+    }
+
+
+    $scope.splitPath = function(path){
+        var pathArray = path.split('\\');
+        var name = pathArray[(pathArray.length -1 )];
+
+        var maxSize = 32;
+
+        if(name.length > maxSize){
+            name = name.substring(0, maxSize)+"...";
+        }
+
+        return name;
     }
 
     $scope.cache = $cacheFactory('mainCache');
 
     $scope.browse = function(driveName,path){
 
+
+        $scope.browsingPath = path;
+
         $scope.path = path;
 
-        var cacheKey = driveName+path;
+        var cacheKey = driveName+path+"data";
 
         var cacheData = $scope.cache.get(cacheKey);
 
         if (cacheData === undefined) {
-            $scope.data = {'files' : [] , 'directories' : []};
-//            $scope.keys.push(cacheKey);
             Drive.request.query({driveName: driveName , path: path},function(data){
-                $scope.data =  data[driveName];
+                $scope.data =  data;
                 $scope.cache.put(cacheKey, $scope.data === undefined ? null : $scope.data);
             });
         }else{
             $scope.data = cacheData;
         }
 
+
+        var points = $scope.path.split("\\");
+
+        var k = 0;
+
+        var pathsArray = new Array();
+
+        for(i = 0 ; i < points.length ; i++){
+            string = "";
+            for(j = 0 ; j <= i ; j ++){
+                if(j == i){
+                    string+=points[j];
+                }else{
+                    string+=points[j]+"\\";
+                }
+            }
+            var path = {'name' : points[i] , 'path' : string};
+            pathsArray.push(path);
+        }
+
+        if(pathsArray.length > 0 ){
+            $scope.pathArray = pathsArray;
+        }
     }
 
     $scope.browse($scope.driveName ,$scope.path) ; // FIRST Browse

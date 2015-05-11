@@ -9,7 +9,17 @@
       </span>
 
       <span>
-        <i class="fa fa-terminal"></i> {{getPath()}}
+        <i class="fa fa-terminal"></i>
+
+        <span ng-repeat="path in pathArray">
+
+          <span ng-class="{'activepath' : isBrowsing(path.path)}" ng-click="browse(getDriveName(),path.path)">
+            {{(path.name)}}
+          </span>
+
+      </span>
+<!--        {{getPath()}}-->
+
       </span>
 
     <span style="float: right;">
@@ -26,27 +36,39 @@
 </h3>
 </li>
 
-  <li ng-click="browse(getDriveName(),directory)" class="list-group-item" ng-repeat="directory in data.directories | filter:searchQuery">
+  <li  ng-click="browse(getDriveName(),directory)" class="list-group-item" ng-repeat="directory in data.directories | filter:searchQuery">
     <span>
     <i class="fa fa-folder"></i>
-    <span>{{directory}}</span>
+    <span ng-class="{'browsing' : isBrowsing(directory)}">{{splitPath(directory)}}</span>
     </span>
   </li>
 
   <li class="list-group-item" ng-repeat="file in data.files | filter:searchQuery">
-    <span ng-href="download(file)">
-    <i class="fa fa-file"></i>
-    <span> {{file}} </span>
 
+<!--    tooltip-placement="right" tooltip="On the Left!"-->
+    <span>
+    <i class="fa fa-file"></i>
+    <span> {{
+
+      splitPath(file)
+
+      }} </span>
     </span>
+
+    <a ng-href="{{getDownloadPath(file)}}" style="float: right;">
+    <i class="fa fa-download"></i>
+    </a>
+
+<!--    -->
+
   </li>
 
-<!--  <li class="list-group-item" ng-repeat="message in data.messages">-->
-<!--    <span ng-click="browse(getDriveName(),file)">-->
-<!--    <i class="fa fa-file"></i>-->
-<!--    <span> {{message}} </span>-->
-<!--    </span>-->
-<!--  </li>-->
+  <li class="list-group-item" ng-repeat="message in data.messages">
+    <span ng-click="browse(getDriveName(),file)">
+    <i class="fa fa-file"></i>
+    <span> {{message}} </span>
+    </span>
+  </li>
 
 </ul>
 

@@ -15,6 +15,7 @@
 
   <script type="text/javascript" src="landrivebrowser/js/jquery-1.10.2.min.js"></script>
 
+
   <script type="text/javascript" src="landrivebrowser/angular/angular.js"></script>
   <script type="text/javascript" src="landrivebrowser/angular/angular-resource.js"></script>
   <script type="text/javascript" src="landrivebrowser/angular/angular-route.js"></script>
@@ -23,6 +24,8 @@
   <script type="text/javascript" src="landrivebrowser/appscripts/routes.js"></script>
   <script type="text/javascript" src="landrivebrowser/appscripts/controllers.js"></script>
   <script type="text/javascript" src="landrivebrowser/appscripts/helpers.js"></script>
+
+  <script type="text/javascript" src="landrivebrowser/js/ui-bootstrap-0.13.0.js"></script>
 
   <script type="text/javascript" src="landrivebrowser/bootstrap/js/bootstrap.min.js"></script>
 

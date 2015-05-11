@@ -269,7 +269,7 @@ body {
   font-size: 14px;
   line-height: 1.42857143;
   color: #BDBDBD;
-  background-color: #060606;
+  background-color: #d3e1e7;
 }
 input,
 button,
@@ -4603,10 +4603,21 @@ a.thumbnail.active {
   background-color: #222222;
   border: 1px solid #337ab7;
 }
+
+span.browsing{
+    font-size : 125%;
+    color:#337ab7
+}
+
+span.activepath{
+    color: #12b6b7;
+}
+
 .list-group-item:first-child {
   border-top-right-radius: 4px;
   border-top-left-radius: 4px;
 }
+
 .list-group-item:last-child {
   margin-bottom: 0;
   border-bottom-right-radius: 4px;
