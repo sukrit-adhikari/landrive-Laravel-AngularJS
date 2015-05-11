@@ -27,13 +27,13 @@
 
     <div class="btn-group" dropdown >
       <button type="button" class="btn btn-primary dropdown-toggle" dropdown-toggle ng-disabled="disabled">
-        <i class="fa fa-tasks"></i> {{reverseSplitPath(getPath())}} <span class="caret"></span>
+        <i class="fa fa-folder-open"></i> {{reverseSplitPath(getPath())}} <span class="caret"></span>
       </button>
       <ul class="dropdown-menu" role="menu">
 
         <li ng-repeat="path in pathArray">
           <a href="" ng-class="{'activepath' : isBrowsing(path.path)}" ng-click="browse(getDriveName(),path.path)">
-            {{(path.name)}}
+            <i class="fa fa-caret-right"></i> {{(path.name)}}
           </a>
         </li>
       </ul>
@@ -66,9 +66,12 @@
         <a href=""><i class="fa fa-search"></i> Search</a>
       </li>
 
-
     </ul>
   </div>
+
+
+<!--  <i class="fa fa-circle-arrow-left"></i>-->
+<!--  <i class="fa fa-circle-arrow-right"></i>-->
 
 
   <form class="navbar-search" style="display: none;">
