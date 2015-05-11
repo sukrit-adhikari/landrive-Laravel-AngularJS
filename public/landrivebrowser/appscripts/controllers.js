@@ -31,6 +31,8 @@ angular.module('landriveBrowser').controller('BrowseCtrl',  function ($scope ,
 
     var locationParams = $location.search();
 
+    $scope.drives = Drive.request.index();
+
     $scope.driveName = locationParams.driveName;
     $scope.path = '';
 
@@ -39,6 +41,11 @@ angular.module('landriveBrowser').controller('BrowseCtrl',  function ($scope ,
     $scope.getDriveName = function(){
         return $scope.driveName;
     };
+
+    $scope.setDriveName = function(dName){
+        $scope.driveName = dName;
+    };
+
 
     $scope.getPath = function(){
         return $scope.path;
@@ -72,14 +79,34 @@ angular.module('landriveBrowser').controller('BrowseCtrl',  function ($scope ,
         return name;
     }
 
+    $scope.reverseSplitPath = function(path){
+
+        var maxsize = 5;
+
+        if(path.length > maxsize){
+
+            var start = (path.length-1) - maxsize;
+            var end = path.length ;
+
+            return '...' + path.substring(start,end);
+
+        }else{
+            return path;
+        }
+
+
+    }
+
+
+
+
     $scope.cache = $cacheFactory('mainCache');
 
     $scope.browse = function(driveName,path){
 
+        $scope.setDriveName(driveName);
 
         $scope.browsingPath = path;
-
-        $scope.path = path;
 
         var cacheKey = driveName+path+"data";
 
@@ -93,6 +120,8 @@ angular.module('landriveBrowser').controller('BrowseCtrl',  function ($scope ,
         }else{
             $scope.data = cacheData;
         }
+
+        $scope.path = path;
 
 
         var points = $scope.path.split("\\");
@@ -114,7 +143,7 @@ angular.module('landriveBrowser').controller('BrowseCtrl',  function ($scope ,
             pathsArray.push(path);
         }
 
-        if(pathsArray.length > 0 ){
+        if(points.length > 0 ){
             $scope.pathArray = pathsArray;
         }
     }

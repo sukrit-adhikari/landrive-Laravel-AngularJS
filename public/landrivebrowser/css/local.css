@@ -4609,7 +4609,7 @@ span.browsing{
     color:#337ab7
 }
 
-span.activepath{
+.dropdown-menu > li > a.activepath{
     color: #12b6b7;
 }
 

@@ -3,38 +3,89 @@
 <ul class="directory-list">
 
 <li class="list-group-item active">
-<h3>
-      <span ng-click="browse(getDriveName(),'')">
-        <i class="fa fa-cloud"></i> {{getDriveName()}}
-      </span>
 
-      <span>
-        <i class="fa fa-terminal"></i>
 
-        <span ng-repeat="path in pathArray">
+    <button class="btn btn-primary" ng-click="browse(getDriveName(),'')">
+          <i class="fa fa-bullseye"></i> {{getDriveName()}}
+    </button>
 
-          <span ng-class="{'activepath' : isBrowsing(path.path)}" ng-click="browse(getDriveName(),path.path)">
+    <div class="btn-group" dropdown >
+      <button type="button" class="btn btn-primary dropdown-toggle" dropdown-toggle ng-disabled="disabled">
+        <i class="fa fa-laptop"></i> {{getDriveName()}} <span class="caret"></span>
+      </button>
+
+      <ul class="dropdown-menu" role="menu">
+
+        <li ng-repeat="drive in drives">
+          <a href="" ng-click="browse(drive.name,'')" >{{drive.info}}</a>
+        </li>
+
+        <li class="divider"></li>
+        <li><a href="#">Shared Drive by admin</a></li>
+      </ul>
+    </div>
+
+    <div class="btn-group" dropdown >
+      <button type="button" class="btn btn-primary dropdown-toggle" dropdown-toggle ng-disabled="disabled">
+        <i class="fa fa-tasks"></i> {{reverseSplitPath(getPath())}} <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" role="menu">
+
+        <li ng-repeat="path in pathArray">
+          <a href="" ng-class="{'activepath' : isBrowsing(path.path)}" ng-click="browse(getDriveName(),path.path)">
             {{(path.name)}}
-          </span>
+          </a>
+        </li>
+      </ul>
+    </div>
 
-      </span>
-<!--        {{getPath()}}-->
 
-      </span>
 
-    <span style="float: right;">
-       <span>
-<!--          <i class="fa fa-search"></i>-->
-          <i class="fa fa-refresh" ></i>
-       </span>
 
     </span>
 
-    <form class="navbar-search" style="display: none;">
-      <input class="form-control" ng-model="searchQuery" placeholder="Search">
-    </form>
-</h3>
+    <span style="float: right;">
+
+
+
+
+
+    </span>
+
+
+
+
+  <div class="btn-group" dropdown>
+    <button type="button" class="btn btn-primary dropdown-toggle" dropdown-toggle ng-disabled="disabled">
+      <i class="fa fa-ellipsis-v"></i> <span class="caret"></span>
+    </button>
+
+    <ul class="dropdown-menu" role="menu" >
+
+      <li>
+        <a href=""><i class="fa fa-search"></i> Search</a>
+      </li>
+
+
+    </ul>
+  </div>
+
+
+  <form class="navbar-search" style="display: none;">
+    <input class="form-control" ng-model="searchQuery" placeholder="Search">
+  </form>
+
+
+
+
 </li>
+
+
+
+
+
+
+
 
   <li  ng-click="browse(getDriveName(),directory)" class="list-group-item" ng-repeat="directory in data.directories | filter:searchQuery">
     <span>
@@ -70,7 +121,11 @@
     </span>
   </li>
 
+
+
 </ul>
+
+
 
 
 </div>
