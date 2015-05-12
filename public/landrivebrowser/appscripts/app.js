@@ -3,6 +3,7 @@ angular.module('landriveBrowser', ['ngRoute' ,
                                    'landriveBrowser.Drive.REST',        // Dependency List
                                    'landriveBrowser.Authentication',
                                    'landriveBrowser.Browser.Services',
+                                   'ngCookies',
 //                                   'landriveBrowser.RequestCache'
                                   ]
 );

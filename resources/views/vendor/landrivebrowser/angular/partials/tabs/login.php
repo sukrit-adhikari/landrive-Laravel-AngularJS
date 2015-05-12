@@ -1,17 +1,15 @@
-<?php
-$tabTitle = 'Login';
-$tabTitleIconClass = "fa-lock";
-include('tabsheader.php');
-?>
-
-
 <form ng-submit="authenticateMe()">
 
   <div>
-
     <div class="row text-center">
       <h2>Log In</h2>
     </div>
+
+
+    <div>
+      <span ng-repeat="alert in alerts" type="{{alert.type}}" >{{alert.msg}}</span>
+    </div>
+
     <div>
       <label for="firstname" class="col-md-2">
         Name

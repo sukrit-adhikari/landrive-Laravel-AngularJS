@@ -10,6 +10,7 @@
     1.) Enable COM Extension
     [COM_DOT_NET]
     extension=php_com_dotnet.dll
+    2.) Enable Fileinfo Extension
 
 * apache\conf\httpd.conf
 

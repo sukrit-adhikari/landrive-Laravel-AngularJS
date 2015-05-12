@@ -16,10 +16,10 @@ class CreateUsersTable extends Migration {
 		{
 			$table->increments('id');
 			$table->string('name')->unique();
-			$table->string('email')->nullable();;
+            $table->integer('status')->nullable();
 			$table->string('password', 60);
-			$table->rememberToken();
-            $table->string('landriveAccessToken')->nullable();
+//			$table->rememberToken();
+            $table->string('landriveaccessToken')->nullable();
 			$table->timestamps();
 		});
 	}

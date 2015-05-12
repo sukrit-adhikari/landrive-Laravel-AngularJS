@@ -37,7 +37,7 @@ class LanDriveTokenController extends Controller {
    */
   public function getToken(){
 
-    $tokenGenerated = ['status' => 0 , 'Message' => "Authentication failed!" , "Token" => ""];
+    $tokenGenerated = ['Status' => 0 , 'Message' => "Authentication failed!" , "Token" => ""];
 
     $inputs = Input::all();
 
@@ -53,7 +53,7 @@ class LanDriveTokenController extends Controller {
 
     $userQueryResult = DB::select('SELECT password FROM users WHERE name = :name LIMIT 1', ['name' => $name]);
 
-    if(!$userQueryResult){
+    if(empty($userQueryResult)){
       return $tokenGenerated;
     }
 

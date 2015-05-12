@@ -1,9 +1,20 @@
-angular.module('landriveBrowser').controller('AuthenticationCtrl', function ($scope , $location , Authentication) {
+angular.module('landriveBrowser').controller('AuthenticationCtrl', function ($scope ,
+                                                                             $location ,
+                                                                             $cookies,
+                                                                             Authentication) {
+
+    $scope.alerts = [];
 
     $scope.authenticateMe = function(){
-       Authentication.getAccessToken($scope.landriveusernam , $scope.password)
+       Authentication.getAccessToken($scope.landriveusername , $scope.password)
                      .then(function(all){
-
+                        if(all.data.Status == 0){
+                          var alert = {type:'danger' , msg:all.data.Message};
+                          $scope.alerts = [alert];
+                        }else{
+                            $cookies.landriveaccesstoken = all.data.Token;
+                            $cookies.landriveusername = landriveusername;
+                        }
                      });
     }
 
@@ -11,14 +22,8 @@ angular.module('landriveBrowser').controller('AuthenticationCtrl', function ($sc
 
 angular.module('landriveBrowser').controller('HomeCtrl', function ($scope , $location  , Drive ) {
 
-    $scope.refresh = function(){
-        $scope.drives = Drive.request.index();
-    }
-
-    $scope.refresh(); // Refresh to load First Content
-
-    $scope.browseDrive = function(drivename){
-        $location.path('/browse').search({driveName: drivename});;
+    $scope.browseDrives = function(){
+        $location.path('/browse');
     }
 
 });
@@ -33,10 +38,25 @@ angular.module('landriveBrowser').controller('BrowseCtrl',  function ($scope ,
 
     $scope.drives = Drive.request.index();
 
-    $scope.driveName = locationParams.driveName;
     $scope.path = '';
 
+    $scope.driveName = locationParams.driveName;
+
+    $scope.searchBarActive = false;
+
+    $scope.showSearchBar = function(){
+        $scope.searchBarActive = true;
+    }
+
+    $scope.hideSearchBar = function(){
+        $scope.searchBarActive = false;
+    }
+
     $scope.pathArray = [];
+
+    $scope.getPathLength = function(){
+        return $scope.pathArray.length;
+    }
 
     $scope.getDriveName = function(){
         return $scope.driveName;
@@ -46,65 +66,46 @@ angular.module('landriveBrowser').controller('BrowseCtrl',  function ($scope ,
         $scope.driveName = dName;
     };
 
-
     $scope.getPath = function(){
         return $scope.path;
     }
 
-    $scope.getDownloadPath = function(filePath){
-        var downloadPath = 'api/drive/'+$scope.getDriveName()+'?path='+filePath+'&download=y';
+    $scope.getDownloadPath = function(path){
+        var downloadPath = 'api/drive/'+$scope.getDriveName()+'?path='+path+'&download=y';
         return downloadPath;
+    }
+
+    $scope.download = function(driveName,path){
+        Drive.request.download({driveName: driveName , path: path});
     }
 
     $scope.isBrowsing = function(path){
         if($scope.browsingPath == path){
-
-//            alert(path)
             return true;
         }
         return false;
     }
 
-
     $scope.splitPath = function(path){
-        var pathArray = path.split('\\');
-        var name = pathArray[(pathArray.length -1 )];
-
-        var maxSize = 32;
-
-        if(name.length > maxSize){
-            name = name.substring(0, maxSize)+"...";
-        }
-
-        return name;
+        return BrowseState.splitPath(path);
     }
 
     $scope.reverseSplitPath = function(path){
-
-        var maxsize = 5;
-
-        if(path.length > maxsize){
-
-            var start = (path.length-1) - maxsize;
-            var end = path.length ;
-
-            return '...' + path.substring(start,end);
-
-        }else{
-            return path;
-        }
-
-
+        return BrowseState.reverseSplitPath(path);
     }
-
-
-
 
     $scope.cache = $cacheFactory('mainCache');
 
     $scope.browse = function(driveName,path){
 
         $scope.setDriveName(driveName);
+
+        if($scope.driveName === undefined){
+            $scope.topBrowseMessage = "No Drive Selected!";
+            return;
+        }else{
+            $scope.topBrowseMessage = "Drive contents.";
+        }
 
         $scope.browsingPath = path;
 
@@ -123,29 +124,8 @@ angular.module('landriveBrowser').controller('BrowseCtrl',  function ($scope ,
 
         $scope.path = path;
 
+        $scope.pathArray = BrowseState.getPathArray($scope.path);
 
-        var points = $scope.path.split("\\");
-
-        var k = 0;
-
-        var pathsArray = new Array();
-
-        for(i = 0 ; i < points.length ; i++){
-            string = "";
-            for(j = 0 ; j <= i ; j ++){
-                if(j == i){
-                    string+=points[j];
-                }else{
-                    string+=points[j]+"\\";
-                }
-            }
-            var path = {'name' : points[i] , 'path' : string};
-            pathsArray.push(path);
-        }
-
-        if(points.length > 0 ){
-            $scope.pathArray = pathsArray;
-        }
     }
 
     $scope.browse($scope.driveName ,$scope.path) ; // FIRST Browse

@@ -1,6 +1,6 @@
 <?php namespace App\Console\Commands;
 
-use App\Http\Controllers\Bin\LandriveStorageController;
+use App\Http\Controllers\Landrive\Bin\LandriveStorageController;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Artisan;
 use Symfony\Component\Console\Input\InputOption;
@@ -52,7 +52,6 @@ class Installation extends Command {
 
     $user = [
       'name' => $name,
-      'email' => '',
       'password' => Hash::make($password),
     ];
 
