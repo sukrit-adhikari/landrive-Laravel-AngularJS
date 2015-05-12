@@ -1,4 +1,4 @@
-angular.module('landriveBrowser').controller('AuthenticationCtrl', function ($scope ,
+angular.module('landriveBrowser').controller('AuthenticationCtrlLogin', function ($scope ,
                                                                              $location ,
                                                                              $cookies,
                                                                              Authentication) {
@@ -6,19 +6,69 @@ angular.module('landriveBrowser').controller('AuthenticationCtrl', function ($sc
     $scope.alerts = [];
 
     $scope.authenticateMe = function(){
-       Authentication.getAccessToken($scope.landriveusername , $scope.password)
+
+       var landriveusername = $scope.landriveusername;
+       var password = $scope.password;
+       Authentication.getAccessToken( landriveusername , password)
                      .then(function(all){
-                        if(all.data.Status == 0){
-                          var alert = {type:'danger' , msg:all.data.Message};
+                        var date = new Date();
+                        var currentTime = date.getHours()+":"+date.getMinutes()+":"+date.getSeconds();
+                        var message = currentTime+" | "+all.data.Message;
+
+                        if(all.data.Status === 0){
+
+
+
+                          var alert = {message: message};
                           $scope.alerts = [alert];
+
                         }else{
-                            $cookies.landriveaccesstoken = all.data.Token;
-                            $cookies.landriveusername = landriveusername;
+
+                          var alert = {message:message};
+                          $scope.alerts = [alert];
+
+                          $cookies.landriveaccesstoken = all.data.Token;
+                          $cookies.landriveusername = landriveusername;
+
+                          $scope.gotoBrowsePage();
+
                         }
                      });
     }
 
+    $scope.gotoBrowsePage = function(){
+        $location.path('/browse');
+    }
+
 });
+
+
+angular.module('landriveBrowser').controller('AuthenticationCtrlLogout', function ($scope ,
+                                                                                   $location ,
+                                                                                   $cookieStore,
+                                                                                   $cookies,
+                                                                                   Authentication) {
+
+    var alert = {message : 'Loggin Out'};
+    $scope.alerts = [];
+
+    $scope.revokeMe = function(){
+        Authentication.revokeAccessToken()
+            .then(function(all){
+                var alert = {type:'danger' , message:all.data.Message};
+                $scope.alerts = [alert];
+                angular.forEach($cookies, function (v, k) {
+                    $cookieStore.remove(k);
+                });
+            })
+    }
+
+    $scope.revokeMe();
+
+});
+
+
+
 
 angular.module('landriveBrowser').controller('HomeCtrl', function ($scope , $location  , Drive ) {
 
@@ -86,6 +136,10 @@ angular.module('landriveBrowser').controller('BrowseCtrl',  function ($scope ,
         return false;
     }
 
+    $scope.gotoLogout = function(){
+        BrowseState.gotoLogout();
+    }
+
     $scope.splitPath = function(path){
         return BrowseState.splitPath(path);
     }
@@ -94,7 +148,7 @@ angular.module('landriveBrowser').controller('BrowseCtrl',  function ($scope ,
         return BrowseState.reverseSplitPath(path);
     }
 
-    $scope.cache = $cacheFactory('mainCache');
+    $scope.cache = $cacheFactory('mainCache' + Math.random());
 
     $scope.browse = function(driveName,path){
 
@@ -131,3 +185,4 @@ angular.module('landriveBrowser').controller('BrowseCtrl',  function ($scope ,
     $scope.browse($scope.driveName ,$scope.path) ; // FIRST Browse
 
 });
+

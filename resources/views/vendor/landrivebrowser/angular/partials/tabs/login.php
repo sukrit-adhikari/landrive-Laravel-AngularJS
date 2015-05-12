@@ -3,11 +3,10 @@
   <div>
     <div class="row text-center">
       <h2>Log In</h2>
-    </div>
 
-
-    <div>
-      <span ng-repeat="alert in alerts" type="{{alert.type}}" >{{alert.msg}}</span>
+      <div>
+        <h3 ng-repeat="alert in alerts" >{{alert.message}}</h3>
+      </div>
     </div>
 
     <div>

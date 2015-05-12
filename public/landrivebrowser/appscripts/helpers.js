@@ -21,30 +21,27 @@ angular.module('landriveBrowser.Authentication', []).factory('Authentication', f
                 params: {'landriveusername' : landriveusername , 'password' : password},
                 headers: {'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8'}
             })
-//                .success(function(data){
-//                    if(data.Status == 0){
-//                        alert("failed")
-//                    }else{
-//                        alert("success")
-//                    }
-//            });
+            return response;
+        },
 
+        revokeAccessToken: function(){
+            response =   $http({
+                method: 'POST',
+                url: "/api/token/revoke"
+            })
             return response;
         }
     };
 });
 
 
-//angular.module('landriveBrowser.RequestCache', []).factory('RequestCache', function ($cacheFactory) {
-//    return $cacheFactory('requestCache');
-//});
 
 
 // Services
 // are singletons
 
 
-angular.module('landriveBrowser.Browser.Services', []).service('BrowseState', function(){
+angular.module('landriveBrowser.Browser.Services', []).service('BrowseState', function($location){
 
         this.reverseSplitPath = function(path){
 
@@ -102,6 +99,10 @@ angular.module('landriveBrowser.Browser.Services', []).service('BrowseState', fu
             }
 
             return pathsArray;
+        }
+
+        this.gotoLogout = function(){
+            $location.path('/logout');
         }
 
 });

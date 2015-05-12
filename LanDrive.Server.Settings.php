@@ -4,7 +4,7 @@ return [
 
   'servername' => 'Freeze',
 
-  'validatelandriveapirequest' => false,
+  'validatelandriveapirequest' => true,
 
   'logrequestresponse' => false,
 

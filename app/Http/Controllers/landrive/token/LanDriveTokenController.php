@@ -61,6 +61,8 @@ class LanDriveTokenController extends Controller {
       $tokenGeneratedString = $this->getNewRandomToken($name.rand(100,9999).time());
       $this->updateToken($name, $tokenGeneratedString);
       $tokenGenerated = ['Status' => 1, 'Code' => 200 , "Message" => "New token generated.", "Token" => $tokenGeneratedString];
+    }else{
+      return $tokenGenerated;
     }
 
     $title = 'Landrive Access Granted.';
@@ -116,8 +118,11 @@ class LanDriveTokenController extends Controller {
 
   public static function requestHasValidToken(){
 
-    $name = Input::get('landriveusername');
-    $lanDriveAccessToken = Input::get('landriveaccesstoken');
+//    $name = Input::get('landriveusername');
+//    $lanDriveAccessToken = Input::get('landriveaccesstoken');
+
+    $name = Request::cookie('landriveusername');
+    $lanDriveAccessToken = Request::cookie('landriveaccesstoken');
 
     if(trim($lanDriveAccessToken) == '' || trim($name) == ''){
       return false;

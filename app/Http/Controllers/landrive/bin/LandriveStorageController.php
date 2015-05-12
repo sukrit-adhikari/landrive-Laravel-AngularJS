@@ -98,6 +98,9 @@ class LandriveStorageController extends Controller {
     $all = [
               'files' => $files,
               'directories' => $directories,
+              'Message' => "Successfully listed.",
+              'Status' => 1,
+              'Code' => 200
            ];
 
     return $all;

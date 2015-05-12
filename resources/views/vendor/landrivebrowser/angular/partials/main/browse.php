@@ -4,7 +4,6 @@
 
 <li class="list-group-item active ">
 
-
     <!--    ShortCut to current Drive-->
     <button class="btn btn-primary" ng-click="browse(getDriveName(),'')">
           <i class="fa fa-bullseye"></i> {{getDriveName()}}
@@ -19,7 +18,7 @@
       <ul class="dropdown-menu" role="menu">
 
         <li ng-repeat="drive in drives">
-          <a href="" ng-click="browse(drive.name,'')" >{{drive.info}}</a>
+          <a href="" ng-click="browse(drive.name,'')" ><i class="fa fa-caret-right"></i> {{drive.info}}</a>
         </li>
 
         <li class="divider"></li>
@@ -30,10 +29,9 @@
 
   <!--  Menu List-->
   <div class="btn-group" dropdown>
-    <button type="button" class="btn btn-primary dropdown-toggle" dropdown-toggle ng-disabled="disabled">
-<!--      <i class="fa fa-ellipsis-v"></i>-->
-      Menu <span class="caret"></span>
-    </button>
+  <button type="button" class="btn btn-primary dropdown-toggle" dropdown-toggle ng-disabled="disabled">
+  Menu <span class="caret"></span>
+  </button>
 
     <ul class="dropdown-menu" role="menu" >
       <li ng-click="showSearchBar()">
@@ -41,6 +39,11 @@
       </li>
     </ul>
   </div>
+
+
+  <button ng-click="gotoLogout()" type="button" class="btn btn-primary dropdown-toggle" dropdown-toggle ng-disabled="disabled">
+    <span><i class="fa fa-unlock"></i></span>
+  </button>
 
 
   <form class="navbar-search" ng-class="{'hidden' : !searchBarActive}">

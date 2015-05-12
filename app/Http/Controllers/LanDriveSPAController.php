@@ -52,4 +52,11 @@ class LanDriveSPAController extends Controller {
     public function getPartialLogin(){
       return view('vendor\landrivebrowser\angular\partials\tabs\login');
     }
+
+    /**
+     * @return \Illuminate\View\View
+     */
+    public function getPartialLogout(){
+      return view('vendor\landrivebrowser\angular\partials\tabs\logout');
+    }
 }
