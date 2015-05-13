@@ -14,10 +14,10 @@ landriveBrowserApp.config(function($routeProvider , $locationProvider) {
             templateUrl: 'mobile/angular/partials/browse',
             controller: 'BrowseCtrl'
         })
-        .when('/drives/:drive/view/:path/file', {
-            templateUrl: 'mobile/angular/partials/viewfiles',
-            controller: ''
-        })
+//        .when('/drives/:drive/view/:path/file', {
+//            templateUrl: 'mobile/angular/partials/view',
+//            controller: ''
+//        })
         .when('/login', {
             templateUrl: 'mobile/angular/partials/login',
             controller: 'AuthenticationCtrlLogin'

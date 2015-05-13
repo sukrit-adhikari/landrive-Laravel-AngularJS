@@ -1,39 +1,39 @@
 angular.module('landriveBrowser').controller('AuthenticationCtrlLogin', function ($scope ,
-                                                                             $location ,
-                                                                             $cookies,
-                                                                             Authentication) {
+                                                                                  $location ,
+                                                                                  $cookies,
+                                                                                  Authentication) {
 
     $scope.alerts = [];
 
     $scope.authenticateMe = function(){
 
-       var landriveusername = $scope.landriveusername;
-       var password = $scope.password;
-       Authentication.getAccessToken( landriveusername , password)
-                     .then(function(all){
-                        var date = new Date();
-                        var currentTime = date.getHours()+":"+date.getMinutes()+":"+date.getSeconds();
-                        var message = currentTime+" | "+all.data.Message;
+        var landriveusername = $scope.landriveusername;
+        var password = $scope.password;
+        Authentication.getAccessToken( landriveusername , password)
+            .then(function(all){
+                var date = new Date();
+                var currentTime = date.getHours()+":"+date.getMinutes()+":"+date.getSeconds();
+                var message = currentTime+" | "+all.data.Message;
 
-                        if(all.data.Status === 0){
+                if(all.data.Status === 0){
 
 
 
-                          var alert = {message: message};
-                          $scope.alerts = [alert];
+                    var alert = {message: message};
+                    $scope.alerts = [alert];
 
-                        }else{
+                }else{
 
-                          var alert = {message:message};
-                          $scope.alerts = [alert];
+                    var alert = {message:message};
+                    $scope.alerts = [alert];
 
-                          $cookies.landriveaccesstoken = all.data.Token;
-                          $cookies.landriveusername = landriveusername;
+                    $cookies.landriveaccesstoken = all.data.Token;
+                    $cookies.landriveusername = landriveusername;
 
-                          $scope.gotoBrowsePage();
+                    $scope.gotoBrowsePage();
 
-                        }
-                     });
+                }
+            });
     }
 
     $scope.gotoBrowsePage = function(){
@@ -82,6 +82,7 @@ angular.module('landriveBrowser').controller('BrowseCtrl',  function ($scope ,
                                                                       $location ,
                                                                       $cacheFactory ,
                                                                       Drive ,
+                                                                      $modal,
                                                                       BrowseState) {
 
     var locationParams = $location.search();
@@ -182,7 +183,67 @@ angular.module('landriveBrowser').controller('BrowseCtrl',  function ($scope ,
 
     }
 
+    $scope.viewData = {};
+
+    $scope.setViewData = function(driveName , path){
+        var viewDataInstance = {driveName : driveName, path : path};
+        $scope.viewData = viewDataInstance;
+    }
+
+    $scope.getViewData = function(){
+        return $scope.viewData;
+    }
+
+    $scope.view = function(driveName , path){
+        $scope.setViewData(driveName, path);
+        $scope.viewInModal();
+    }
+
+    $scope.viewInModal = function () {
+
+        var modalInstance = $modal.open({
+            templateUrl: 'mobile/angular/partials/view',
+            controller: 'ViewModalCtrl',
+            size: 'lg',
+            resolve: {
+                viewData: function () {
+                    return $scope.getViewData();
+                }
+            }
+        });
+
+        modalInstance.result.then(function (selectedItem) {
+
+        }, function () {
+//            $log.info('Modal dismissed at: ' + new Date());
+        });
+    };
+
     $scope.browse($scope.driveName ,$scope.path) ; // FIRST Browse
 
 });
 
+
+angular.module('landriveBrowser').controller('ViewModalCtrl', function ($scope,
+                                                                        $modalInstance,
+                                                                        Drive,
+                                                                        viewData) {
+
+    $scope.viewData = viewData;
+
+    $scope.info = {};
+
+    Drive.request.info({driveName: viewData.driveName , path: viewData.path},function(data){
+        $scope.info =  data;
+    });
+
+    $scope.ok = function () {
+        $modalInstance.close();
+    };
+
+//    $scope.cancel = function () {
+//        $modalInstance.dismiss('cancel');
+//    };
+
+
+});

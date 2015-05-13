@@ -4,6 +4,7 @@ angular.module('landriveBrowser.Drive.REST', ['ngResource']).service('Drive', fu
     this.request = $resource('/api/drive/:driveName', {driveName:'@driveName'}, {
         index:  {method:'GET' , actions:{cache:true}},
         query:  {method:'GET' , params:{path: '@path'}, actions:{cache:$cacheFactory} , isArray:false},
+        info:   {method:'GET' , params:{path: '@path', info:'y'}, actions:{cache:$cacheFactory} , isArray:false},
         post:   {method:'POST'},
         update: {method:'PUT'},
         remove: {method:'DELETE'},

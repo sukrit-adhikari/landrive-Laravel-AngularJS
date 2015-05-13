@@ -28,22 +28,22 @@
     </span>
 
   <!--  Menu List-->
-  <div class="btn-group" dropdown>
+  <div class="btn-group" dropdown >
   <button type="button" class="btn btn-primary dropdown-toggle" dropdown-toggle ng-disabled="disabled">
-  Menu <span class="caret"></span>
+    <i class="fa fa-ellipsis-v"></i>
   </button>
 
     <ul class="dropdown-menu" role="menu" >
-      <li ng-click="showSearchBar()">
+      <li ng-click="toggleSearchBar()">
         <a href=""><i class="fa fa-search"></i> Search</a>
+      </li>
+      <li ng-click="gotoLogout()">
+        <a href=""><i class="fa fa-unlock"></i> Logout</a>
       </li>
     </ul>
   </div>
 
 
-  <button ng-click="gotoLogout()" type="button" class="btn btn-primary dropdown-toggle" dropdown-toggle ng-disabled="disabled">
-    <span><i class="fa fa-unlock"></i></span>
-  </button>
 
 
   <form class="navbar-search" ng-class="{'hidden' : !searchBarActive}">
@@ -103,6 +103,11 @@
     <a ng-href="{{getDownloadPath(file)}}" >
       <i class="fa fa-download"></i>
     </a>
+
+    <a ng-click="view(getDriveName(),file)" >
+      <i class="fa fa-eye"></i>
+    </a>
+
     </span>
 
 

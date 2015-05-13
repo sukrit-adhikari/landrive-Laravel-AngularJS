@@ -194,4 +194,15 @@ class LandriveStorageController extends Controller {
 
   }
 
+  public function info($drive,$path){
+
+    return [
+            'Status' => 1,
+            'Message' => 'Info Generated.',
+            'LastModified' => Storage::disk($drive)->lastModified($path),
+           ];
+
+
+  }
+
 }

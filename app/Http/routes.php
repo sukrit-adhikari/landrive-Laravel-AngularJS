@@ -58,7 +58,7 @@ Route::group(['middleware' => 'ValidateLanDriveAPIRequest'], function()
 
   Route::get('mobile/angular/partials/browse' , 'LanDriveSPAController@getPartialBrowse');
 
-  Route::get('mobile/angular/partials/viewfile' , 'LanDriveSPAController@getPartialViewFile');
+  Route::get('mobile/angular/partials/view' , 'LanDriveSPAController@getPartialView');
 
   Route::get('mobile/angular/partials/login' , 'LanDriveSPAController@getPartialLogin');
 
