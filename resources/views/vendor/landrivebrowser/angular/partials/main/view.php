@@ -2,7 +2,7 @@
   <p class="modal-title">{{viewData.driveName}} : {{viewData.path}}</p>
 
   <div ng-if="gotInfo">
-    <div><span>{{timeConverter(info.LastModified)}}</span></div>
+    <div><i class="fa fa-calendar"></i> <span>{{timeConverter(info.LastModified)}}</span></div>
     <div>
       <span>{{( (info.Size / 1000) / 1000 )}} MB</span>
       <a href="" ng-href="{{getDownloadPath()}}" >
@@ -27,8 +27,6 @@
 <!--          </audio>-->
 <!--        </span>-->
   </div>
-
-
 
 
   <div class="modal-footer">
