@@ -21,8 +21,8 @@
           <a href="" ng-click="browse(drive.name,'')" ><i class="fa fa-caret-right"></i> {{drive.info}}</a>
         </li>
 
-        <li class="divider"></li>
-        <li><a href="#">Shared Drive by admin</a></li>
+<!--        <li class="divider"></li>-->
+<!--        <li><a href="#">Shared Drive by admin</a></li>-->
       </ul>
     </div>
     </span>
@@ -43,9 +43,6 @@
     </ul>
   </div>
 
-
-
-
   <form class="navbar-search" ng-class="{'hidden' : !searchBarActive}">
     <input class="form-control" ng-model="searchQuery" placeholder="Search">
   </form>
@@ -60,7 +57,7 @@
   <li class="list-group-item">
     <div class="btn-group" dropdown ng-class="{'hidden' : getPath() == ''}">
       <button type="button" class="btn btn-primary dropdown-toggle" dropdown-toggle ng-disabled="disabled">
-        <i class="fa fa-folder-open"></i> {{reverseSplitPath(getPath())}} <span class="caret"></span>
+        <i class="fa fa-folder-open"></i> {{reverseSplit(getPath())}} <span class="caret"></span>
         <span class="badge">{{getPathLength()}}</span>
       </button>
       <ul class="dropdown-menu" role="menu" >
@@ -72,7 +69,9 @@
       </ul>
     </div>
     <div ng-class="{'hidden' : getPath() != ''}">
-      <i class="fa fa-chevron-circle-down"></i> {{topBrowseMessage}}
+      <button type="button" class="btn btn-primary"  ng-disabled="disabled">
+        <i class="fa fa-chevron-circle-down"></i> {{topBrowseMessage}}
+      </button>
     </div>
 
   </li>
@@ -82,35 +81,38 @@
 
 <div>
 <ul>
+
+
+
+  <li class="list-group-item" ng-repeat="drive in drives" ng-if="!isDriveSelected()">
+    <span ng-click="browse(drive.name,'')" ><i class="fa fa-cloud"></i> {{drive.info}}</span>
+  </li>
+
   <!--  Directory List-->
-  <li  ng-click="browse(getDriveName(),directory)" class="list-group-item" ng-repeat="directory in data.directories | filter:searchQuery">
+  <li  ng-click="browse(getDriveName(),directory)" ng-class="{'active' : isBrowsing(directory)}" class="list-group-item" ng-repeat="directory in data.directories | filter:searchQuery">
     <span>
     <i class="fa fa-folder"></i>
-    <span ng-class="{'browsing' : isBrowsing(directory)}">{{splitPath(directory)}}</span>
+    <span ng-class="{'browsing' : isBrowsing(directory)}">{{split(directory)}}</span>
+    <i ng-class="{'fa fa-spinner fa-spin' : isBrowsing(directory)}"></i>
     </span>
   </li>
   <!--  File List-->
   <li class="list-group-item" ng-repeat="file in data.files | filter:searchQuery">
     <span>
     <i class="fa fa-file"></i>
-    <span> {{ splitPath(file)}} </span>
+      <a ng-click="view(getDriveName(),file)" >
+      <span> {{ split(file)}} </span>
+      </a>
     </span>
 
     <span style="float: right;">
 
 
-
-    <a ng-href="{{getDownloadPath(file)}}" >
-      <i class="fa fa-download"></i>
-    </a>
-
-    <a ng-click="view(getDriveName(),file)" >
-      <i class="fa fa-eye"></i>
-    </a>
+<!--    <a ng-click="view(getDriveName(),file)" >-->
+<!--      <i class="fa fa-eye"></i>-->
+<!--    </a>-->
 
     </span>
-
-
 
   </li>
 </ul>

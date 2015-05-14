@@ -21,6 +21,8 @@ return array(
     'App\\Http\\Controllers\\HomeController' => $baseDir . '/app/Http/Controllers/HomeController.php',
     'App\\Http\\Controllers\\LanDriveSPAController' => $baseDir . '/app/Http/Controllers/LanDriveSPAController.php',
     'App\\Http\\Controllers\\Landrive\\Bin\\LandriveStorageController' => $baseDir . '/app/Http/Controllers/Landrive/Bin/LandriveStorageController.php',
+    'App\\Http\\Controllers\\Landrive\\Bin\\LandriveSystemController' => $baseDir . '/app/Http/Controllers/Landrive/Bin/LandriveSystemController.php',
+    'App\\Http\\Controllers\\Landrive\\Bin\\LandriveUserStorageController' => $baseDir . '/app/Http/Controllers/Landrive/Bin/LandriveUserStorageController.php',
     'App\\Http\\Controllers\\Landrive\\Driveapi\\DriveController' => $baseDir . '/app/Http/Controllers/Landrive/Driveapi/DriveController.php',
     'App\\Http\\Controllers\\Landrive\\Server\\LanDriveServerConfigController' => $baseDir . '/app/Http/Controllers/Landrive/Server/LanDriveServerConfigController.php',
     'App\\Http\\Controllers\\Landrive\\Token\\LanDriveTokenController' => $baseDir . '/app/Http/Controllers/Landrive/Token/LanDriveTokenController.php',

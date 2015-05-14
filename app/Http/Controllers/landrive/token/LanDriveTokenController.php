@@ -51,7 +51,7 @@ class LanDriveTokenController extends Controller {
     $name = $inputs['landriveusername'];
     $password = ($inputs['password']);
 
-    $userQueryResult = DB::select('SELECT password FROM users WHERE name = :name LIMIT 1', ['name' => $name]);
+    $userQueryResult = DB::select('SELECT password,landriveaccesstoken FROM users WHERE name = :name LIMIT 1', ['name' => $name]);
 
     if(empty($userQueryResult)){
       return $tokenGenerated;

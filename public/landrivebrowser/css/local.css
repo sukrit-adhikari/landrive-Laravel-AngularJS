@@ -4605,8 +4605,8 @@ a.thumbnail.active {
 }
 
 span.browsing{
-    font-size : 125%;
-    color:#337ab7
+    font-size : 115%;
+    /*color:#337ab7*/
 }
 
 .dropdown-menu > li > a.activepath{

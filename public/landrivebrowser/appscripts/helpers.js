@@ -44,13 +44,17 @@ angular.module('landriveBrowser.Authentication', []).factory('Authentication', f
 
 angular.module('landriveBrowser.Browser.Services', []).service('BrowseState', function($location){
 
-        this.reverseSplitPath = function(path){
+        this.reverseSplit = function(path ,maximumSize ){
 
-            var maxsize = 32;
+            if(maximumSize === undefined){
+                var maxSize = 32;
+            }else{
+                var maxSize = maximumSize;
+            }
 
-            if(path.length > maxsize){
+            if(path.length > maxSize){
 
-                var start = (path.length-1) - maxsize;
+                var start = (path.length-1) - maxSize;
                 var end = path.length ;
 
                 return '..' + path.substring(start,end);
@@ -60,14 +64,22 @@ angular.module('landriveBrowser.Browser.Services', []).service('BrowseState', fu
             }
         }
 
-        this.splitPath = function(path){
+        this.split = function(path , maximumSize, ellipsis){
             var pathArray = path.split('\\');
             var name = pathArray[(pathArray.length -1 )];
+            if(maximumSize === undefined){
+                var maxSize = 32;
+            }else{
+                var maxSize = maximumSize;
+            }
 
-            var maxSize = 32;
+            var elpsis = '';
+            if(ellipsis === undefined){
+                elpsis = "..";
+            }
 
             if(name.length > maxSize){
-                name = name.substring(0, maxSize)+"..";
+                name = name.substring(0, maxSize)+elpsis;
             }
 
             return name;
@@ -76,6 +88,26 @@ angular.module('landriveBrowser.Browser.Services', []).service('BrowseState', fu
         this.getDownloadPath = function(driveName,path){
             var downloadPath = 'api/drive/'+driveName+'?path='+path+'&download=y';
             return downloadPath;
+        }
+
+        this.isImage = function(filePath){
+            var extensionList = filePath.split(".");
+            var lastExtension = extensionList[(extensionList.length - 1)];
+
+            var imageExtensionList = ['jpg' , 'jpeg' , 'png', 'gif'];
+            var musicExtensionList = ['mp3'];
+
+            if(imageExtensionList.indexOf(lastExtension.toLowerCase())  != -1){
+                return true;
+            }
+
+            return false;
+
+        }
+
+        this.getImageSrcPath = function(driveName,path){
+            var imageSrcPath = 'api/drive/'+driveName+'?path='+path+'&image=y';
+            return imageSrcPath;
         }
 
         this.getPathArray = function(path){
@@ -104,6 +136,24 @@ angular.module('landriveBrowser.Browser.Services', []).service('BrowseState', fu
 
         this.gotoLogout = function(){
             $location.path('/logout');
+        }
+
+        this.getDownloadPath = function(driveName , path){
+            var downloadPath = 'api/drive/'+driveName+'?path='+path+'&download=y';
+            return downloadPath;
+        }
+
+        this.timeConverter = function(UNIX_timestamp){
+            var a = new Date(UNIX_timestamp*1000);
+            var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+            var year = a.getFullYear();
+            var month = months[a.getMonth()];
+            var date = a.getDate();
+            var hour = a.getHours();
+            var min = a.getMinutes();
+            var sec = a.getSeconds();
+            var time = date + ',' + month + ' ' + year + ' ' + hour + ':' + min + ':' + sec ;
+            return time;
         }
 
 });

@@ -6,7 +6,10 @@ use Illuminate\Support\Facades\Crypt;
 use Illuminate\Support\Facades\Storage;
 use PhpSpec\Exception\Exception;
 use Illuminate\Http\Request;
-
+use Intervention\Image\Facades\Image;
+use App\Http\Controllers\Landrive\Bin\LandriveSystemController;
+use App\Http\Controllers\Landrive\Bin\LandriveUserStorageController;
+use Illuminate\Support\Facades\Response;
 
 class LandriveStorageController extends Controller {
 
@@ -59,7 +62,7 @@ class LandriveStorageController extends Controller {
    */
   public function getUserDrives($user = null , $getRoot = false){
 
-    $drives = Config::get('filesystems.disks');
+    $drives = LandriveUserStorageController::getUserDrives();
 
     foreach($drives as $driveName => $driveDetail){
 
@@ -200,9 +203,27 @@ class LandriveStorageController extends Controller {
             'Status' => 1,
             'Message' => 'Info Generated.',
             'LastModified' => Storage::disk($drive)->lastModified($path),
+            'Size' => Storage::disk($drive)->size($path)
            ];
+  }
 
+  public function image($drive , $path){
+
+    $imagePath = LandriveSystemController::getFullSystemPath($drive,$path);
+
+    $image = Image::make($imagePath)->resize(300, 240);
+
+    $response = Response::make($image->encode('jpg'));
+
+    // set content-type
+    $response->header('Content-Type', 'image/png');
+
+    flush();
+
+    // output
+    return $response;
 
   }
+
 
 }

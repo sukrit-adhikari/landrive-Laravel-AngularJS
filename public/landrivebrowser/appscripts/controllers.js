@@ -17,8 +17,6 @@ angular.module('landriveBrowser').controller('AuthenticationCtrlLogin', function
 
                 if(all.data.Status === 0){
 
-
-
                     var alert = {message: message};
                     $scope.alerts = [alert];
 
@@ -109,6 +107,14 @@ angular.module('landriveBrowser').controller('BrowseCtrl',  function ($scope ,
         return $scope.pathArray.length;
     }
 
+
+    $scope.isDriveSelected = function(){
+        if($scope.driveName === undefined){
+            return false;
+        }
+        return true;
+    }
+
     $scope.getDriveName = function(){
         return $scope.driveName;
     };
@@ -122,8 +128,9 @@ angular.module('landriveBrowser').controller('BrowseCtrl',  function ($scope ,
     }
 
     $scope.getDownloadPath = function(path){
-        var downloadPath = 'api/drive/'+$scope.getDriveName()+'?path='+path+'&download=y';
-        return downloadPath;
+
+        return BrowseState.getDownloadPath($scope.getDriveName(), path)
+
     }
 
     $scope.download = function(driveName,path){
@@ -141,12 +148,12 @@ angular.module('landriveBrowser').controller('BrowseCtrl',  function ($scope ,
         BrowseState.gotoLogout();
     }
 
-    $scope.splitPath = function(path){
-        return BrowseState.splitPath(path);
+    $scope.split = function(path){
+        return BrowseState.split(path);
     }
 
-    $scope.reverseSplitPath = function(path){
-        return BrowseState.reverseSplitPath(path);
+    $scope.reverseSplit = function(path){
+        return BrowseState.reverseSplit(path);
     }
 
     $scope.cache = $cacheFactory('mainCache' + Math.random());
@@ -156,7 +163,7 @@ angular.module('landriveBrowser').controller('BrowseCtrl',  function ($scope ,
         $scope.setDriveName(driveName);
 
         if($scope.driveName === undefined){
-            $scope.topBrowseMessage = "No Drive Selected!";
+            $scope.topBrowseMessage = "Drive list.";
             return;
         }else{
             $scope.topBrowseMessage = "Drive contents.";
@@ -172,6 +179,7 @@ angular.module('landriveBrowser').controller('BrowseCtrl',  function ($scope ,
             Drive.request.query({driveName: driveName , path: path},function(data){
                 $scope.data =  data;
                 $scope.cache.put(cacheKey, $scope.data === undefined ? null : $scope.data);
+                $scope.pathArray = BrowseState.getPathArray($scope.path);
             });
         }else{
             $scope.data = cacheData;
@@ -179,7 +187,7 @@ angular.module('landriveBrowser').controller('BrowseCtrl',  function ($scope ,
 
         $scope.path = path;
 
-        $scope.pathArray = BrowseState.getPathArray($scope.path);
+
 
     }
 
@@ -194,7 +202,7 @@ angular.module('landriveBrowser').controller('BrowseCtrl',  function ($scope ,
         return $scope.viewData;
     }
 
-    $scope.view = function(driveName , path){
+    $scope.view = function(driveName , path ){
         $scope.setViewData(driveName, path);
         $scope.viewInModal();
     }
@@ -208,6 +216,9 @@ angular.module('landriveBrowser').controller('BrowseCtrl',  function ($scope ,
             resolve: {
                 viewData: function () {
                     return $scope.getViewData();
+                },
+                fileList: function () {
+                    return $scope.data.files;
                 }
             }
         });
@@ -227,19 +238,51 @@ angular.module('landriveBrowser').controller('BrowseCtrl',  function ($scope ,
 angular.module('landriveBrowser').controller('ViewModalCtrl', function ($scope,
                                                                         $modalInstance,
                                                                         Drive,
+                                                                        BrowseState,
+                                                                        fileList,
                                                                         viewData) {
 
     $scope.viewData = viewData;
 
+    $scope.browseIndex = fileList.indexOf($scope.viewData.path);
+
+    $scope.viewNext = function(){
+        $scope.viewData.path = fileList[($scope.browseIndex + 1)];
+        $scope.gotInfo = false;
+    }
+
     $scope.info = {};
+
+    $scope.gotInfo = false;
 
     Drive.request.info({driveName: viewData.driveName , path: viewData.path},function(data){
         $scope.info =  data;
+        $scope.gotInfo = true;
     });
+
+    $scope.split = function(text,maxSize,ellipsis){
+        return BrowseState.split(text,5,'');
+    }
+
+    $scope.getDownloadPath = function(){
+        return BrowseState.getDownloadPath($scope.viewData.driveName, $scope.viewData.path);
+    }
+
+    $scope.getImageSrcPath = function(){
+       return BrowseState.getImageSrcPath($scope.viewData.driveName, $scope.viewData.path);
+    }
+
+    $scope.timeConverter = function(UNIXTimestamp){
+        return BrowseState.timeConverter(UNIXTimestamp);
+    }
 
     $scope.ok = function () {
         $modalInstance.close();
     };
+
+    $scope.isImage = function(){
+        return BrowseState.isImage($scope.viewData.path);
+    }
 
 //    $scope.cancel = function () {
 //        $modalInstance.dismiss('cancel');
