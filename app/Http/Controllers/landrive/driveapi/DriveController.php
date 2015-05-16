@@ -85,10 +85,17 @@ class DriveController extends Controller {
 //      $drive = $inputs['drive'];
       $path = isset($inputs['path']) && $inputs['path'] != ''  ? $inputs['path'] : null;
 
+
       $info = isset($inputs['info']) && $inputs['info'] == 'y'  ? 'y' : 'n';
       if( $info == 'y' ){
         return $this->landriveStorageController->info($drive,$path);
       }
+
+      $content = isset($inputs['content']) && $inputs['content'] == 'y'  ? 'y' : 'n';
+      if($content == 'y'){
+        return $this->landriveStorageController->getContent($drive,$path);
+      }
+
 
       $download = isset($inputs['download']) && $inputs['download'] == 'y'  ? 'y' : 'n';
       if( $download == 'y' ){

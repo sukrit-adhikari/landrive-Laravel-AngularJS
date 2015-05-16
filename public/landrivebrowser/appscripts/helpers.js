@@ -5,6 +5,7 @@ angular.module('landriveBrowser.Drive.REST', ['ngResource']).service('Drive', fu
         index:  {method:'GET' , actions:{cache:true}},
         query:  {method:'GET' , params:{path: '@path'}, actions:{cache:$cacheFactory} , isArray:false},
         info:   {method:'GET' , params:{path: '@path', info:'y'}, actions:{cache:$cacheFactory} , isArray:false},
+        content:{method:'GET' , params:{path: '@path', content:'y'}, actions:{cache:$cacheFactory} , isArray:false},
         post:   {method:'POST'},
         update: {method:'PUT'},
         remove: {method:'DELETE'},
@@ -105,6 +106,47 @@ angular.module('landriveBrowser.Browser.Services', []).service('BrowseState', fu
 
         }
 
+        this.isText = function(filePath){
+            var extensionList = filePath.split(".");
+            var lastExtension = extensionList[(extensionList.length - 1)];
+
+            var textExtensionList = [   'bat',
+                                        'conf',
+                                        'css',
+                                        'ini',
+                                        'java',
+                                        'js',
+                                        'json',
+                                        'log',
+                                        'txt',
+                                        'php',
+                                        'svg'
+                                    ];
+
+            if(textExtensionList.indexOf(lastExtension.toLowerCase())  != -1){
+                return true;
+            }
+
+            return false;
+
+        }
+
+        this.isAudio = function(filePath){
+            var extensionList = filePath.split(".");
+            var lastExtension = extensionList[(extensionList.length - 1)];
+
+            var textExtensionList = ['mp3'];
+
+            if(textExtensionList.indexOf(lastExtension.toLowerCase())  != -1){
+                return true;
+            }
+
+            return false;
+
+        }
+
+
+
         this.getImageSrcPath = function(driveName,path){
             var imageSrcPath = 'api/drive/'+driveName+'?path='+path+'&image=y';
             return imageSrcPath;
@@ -152,7 +194,7 @@ angular.module('landriveBrowser.Browser.Services', []).service('BrowseState', fu
             var hour = a.getHours();
             var min = a.getMinutes();
             var sec = a.getSeconds();
-            var time = date + ',' + month + ' ' + year + ' ' + hour + ':' + min + ':' + sec ;
+            var time = date + ' , ' + month + ' ' + year + ' ' + hour + ':' + min + ':' + sec ;
             return time;
         }
 

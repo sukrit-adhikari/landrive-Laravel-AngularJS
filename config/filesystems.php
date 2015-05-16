@@ -28,7 +28,7 @@ if(class_exists('COM')){
 
       $systemDrives[$driveDetail->DriveLetter] = [
         'driver' => 'local',
-        'info' => $driveDetail->DriveLetter . ":\\\ " . $type[$driveDetail->DriveType].' '.$s,
+        'info' => $driveDetail->DriveLetter . ":\\\ ",// . $type[$driveDetail->DriveType].' '.$s,
         'root' => ($driveDetail->DriveLetter).':\\',
       ];
 

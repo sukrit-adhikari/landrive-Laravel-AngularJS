@@ -84,8 +84,8 @@
 
 
 
-  <li class="list-group-item" ng-repeat="drive in drives" ng-if="!isDriveSelected()">
-    <span ng-click="browse(drive.name,'')" ><i class="fa fa-cloud"></i> {{drive.info}}</span>
+  <li ng-click="browse(drive.name,'')" class="list-group-item" ng-repeat="drive in drives" ng-if="!isDriveSelected()">
+    <span><i class="fa fa-cloud"></i> {{drive.info}}</span>
   </li>
 
   <!--  Directory List-->
@@ -94,13 +94,14 @@
     <i class="fa fa-folder"></i>
     <span ng-class="{'browsing' : isBrowsing(directory)}">{{split(directory)}}</span>
     <i ng-class="{'fa fa-spinner fa-spin' : isBrowsing(directory)}"></i>
+<!--    <i class="fa fa-ellipsis-v" style="float: right;"></i>-->
     </span>
   </li>
   <!--  File List-->
-  <li class="list-group-item" ng-repeat="file in data.files | filter:searchQuery">
+  <li ng-click="view(getDriveName(),file)" class="list-group-item" ng-repeat="file in data.files | filter:searchQuery">
     <span>
     <i class="fa fa-file"></i>
-      <a ng-click="view(getDriveName(),file)" >
+      <a href="">
       <span> {{ split(file)}} </span>
       </a>
     </span>

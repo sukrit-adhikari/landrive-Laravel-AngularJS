@@ -209,11 +209,23 @@ class LandriveStorageController extends Controller {
 
   public function image($drive , $path){
 
+    $defaultHeight = 240;
+    $defaultWidth = 300;
+
     $imagePath = LandriveSystemController::getFullSystemPath($drive,$path);
 
-    $image = Image::make($imagePath)->resize(300, 240);
+    $image = Image::make($imagePath);
 
-    $response = Response::make($image->encode('jpg'));
+    $imageHeight = $image->height();
+    $imageWidth = $image->width();
+
+    if($imageHeight < $defaultHeight && $imageWidth < $defaultWidth){
+      // Dont resize if its too small
+    }else{
+      $image->widen($defaultWidth);
+    }
+
+    $response = Response::make($image->encode('jpg',70));
 
     // set content-type
     $response->header('Content-Type', 'image/png');
@@ -225,5 +237,10 @@ class LandriveStorageController extends Controller {
 
   }
 
+
+  public function getContent($drive , $path){
+    $fileContent = Storage::disk($drive)->get($path);
+    return ['Status' => 1 , 'Code' => 200 ,'Message' => 'Content of the file "'.$path.'" loaded.' ,'Content' => $fileContent ];
+  }
 
 }

@@ -47,7 +47,7 @@ angular.module('landriveBrowser').controller('AuthenticationCtrlLogout', functio
                                                                                    $cookies,
                                                                                    Authentication) {
 
-    var alert = {message : 'Loggin Out'};
+    var alert = {message : 'Logging Out'};
     $scope.alerts = [];
 
     $scope.revokeMe = function(){
@@ -238,30 +238,64 @@ angular.module('landriveBrowser').controller('BrowseCtrl',  function ($scope ,
 angular.module('landriveBrowser').controller('ViewModalCtrl', function ($scope,
                                                                         $modalInstance,
                                                                         Drive,
+                                                                        $cacheFactory,
                                                                         BrowseState,
                                                                         fileList,
                                                                         viewData) {
 
     $scope.viewData = viewData;
 
-    $scope.browseIndex = fileList.indexOf($scope.viewData.path);
+    if(fileList.length === 1){
+        $scope.leftEnd = true;
+        $scope.rightEnd = true;
+    }else{
+        $scope.leftEnd = false;
+        $scope.rightEnd = false;
+    }
 
     $scope.viewNext = function(){
+//        if(fileList.length != $scope.browseIndex ){
+//
+//        }
+
+        if($scope.browseIndex === (fileList.length-1)){
+            $scope.rightEnd = true;
+            return;
+        }else{
+            $scope.rightEnd = false;
+        }
+
         $scope.viewData.path = fileList[($scope.browseIndex + 1)];
-        $scope.gotInfo = false;
+
+        $scope.refresh();
+
     }
+
+    $scope.viewPrevious = function(){
+
+        if($scope.browseIndex === 0){
+            $scope.leftEnd = true;
+            return;
+        }else{
+            $scope.leftEnd = false;
+        }
+
+        $scope.viewData.path = fileList[($scope.browseIndex - 1)];
+
+        $scope.refresh();
+    }
+
+
 
     $scope.info = {};
 
-    $scope.gotInfo = false;
-
-    Drive.request.info({driveName: viewData.driveName , path: viewData.path},function(data){
-        $scope.info =  data;
-        $scope.gotInfo = true;
-    });
 
     $scope.split = function(text,maxSize,ellipsis){
-        return BrowseState.split(text,5,'');
+        return BrowseState.split(text,maxSize,ellipsis);
+    }
+
+    $scope.reverseSplit = function(text,maxSize,ellipsis){
+        return BrowseState.reverseSplit(text,maxSize,ellipsis);
     }
 
     $scope.getDownloadPath = function(){
@@ -284,9 +318,60 @@ angular.module('landriveBrowser').controller('ViewModalCtrl', function ($scope,
         return BrowseState.isImage($scope.viewData.path);
     }
 
+    $scope.isText = function(){
+        return BrowseState.isText($scope.viewData.path);
+    }
+
+    $scope.isAudio = function(){
+        return BrowseState.isAudio($scope.viewData.path);
+    }
+
+    $scope.cache = $cacheFactory('infoCache' + Math.random());
+
+    $scope.refresh = function(){
+
+        $scope.downloadPath = $scope.getDownloadPath();
+
+        var cacheKey = viewData.driveName+viewData.path+"info";
+
+        var cacheData = $scope.cache.get(cacheKey);
+
+        if (cacheData === undefined) {
+
+            $scope.gotInfo = false;
+
+            Drive.request.info({driveName: viewData.driveName , path: viewData.path},function(data){
+                $scope.cache.put(cacheKey, data);
+                $scope.info =  data;
+                $scope.gotInfo = true;
+            });
+
+        }else{
+            $scope.info = cacheData;
+        }
+
+
+        if(BrowseState.isImage($scope.viewData.path)){
+            $scope.imagePath = $scope.getImageSrcPath();
+        }
+
+        if(BrowseState.isText($scope.viewData.path)){
+            Drive.request.content({driveName: viewData.driveName , path: viewData.path},function(data){
+                $scope.fileContent =  data.Content;
+            });
+        }else{
+            $scope.fileContent =  '';
+        }
+
+
+        $scope.browseIndex = fileList.indexOf($scope.viewData.path);
+
+    }
+
+
 //    $scope.cancel = function () {
 //        $modalInstance.dismiss('cancel');
 //    };
 
-
+    $scope.refresh();
 });
