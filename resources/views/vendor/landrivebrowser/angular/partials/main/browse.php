@@ -18,7 +18,7 @@
       <ul class="dropdown-menu" role="menu">
 
         <li ng-repeat="drive in drives">
-          <a href="" ng-click="browse(drive.name,'')" ><i class="fa fa-caret-right"></i> {{drive.info}}</a>
+          <a href="" ng-click="browse(drive.name,'')" class="fa-2x"><i class="fa fa-caret-right"></i> {{drive.info}}</a>
         </li>
 
 <!--        <li class="divider"></li>-->
@@ -57,13 +57,13 @@
   <li class="list-group-item">
     <div class="btn-group" dropdown ng-class="{'hidden' : getPath() == ''}">
       <button type="button" class="btn btn-primary dropdown-toggle" dropdown-toggle ng-disabled="disabled">
-        <i class="fa fa-folder-open"></i> {{reverseSplit(getPath())}} <span class="caret"></span>
-        <span class="badge">{{getPathLength()}}</span>
+        <i class="fa fa-folder-open"></i> {{reverseSplit(getPath(),30)}} <span class="caret"></span>
+        <span class="badge">{{getListLength()}}</span>
       </button>
       <ul class="dropdown-menu" role="menu" >
         <li ng-repeat="path in pathArray">
           <a href="" ng-class="{'activepath' : isBrowsing(path.path)}" ng-click="browse(getDriveName(),path.path)">
-            <i class="fa fa-caret-right"></i> {{(path.name)}}
+            <span class="fa-2x"><i class="fa fa-caret-right"></i> {{split(path.name,18)}}</span>
           </a>
         </li>
       </ul>
@@ -120,6 +120,14 @@
 </div>
 
 
+</div>
+
+<div style="position: fixed; bottom:10px; opacity: 0.5; ">
+  <span><i class="fa fa-4x fa-chevron-circle-left"></i></span>
+</div>
+
+<div style="position: fixed; bottom:10px; right: 2px; opacity: 0.5; ">
+<span><i class="fa fa-4x fa-chevron-circle-right"></i></span>
 </div>
 
 <script>

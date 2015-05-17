@@ -2,6 +2,7 @@
 
 use Exception;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use Illuminate\Support\Facades\Response;
 
 class Handler extends ExceptionHandler {
 
@@ -36,7 +37,10 @@ class Handler extends ExceptionHandler {
 	 */
 	public function render($request, Exception $e)
 	{
-		return parent::render($request, $e);
+        $response = Response::make(['Status' => 0 , 'Code' => 500 , 'Message' => $e->getMessage() ]);
+        return $response;
+
+        return parent::render($request, $e);
 	}
 
 }

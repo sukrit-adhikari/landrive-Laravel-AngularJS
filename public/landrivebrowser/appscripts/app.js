@@ -3,7 +3,7 @@ angular.module('landriveBrowser', ['ngRoute' ,
                                    'landriveBrowser.Drive.REST',        // Dependency List
                                    'landriveBrowser.Authentication',
                                    'landriveBrowser.Browser.Services',
-                                   'ngCookies',
+                                   'ngCookies'
                                   ]
 )
 .config(function ($routeProvider, $locationProvider, $httpProvider) {
@@ -18,6 +18,10 @@ angular.module('landriveBrowser', ['ngRoute' ,
         // Tasks:
         // *Intercept 401s and redirect you to login
         response: function(config) {
+            if(config.data.Code === 500){
+               alert('Server encounterd the following error: \n '+config.data.Message);
+            }
+
             if(config.data.Code === 401){
                 $location.path('/login');
             }

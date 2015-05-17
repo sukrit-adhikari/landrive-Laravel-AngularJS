@@ -103,8 +103,11 @@ angular.module('landriveBrowser').controller('BrowseCtrl',  function ($scope ,
 
     $scope.pathArray = [];
 
-    $scope.getPathLength = function(){
-        return $scope.pathArray.length;
+    $scope.getListLength = function(){
+        if($scope.data === undefined){
+            return "...";
+        }
+        return ($scope.data.files.length+$scope.data.directories.length);
     }
 
 
@@ -148,15 +151,23 @@ angular.module('landriveBrowser').controller('BrowseCtrl',  function ($scope ,
         BrowseState.gotoLogout();
     }
 
-    $scope.split = function(path){
-        return BrowseState.split(path);
+    $scope.split = function(path , maxSize){
+        return BrowseState.split(path, maxSize);
     }
 
-    $scope.reverseSplit = function(path){
-        return BrowseState.reverseSplit(path);
+    $scope.reverseSplit = function(path,maxSize){
+        return BrowseState.reverseSplit(path,maxSize);
     }
 
     $scope.cache = $cacheFactory('mainCache' + Math.random());
+
+    $scope.leftBrowse = function(){
+
+    }
+
+    $scope.rightBrowse = function(){
+
+    }
 
     $scope.browse = function(driveName,path){
 
@@ -177,19 +188,55 @@ angular.module('landriveBrowser').controller('BrowseCtrl',  function ($scope ,
 
         if (cacheData === undefined) {
             Drive.request.query({driveName: driveName , path: path},function(data){
+
+//                for(i=0 ; i< data.files.length ; i++){
+//                    data.files[i] = $scope.split(data.files[i])
+//                    console.log(data.files[i])
+//                }
+//
+//                for(i=0 ; i< data.directories.length ; i++){
+//                    data.directories[i] = $scope.split(data.directories[i])
+//                }
+
                 $scope.data =  data;
                 $scope.cache.put(cacheKey, $scope.data === undefined ? null : $scope.data);
-                $scope.pathArray = BrowseState.getPathArray($scope.path);
+
             });
         }else{
             $scope.data = cacheData;
         }
 
+        var oldPathPoints = $scope.path.split('\\');
+        var newPathPoints = path.split('\\');
+
+        if(oldPathPoints[0] === newPathPoints[0] // Under same root.
+            &&
+           (    // Browsing Deeper
+                newPathPoints.length > $scope.pathArray.length
+
+                ||
+
+                // Browsing another leaf in same  level
+               (newPathPoints.length === $scope.pathArray.length &&
+                oldPathPoints[(oldPathPoints.length - 1)] != newPathPoints[(newPathPoints.length -1)]
+               )
+
+           )
+           ){
+
+           $scope.pathArray = BrowseState.getPathArray(path);
+
+        }else if(path === ''){
+            $scope.pathArray = BrowseState.getPathArray(path);
+        }else{
+            // do nothing
+        }
+
         $scope.path = path;
 
-
-
     }
+
+
 
     $scope.viewData = {};
 
@@ -341,6 +388,7 @@ angular.module('landriveBrowser').controller('ViewModalCtrl', function ($scope,
             $scope.gotInfo = false;
 
             Drive.request.info({driveName: viewData.driveName , path: viewData.path},function(data){
+
                 $scope.cache.put(cacheKey, data);
                 $scope.info =  data;
                 $scope.gotInfo = true;

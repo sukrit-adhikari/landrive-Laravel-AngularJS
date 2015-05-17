@@ -65,6 +65,8 @@ angular.module('landriveBrowser.Browser.Services', []).service('BrowseState', fu
             }
         }
 
+
+
         this.split = function(path , maximumSize, ellipsis){
             var pathArray = path.split('\\');
             var name = pathArray[(pathArray.length -1 )];
@@ -96,7 +98,6 @@ angular.module('landriveBrowser.Browser.Services', []).service('BrowseState', fu
             var lastExtension = extensionList[(extensionList.length - 1)];
 
             var imageExtensionList = ['jpg' , 'jpeg' , 'png', 'gif'];
-            var musicExtensionList = ['mp3'];
 
             if(imageExtensionList.indexOf(lastExtension.toLowerCase())  != -1){
                 return true;
@@ -113,6 +114,7 @@ angular.module('landriveBrowser.Browser.Services', []).service('BrowseState', fu
             var textExtensionList = [   'bat',
                                         'conf',
                                         'css',
+                                        'html',
                                         'ini',
                                         'java',
                                         'js',
@@ -120,7 +122,8 @@ angular.module('landriveBrowser.Browser.Services', []).service('BrowseState', fu
                                         'log',
                                         'txt',
                                         'php',
-                                        'svg'
+                                        'svg',
+                                        'xml'
                                     ];
 
             if(textExtensionList.indexOf(lastExtension.toLowerCase())  != -1){
@@ -199,5 +202,3 @@ angular.module('landriveBrowser.Browser.Services', []).service('BrowseState', fu
         }
 
 });
-
-

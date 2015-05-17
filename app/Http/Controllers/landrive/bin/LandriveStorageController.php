@@ -166,37 +166,33 @@ class LandriveStorageController extends Controller {
       $fileName = $pathArray[(sizeof($pathArray) - 1) ];
     }
 
-
     if(!Storage::disk($drive)->exists($path)){
       return ['Status' => 0 , 'Message' => 'Does not exist.' , 'Code' => 404 ];
     }
 
-    $fileContent = Storage::disk($drive)->get($path);
-
-    $tmpName = tempnam(sys_get_temp_dir(), 'lan');
-    $file = fopen($tmpName, 'w');
-
-    file_put_contents( $tmpName ,$fileContent);
-    fclose($file);
-
+    $filePath = LandriveSystemController::getFullSystemPath($drive,$path);
+    $tmpName = $filePath;
 
     header('Content-Description: File Transfer');
-//    header('Content-Type: text/csv');
-    header('Content-Disposition: attachment; filename='.$fileName);
+    header('Content-Disposition: attachment; filename="'.$fileName.'"');
     header('Content-Transfer-Encoding: binary');
     header('Expires: 0');
     header('Cache-Control: must-revalidate');
     header('Pragma: public');
     header('Content-Length: ' . filesize($tmpName));
 
+    flush();
     ob_clean();
     flush();
     readfile($tmpName);
 
-    unlink($tmpName);
-
   }
 
+  /**
+   * @param $drive
+   * @param $path
+   * @return array
+   */
   public function info($drive,$path){
 
     return [
@@ -207,10 +203,15 @@ class LandriveStorageController extends Controller {
            ];
   }
 
+  /**
+   * @param $drive
+   * @param $path
+   * @return mixed
+   */
   public function image($drive , $path){
 
     $defaultHeight = 240;
-    $defaultWidth = 300;
+    $defaultWidth = 310;
 
     $imagePath = LandriveSystemController::getFullSystemPath($drive,$path);
 
@@ -237,7 +238,11 @@ class LandriveStorageController extends Controller {
 
   }
 
-
+  /**
+   * @param $drive
+   * @param $path
+   * @return array
+   */
   public function getContent($drive , $path){
     $fileContent = Storage::disk($drive)->get($path);
     return ['Status' => 1 , 'Code' => 200 ,'Message' => 'Content of the file "'.$path.'" loaded.' ,'Content' => $fileContent ];

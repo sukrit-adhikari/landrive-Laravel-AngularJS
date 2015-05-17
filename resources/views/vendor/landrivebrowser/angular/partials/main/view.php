@@ -1,7 +1,7 @@
 <div class="modal-header">
   <p class="modal-title">
     <span><i class="fa fa-cloud"></i> {{viewData.driveName}}
-          <i class="fa fa-terminal"></i> {{  reverseSplit(viewData.path,32,'..')}}
+          <i class="fa fa-terminal"></i> {{reverseSplit(viewData.path,32,'..')}}
           <span ng-if="!gotInfo">
             <i class="fa fa-spinner fa-spin"></i>
           <div>
@@ -28,6 +28,11 @@
 </div>
 
   <div class="modal-body">
+
+  <div ng-if="isText()">
+    <p>{{fileContent}}</p>
+  </div>
+
   <center>
         <div ng-if="isImage()">
            <center><img ng-src="{{imagePath}}" /></center>
@@ -37,9 +42,11 @@
 <!--          <i class="fa fa-spinner fa-spin fa-3x"></i>-->
 <!--        <div>-->
 
-        <div ng-if="isText()">
-          <p>{{fileContent}}</p>
-        </div>
+
+<!--    <video controls autoplay="autoplay">-->
+<!--      <source ng-src="{{downloadPath}}" type="video/mpeg">-->
+<!--      Your browser does not support the audio element.-->
+<!--    </video>-->
 
         <span ng-if="isAudio()">
           <audio controls autoplay="autoplay">

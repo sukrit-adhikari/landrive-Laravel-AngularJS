@@ -6,7 +6,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1 , user-scalable=no">
 
-  <title>Landrive | Mobile</title>
+  <title>Landrive | Browser</title>
 
   <link rel="stylesheet" type="text/css" href="landrivebrowser/bootstrap/css/bootstrap.min.css" />
 
