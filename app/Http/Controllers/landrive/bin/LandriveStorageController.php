@@ -160,6 +160,8 @@ class LandriveStorageController extends Controller {
    * @return array
    */
   public function download($drive,$path,$fileName =  null){
+    define('CHUNK_SIZE', 1024*1024);
+    $downloadResponse = ['Status' => 0 , 'Code' => 500 , 'Message' => 'Server encountered some problem.'];
 
     if($fileName == null){
       $pathArray = explode("\\",$path);
@@ -181,10 +183,23 @@ class LandriveStorageController extends Controller {
     header('Pragma: public');
     header('Content-Length: ' . filesize($tmpName));
 
+    ob_flush();
     flush();
-    ob_clean();
-    flush();
-    readfile($tmpName);
+
+
+
+    $handle = fopen($tmpName, 'rb');
+
+    if ($handle === false) {
+      return $downloadResponse;
+    }
+
+    while (!feof($handle)) {
+      $buffer = fread($handle, CHUNK_SIZE);
+      echo $buffer;
+      ob_flush();
+      flush();
+    }
 
   }
 

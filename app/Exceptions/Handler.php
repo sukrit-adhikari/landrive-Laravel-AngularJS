@@ -37,7 +37,12 @@ class Handler extends ExceptionHandler {
 	 */
 	public function render($request, Exception $e)
 	{
-        $response = Response::make(['Status' => 0 , 'Code' => 500 , 'Message' => $e->getMessage() ]);
+        $message = $e->getMessage();
+        if($message == ''){
+          $message = 'Something went wrong.';
+        }
+
+        $response = Response::make(['Status' => 0 , 'Code' => 500 , 'Message' => $message ]);
         return $response;
 
         return parent::render($request, $e);

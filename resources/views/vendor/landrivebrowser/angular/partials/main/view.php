@@ -30,7 +30,7 @@
   <div class="modal-body">
 
   <div ng-if="isText()">
-    <p>{{fileContent}}</p>
+    <pre>{{fileContent}}</pre>
   </div>
 
   <center>

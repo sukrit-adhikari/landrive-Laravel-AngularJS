@@ -45,6 +45,13 @@ class LanDriveSPAController extends Controller {
       return view('vendor\landrivebrowser\angular\partials\main\view');
     }
 
+    /**
+     * @return \Illuminate\View\View
+     */
+    public function getPartialAdd(){
+      return view('vendor\landrivebrowser\angular\partials\main\add');
+    }
+
 
     /**
      * @return \Illuminate\View\View

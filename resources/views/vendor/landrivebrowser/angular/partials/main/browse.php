@@ -43,6 +43,8 @@
     </ul>
   </div>
 
+
+
   <form class="navbar-search" ng-class="{'hidden' : !searchBarActive}">
     <input class="form-control" ng-model="searchQuery" placeholder="Search">
   </form>
@@ -55,7 +57,7 @@
 <ul>
   <!--  PathList-->
   <li class="list-group-item">
-    <div class="btn-group" dropdown ng-class="{'hidden' : getPath() == ''}">
+    <div class="btn-group" dropdown ng-class="{'hidden' : browsingPath == ''}">
       <button type="button" class="btn btn-primary dropdown-toggle" dropdown-toggle ng-disabled="disabled">
         <i class="fa fa-folder-open"></i> {{reverseSplit(browsingPath,30)}} <span class="caret"></span>
         <span class="badge">{{getListLength()}}</span>
@@ -68,7 +70,7 @@
         </li>
       </ul>
     </div>
-    <div ng-class="{'hidden' : getPath() != ''}">
+    <div ng-class="{'hidden' : browsingPath != ''}">
       <button type="button" class="btn btn-primary"  ng-disabled="disabled">
         <i class="fa fa-chevron-circle-down"></i> {{topBrowseMessage}}
       </button>
@@ -98,11 +100,11 @@
     </span>
   </li>
   <!--  File List-->
-  <li ng-click="view(getDriveName(),file)" class="list-group-item" ng-repeat="file in data.files | filter:searchQuery">
-    <span>
+  <li class="list-group-item" ng-repeat="file in data.files | filter:searchQuery">
+    <span ng-click="view(getDriveName(),file)">
     <i class="fa fa-file"></i>
       <a href="">
-      <span> {{ split(file)}} </span>
+      <span> {{ split(file,40)}} </span>
       </a>
     </span>
 
@@ -122,6 +124,9 @@
 
 </div>
 
+
+<div ng-if="isDriveSelected()">
+
 <div style="position: fixed; bottom:20px; left: 10px; opacity: 0.5; ">
   <span><i ng-click="leftBrowse()" class="fa fa-4x fa-chevron-circle-left browse-navigator"></i></span>
 </div>
@@ -129,6 +134,13 @@
 <div style="position: fixed; bottom:20px; right: 10px; opacity: 0.5; ">
 <span><i ng-click="rightBrowse()" class="fa fa-4x fa-chevron-circle-right browse-navigator"></i></span>
 </div>
+
+<div style="position: fixed; bottom:75px; right: 10px; opacity: 0.5; ">
+  <span><i ng-click="add(getDriveName(),browsingPath)" class="fa fa-4x fa-plus-circle browse-navigator"></i></span>
+</div>
+
+</div>
+
 
 <script>
 //  jQuery("body > div > div > div").slimscroll({height:'450px'});

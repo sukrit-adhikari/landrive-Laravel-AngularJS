@@ -212,15 +212,6 @@ angular.module('landriveBrowser').controller('BrowseCtrl',  function ($scope ,
         if (cacheData === undefined) {
             Drive.request.query({driveName: driveName , path: path},function(data){
 
-//                for(i=0 ; i< data.files.length ; i++){
-//                    data.files[i] = $scope.split(data.files[i])
-//                    console.log(data.files[i])
-//                }
-//
-//                for(i=0 ; i< data.directories.length ; i++){
-//                    data.directories[i] = $scope.split(data.directories[i])
-//                }
-
                 $scope.data =  data;
                 $scope.cache.put(cacheKey, $scope.data === undefined ? null : $scope.data);
 
@@ -229,14 +220,11 @@ angular.module('landriveBrowser').controller('BrowseCtrl',  function ($scope ,
             $scope.data = cacheData;
         }
 
-        if($scope.path.indexOf(path) === -1 || path === ''){
+        if($scope.path.indexOf(path) === -1 && path !== ''){
             $scope.pathArray = BrowseState.getPathArray(path);
 
             $scope.path = path;
         }
-
-
-
 
     }
 
@@ -280,6 +268,49 @@ angular.module('landriveBrowser').controller('BrowseCtrl',  function ($scope ,
 //            $log.info('Modal dismissed at: ' + new Date());
         });
     };
+
+
+    $scope.addData = {};
+
+    $scope.setAddData = function(driveNameArg , pathArg){
+        var addDataInstance = {driveName : driveNameArg, path : pathArg};
+        $scope.addData = addDataInstance;
+    }
+
+    $scope.getAddData = function(){
+        return $scope.addData;
+    }
+
+    $scope.add = function(driveNameArg , pathArg ){
+        $scope.setAddData(driveNameArg, pathArg);
+        $scope.addInModal();
+    }
+
+    $scope.addInModal = function () {
+
+        var modalInstance = $modal.open({
+            templateUrl: 'mobile/angular/partials/add',
+            controller: 'AddModalCtrl',
+            size: 'lg',
+            resolve: {
+                addData: function () {
+                    return $scope.getAddData();
+                }
+            }
+        });
+
+        modalInstance.result.then(function (selectedItem) {
+
+        }, function () {
+//            $log.info('Modal dismissed at: ' + new Date());
+        });
+    };
+
+
+
+
+
+
 
     $scope.browse($scope.driveName ,$scope.path) ; // FIRST Browse
 
@@ -426,4 +457,37 @@ angular.module('landriveBrowser').controller('ViewModalCtrl', function ($scope,
 //    };
 
     $scope.refresh();
+});
+
+
+
+
+angular.module('landriveBrowser').controller('AddModalCtrl', function ($scope,
+                                                                       $modalInstance,
+                                                                       Drive,
+                                                                       $cacheFactory,
+                                                                       BrowseState,
+                                                                       addData) {
+
+    $scope.addData = addData;
+
+
+    $scope.split = function(text,maxSize,ellipsis){
+        return BrowseState.split(text,maxSize,ellipsis);
+    }
+
+    $scope.reverseSplit = function(text,maxSize,ellipsis){
+        return BrowseState.reverseSplit(text,maxSize,ellipsis);
+    }
+
+    $scope.ok = function () {
+        $modalInstance.close();
+    };
+
+
+
+//    $scope.cancel = function () {
+//        $modalInstance.dismiss('cancel');
+//    };
+
 });
