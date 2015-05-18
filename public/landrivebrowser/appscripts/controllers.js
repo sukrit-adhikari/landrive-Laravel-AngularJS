@@ -89,6 +89,8 @@ angular.module('landriveBrowser').controller('BrowseCtrl',  function ($scope ,
 
     $scope.path = '';
 
+    $scope.browsingPath = '';
+
     $scope.driveName = locationParams.driveName;
 
     $scope.searchBarActive = false;
@@ -162,11 +164,32 @@ angular.module('landriveBrowser').controller('BrowseCtrl',  function ($scope ,
     $scope.cache = $cacheFactory('mainCache' + Math.random());
 
     $scope.leftBrowse = function(){
+        for(i = 0 ; i< $scope.pathArray.length ; i++){
 
+            if($scope.isBrowsing($scope.pathArray[i].path)){
+                if(i === 0 ){
+                    // Reached the Left End .. Do nothing
+                    $scope.browse($scope.getDriveName() , '')
+                    break;
+                }else{
+                    $scope.browse($scope.getDriveName() , $scope.pathArray[(i-1)].path)
+                    break;
+                }
+            }
+        }
     }
 
     $scope.rightBrowse = function(){
-
+        for(i = 0 ; i< $scope.pathArray.length ; i++){
+            if($scope.isBrowsing($scope.pathArray[i].path)){
+                if(i === ($scope.pathArray.length - 1) ){
+                    // Reached the Right End .. Do nothing
+                }else{
+                    $scope.browse($scope.getDriveName() , $scope.pathArray[(i+1)].path)
+                    break;
+                }
+            }
+        }
     }
 
     $scope.browse = function(driveName,path){
@@ -206,33 +229,14 @@ angular.module('landriveBrowser').controller('BrowseCtrl',  function ($scope ,
             $scope.data = cacheData;
         }
 
-        var oldPathPoints = $scope.path.split('\\');
-        var newPathPoints = path.split('\\');
-
-        if(oldPathPoints[0] === newPathPoints[0] // Under same root.
-            &&
-           (    // Browsing Deeper
-                newPathPoints.length > $scope.pathArray.length
-
-                ||
-
-                // Browsing another leaf in same  level
-               (newPathPoints.length === $scope.pathArray.length &&
-                oldPathPoints[(oldPathPoints.length - 1)] != newPathPoints[(newPathPoints.length -1)]
-               )
-
-           )
-           ){
-
-           $scope.pathArray = BrowseState.getPathArray(path);
-
-        }else if(path === ''){
+        if($scope.path.indexOf(path) === -1 || path === ''){
             $scope.pathArray = BrowseState.getPathArray(path);
-        }else{
-            // do nothing
+
+            $scope.path = path;
         }
 
-        $scope.path = path;
+
+
 
     }
 

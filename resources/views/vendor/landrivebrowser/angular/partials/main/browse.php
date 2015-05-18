@@ -57,7 +57,7 @@
   <li class="list-group-item">
     <div class="btn-group" dropdown ng-class="{'hidden' : getPath() == ''}">
       <button type="button" class="btn btn-primary dropdown-toggle" dropdown-toggle ng-disabled="disabled">
-        <i class="fa fa-folder-open"></i> {{reverseSplit(getPath(),30)}} <span class="caret"></span>
+        <i class="fa fa-folder-open"></i> {{reverseSplit(browsingPath,30)}} <span class="caret"></span>
         <span class="badge">{{getListLength()}}</span>
       </button>
       <ul class="dropdown-menu" role="menu" >
@@ -122,12 +122,12 @@
 
 </div>
 
-<div style="position: fixed; bottom:10px; opacity: 0.5; ">
-  <span><i class="fa fa-4x fa-chevron-circle-left"></i></span>
+<div style="position: fixed; bottom:20px; left: 10px; opacity: 0.5; ">
+  <span><i ng-click="leftBrowse()" class="fa fa-4x fa-chevron-circle-left browse-navigator"></i></span>
 </div>
 
-<div style="position: fixed; bottom:10px; right: 2px; opacity: 0.5; ">
-<span><i class="fa fa-4x fa-chevron-circle-right"></i></span>
+<div style="position: fixed; bottom:20px; right: 10px; opacity: 0.5; ">
+<span><i ng-click="rightBrowse()" class="fa fa-4x fa-chevron-circle-right browse-navigator"></i></span>
 </div>
 
 <script>
