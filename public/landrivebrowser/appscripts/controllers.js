@@ -81,6 +81,8 @@ angular.module('landriveBrowser').controller('BrowseCtrl',  function ($scope ,
                                                                       $cacheFactory ,
                                                                       Drive ,
                                                                       $modal,
+                                                                      MusicPlayer,
+                                                                      RemoteMusicPlayer,
                                                                       BrowseState) {
 
     var locationParams = $location.search();
@@ -95,12 +97,11 @@ angular.module('landriveBrowser').controller('BrowseCtrl',  function ($scope ,
 
     $scope.searchBarActive = false;
 
-    $scope.showSearchBar = function(){
-        $scope.searchBarActive = true;
-    }
-
-    $scope.hideSearchBar = function(){
-        $scope.searchBarActive = false;
+    $scope.toggleSearchBar = function(){
+        $scope.searchBarActive = !$scope.searchBarActive;
+        if(!$scope.searchBarActive){
+            $scope.searchQuery = '';
+        }
     }
 
     $scope.pathArray = [];
@@ -163,6 +164,11 @@ angular.module('landriveBrowser').controller('BrowseCtrl',  function ($scope ,
 
     $scope.cache = $cacheFactory('mainCache' + Math.random());
 
+    $scope.clearCache = function(){
+        $scope.cache = $cacheFactory('mainCache'+ Math.random() + Math.random());
+        alert('Browse Cache cleared.\nPlease reload to clear all cache.')
+    }
+
     $scope.leftBrowse = function(){
         for(i = 0 ; i< $scope.pathArray.length ; i++){
 
@@ -188,6 +194,8 @@ angular.module('landriveBrowser').controller('BrowseCtrl',  function ($scope ,
                     $scope.browse($scope.getDriveName() , $scope.pathArray[(i+1)].path)
                     break;
                 }
+            }else if($scope.isBrowsing('') && $scope.pathArray.length > 0 ){
+                    $scope.browse($scope.getDriveName() , $scope.pathArray[0].path)
             }
         }
     }
@@ -220,6 +228,7 @@ angular.module('landriveBrowser').controller('BrowseCtrl',  function ($scope ,
             $scope.data = cacheData;
         }
 
+
         if($scope.path.indexOf(path) === -1 && path !== ''){
             $scope.pathArray = BrowseState.getPathArray(path);
 
@@ -228,7 +237,9 @@ angular.module('landriveBrowser').controller('BrowseCtrl',  function ($scope ,
 
     }
 
-
+    $scope.playRemoteMusicPlayer = function(){
+        RemoteMusicPlayer.play();
+    }
 
     $scope.viewData = {};
 
@@ -307,14 +318,43 @@ angular.module('landriveBrowser').controller('BrowseCtrl',  function ($scope ,
     };
 
 
+    $scope.remoteControlRemoteMusicPlayer = function(){
+        $scope.remoteControlInModal();
+    }
 
+    $scope.remoteControlInModal = function () {
 
+        var modalInstance = $modal.open({
+            templateUrl: 'mobile/angular/partials/remote',
+            controller: 'RemoteModalCtrl',
+            size: 'lg'
+//            resolve: {
+//                addData: function () {
+//                    return $scope.getAddData();
+//                }
+//            }
+        });
 
+        modalInstance.result.then(function (selectedItem) {
 
+        }, function () {
+//            $log.info('Modal dismissed at: ' + new Date());
+        });
+    };
 
     $scope.browse($scope.driveName ,$scope.path) ; // FIRST Browse
 
 });
+
+
+angular.module('landriveBrowser').controller('RemoteModalCtrl', function ($scope,
+                                                                          $modalInstance
+                                                                         ){
+
+
+
+});
+
 
 
 angular.module('landriveBrowser').controller('ViewModalCtrl', function ($scope,
@@ -411,6 +451,8 @@ angular.module('landriveBrowser').controller('ViewModalCtrl', function ($scope,
     $scope.cache = $cacheFactory('infoCache' + Math.random());
 
     $scope.refresh = function(){
+
+        $scope.fileContent =  '<Landrive>\nLoading...\nPlease Wait\n</Landrive>';
 
         $scope.downloadPath = $scope.getDownloadPath();
 

@@ -2249,6 +2249,9 @@ fieldset[disabled] .btn-warning.active {
   background-color: #a30000;
   border-color: #8f0000;
 }
+
+
+
 .btn-danger:active,
 .btn-danger.active,
 .open .dropdown-toggle.btn-danger {
@@ -6299,3 +6302,16 @@ opacity: 0.3;
 .browse-navigator{
 color:#2a9fd6;
 }
+
+
+.animate.ng-enter
+{
+    transition:0.75s,
+    opacity: 0;
+}
+
+.animate.ng-enter-active
+{
+    opacity: 1;
+}
+

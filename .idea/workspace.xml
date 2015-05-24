@@ -4,11 +4,19 @@
     <list default="true" id="690900b1-95e0-431b-9690-571cb9884ab3" name="Default" comment="">
       <change type="DELETED" beforePath="C:\xampp\htdocs\landrive\resources\views\vendor\landrivebrowser\angular\partials\main\viewfile.php" afterPath="" />
       <change type="DELETED" beforePath="C:\xampp\htdocs\landrive\vendor\compiled.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Exceptions/Handler.php" afterPath="$PROJECT_DIR$/app/Exceptions/Handler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/landrivedatabase/landrivedatabase.sqlite" afterPath="$PROJECT_DIR$/database/landrivedatabase/landrivedatabase.sqlite" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2015_05_11_1232342_create_drive_tables.php" afterPath="$PROJECT_DIR$/database/migrations/2015_05_11_1232342_create_drive_tables.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/LanDriveSPAController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/LanDriveSPAController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Landrive/Response/LandriveResponseController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Landrive/Response/LandriveResponseController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Landrive/Bin/LandriveStorageController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Landrive/Bin/LandriveStorageController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Landrive/Bin/LandriveSystemController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Landrive/Bin/LandriveSystemController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/landrivebrowser/appscripts/app.js" afterPath="$PROJECT_DIR$/public/landrivebrowser/appscripts/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/vendor/landrivebrowser/angular/partials/main/browse.php" afterPath="$PROJECT_DIR$/resources/views/vendor/landrivebrowser/angular/partials/main/browse.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/landrivebrowser/appscripts/controllers.js" afterPath="$PROJECT_DIR$/public/landrivebrowser/appscripts/controllers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/landrivebrowser/appscripts/helpers.js" afterPath="$PROJECT_DIR$/public/landrivebrowser/appscripts/helpers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/vendor/landrivebrowser/landrivebrowser.php" afterPath="$PROJECT_DIR$/resources/views/vendor/landrivebrowser/landrivebrowser.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/landrivebrowser/css/local.css" afterPath="$PROJECT_DIR$/public/landrivebrowser/css/local.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/vendor/landrivebrowser/angular/partials/main/view.php" afterPath="$PROJECT_DIR$/resources/views/vendor/landrivebrowser/angular/partials/main/view.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -39,97 +47,7 @@
     <favorites_list name="landrive" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="view.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/vendor/landrivebrowser/angular/partials/main/view.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="19" selection-start="776" selection-end="776" vertical-scroll-proportion="-11.769231" vertical-offset="238" max-vertical-offset="1428">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LanDriveSPAController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/LanDriveSPAController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="67" selection-start="1223" selection-end="1223" vertical-scroll-proportion="-16.346153" vertical-offset="442" max-vertical-offset="1275">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="browse.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/vendor/landrivebrowser/angular/partials/main/browse.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="102" column="6" selection-start="3356" selection-end="3356" vertical-scroll-proportion="-66.69231" vertical-offset="0" max-vertical-offset="2584">
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#1;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="controllers.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/landrivebrowser/appscripts/controllers.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="296" column="44" selection-start="8467" selection-end="8467" vertical-scroll-proportion="0.0" vertical-offset="4492" max-vertical-offset="8466">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="add.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/vendor/landrivebrowser/angular/partials/main/add.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="93" selection-start="411" selection-end="411" vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="1105">
-              <folding>
-                <element signature="n#style#0;n#span#0;n#div#2;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="helpers.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/landrivebrowser/appscripts/helpers.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="177" column="0" selection-start="5456" selection-end="5456" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3553">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DriveController.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Landrive/Driveapi/DriveController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="16" selection-start="848" selection-end="848" vertical-scroll-proportion="0.29209623" vertical-offset="0" max-vertical-offset="2533">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/landrivebrowser/appscripts/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="2" selection-start="621" selection-end="621" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LandriveStorageController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Landrive/Bin/LandriveStorageController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="178" column="30" selection-start="4798" selection-end="4816" vertical-scroll-proportion="-9.961538" vertical-offset="2767" max-vertical-offset="4607">
-              <folding>
-                <element signature="e#52#88#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -148,22 +66,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
+        <option value="$PROJECT_DIR$/app/Drive.php" />
         <option value="$PROJECT_DIR$/database/migrations/2015_05_11_1232342_create_drive_tables.php" />
-        <option value="$PROJECT_DIR$/LanDrive.Server.Settings.php" />
-        <option value="$PROJECT_DIR$/resources/views/vendor/landrivebrowser/landrivebrowser.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Landrive/Response/LandriveResponseController.php" />
-        <option value="$PROJECT_DIR$/public/landrivebrowser/appscripts/helpers.js" />
-        <option value="$PROJECT_DIR$/public/landrivebrowser/css/local.css" />
-        <option value="$PROJECT_DIR$/public/landrivebrowser/appscripts/app.js" />
-        <option value="$PROJECT_DIR$/app/Exceptions/Handler.php" />
-        <option value="$PROJECT_DIR$/vendor/symfony/http-foundation/Symfony/Component/HttpFoundation/Response.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Landrive/Bin/LandriveStorageController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Landrive/Bin/LandriveSystemController.php" />
+        <option value="$PROJECT_DIR$/public/landrivebrowser/js/howler.js" />
+        <option value="$PROJECT_DIR$/database/migrations/2015_04_20_082822_create_remote_music_player.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/LandriveRemoteMusicPlayerController.php" />
+        <option value="$PROJECT_DIR$/resources/views/vendor/landrivebrowser/angular/partials/main/browse.php" />
+        <option value="$PROJECT_DIR$/public/landrivebrowser/appscripts/controllers.js" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/LanDriveSPAController.php" />
-        <option value="$PROJECT_DIR$/public/landrivebrowser/appscripts/controllers.js" />
-        <option value="$PROJECT_DIR$/resources/views/vendor/landrivebrowser/angular/partials/main/add.php" />
+        <option value="$PROJECT_DIR$/resources/views/vendor/landrivebrowser/angular/partials/main/remote.php" />
         <option value="$PROJECT_DIR$/resources/views/vendor/landrivebrowser/angular/partials/main/view.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Landrive/Bin/LandriveStorageController.php" />
-        <option value="$PROJECT_DIR$/resources/views/vendor/landrivebrowser/angular/partials/main/browse.php" />
+        <option value="$PROJECT_DIR$/public/landrivebrowser/appscripts/helpers.js" />
+        <option value="$PROJECT_DIR$/resources/views/vendor/landrivebrowser/landrivebrowser.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Landrive/RemoteMusicPlayer/LandriveRemoteMusicPlayerController.php" />
       </list>
     </option>
   </component>
@@ -423,6 +341,58 @@
               <option name="myItemId" value="landrivebrowser" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="landrive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="landrive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="landrivebrowser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="font-awesome" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="landrive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="landrive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="landrivebrowser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="font-awesome" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -463,6 +433,24 @@
               <option name="myItemId" value="landrivebrowser" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="landrive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="landrive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="landrivebrowser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="appscripts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
@@ -478,7 +466,93 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="landrivebrowser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="landrive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="landrive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="database" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="landrive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="landrive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="database" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="migrations" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="landrive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="landrive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="landrive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="landrive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="landrive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="landrive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Providers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -545,6 +619,66 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Landrive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Token" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="landrive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="landrive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Http" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Landrive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="landrive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="landrive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Http" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Landrive" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RemoteMusicPlayer" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -578,36 +712,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="landrive" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="landrive" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Landrive" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Bin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -615,12 +719,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="SearchEverywhereHistoryKey" value="Illuminate\supp&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="SearchEverywhereHistoryKey" value="Illuminate\supp&#9;null&#9;null" />
     <property name="options.lastSelected" value="preferences.sourceCode.PHP" />
     <property name="FullScreen" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PublishConfig" serverName="Landrive" serverId="2c74bd0e-c6da-4365-a0f6-b488172eec9b">
     <servers>
@@ -683,15 +787,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="776" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32766616" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32921174" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21407185" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298217" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28359374" sideWeight="0.78592813" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2359375" sideWeight="0.52095807" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -700,6 +803,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4790419" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32921174" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -730,121 +834,115 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/debug/Symfony/Component/Debug/ExceptionHandler.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Landrive/Bin/LandriveStorageController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="229" column="27" selection-start="7608" selection-end="7608" vertical-scroll-proportion="-2.039801" vertical-offset="5004" max-vertical-offset="8075" />
+        <state line="22" column="52" selection-start="748" selection-end="748" vertical-scroll-proportion="-0.26288658" vertical-offset="374" max-vertical-offset="4522" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/vendor/landrivebrowser/landrivebrowser.php">
+    <entry file="file://$PROJECT_DIR$/config/filesystems.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="27" selection-start="227" selection-end="227" vertical-scroll-proportion="0.0" vertical-offset="574" max-vertical-offset="1190">
+        <state line="53" column="54" selection-start="1417" selection-end="1417" vertical-scroll-proportion="0.32130584" vertical-offset="714" max-vertical-offset="2040" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Landrive/Driveapi/DriveController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2533" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Schema/Blueprint.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="655" column="26" selection-start="14565" selection-end="14565" vertical-scroll-proportion="0.5647059" vertical-offset="10748" max-vertical-offset="14994">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_5.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="618" column="6" selection-start="18393" selection-end="18393" vertical-scroll-proportion="0.23024055" vertical-offset="10372" max-vertical-offset="19057">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Landrive/Token/LanDriveTokenController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="0" selection-start="1328" selection-end="1328" vertical-scroll-proportion="0.3880597" vertical-offset="684" max-vertical-offset="2516" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2015_04_20_082822_create_remote_music_player.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="33" selection-start="780" selection-end="780" vertical-scroll-proportion="-13.076923" vertical-offset="136" max-vertical-offset="850">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/http-foundation/Symfony/Component/HttpFoundation/Response.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/vendor/landrivebrowser/angular/partials/main/remote.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="400" column="5" selection-start="13629" selection-end="13629" vertical-scroll-proportion="0.4692483" vertical-offset="6475" max-vertical-offset="21658">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/landrivebrowser/css/local.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6299" column="14" selection-start="132784" selection-end="132784" vertical-scroll-proportion="0.8388158" vertical-offset="106573" max-vertical-offset="107202">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Exceptions/Handler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="8" selection-start="848" selection-end="848" vertical-scroll-proportion="0.4857143" vertical-offset="340" max-vertical-offset="935">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/LanDriveSPAController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="67" selection-start="1223" selection-end="1223" vertical-scroll-proportion="-16.346153" vertical-offset="442" max-vertical-offset="1275">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/landrivebrowser/appscripts/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="2" selection-start="621" selection-end="621" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/landrivebrowser/appscripts/controllers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="296" column="44" selection-start="8467" selection-end="8467" vertical-scroll-proportion="0.0" vertical-offset="4492" max-vertical-offset="8466">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/vendor/landrivebrowser/angular/partials/main/add.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="93" selection-start="411" selection-end="411" vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="1105">
+        <state line="30" column="105" selection-start="581" selection-end="682" vertical-scroll-proportion="-17.653847" vertical-offset="51" max-vertical-offset="646">
           <folding>
             <element signature="n#style#0;n#span#0;n#div#2;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/landrivebrowser/appscripts/helpers.js">
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="177" column="0" selection-start="5456" selection-end="5456" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3553">
+        <state line="78" column="87" selection-start="2526" selection-end="2526" vertical-scroll-proportion="0.7079038" vertical-offset="761" max-vertical-offset="1343">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Landrive/Bin/LandriveStorageController.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/LanDriveSPAController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="178" column="30" selection-start="4798" selection-end="4816" vertical-scroll-proportion="-9.961538" vertical-offset="2767" max-vertical-offset="4607">
-          <folding>
-            <element signature="e#52#88#0" expanded="true" />
-          </folding>
+        <state line="59" column="63" selection-start="1391" selection-end="1391" vertical-scroll-proportion="0.2857143" vertical-offset="833" max-vertical-offset="1428">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/landrivebrowser/appscripts/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="351" column="75" selection-start="10294" selection-end="10294" vertical-scroll-proportion="0.0" vertical-offset="5440" max-vertical-offset="9180">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/vendor/landrivebrowser/landrivebrowser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="67" selection-start="766" selection-end="766" vertical-scroll-proportion="0.42857143" vertical-offset="51" max-vertical-offset="1224">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/vendor/landrivebrowser/angular/partials/main/browse.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="102" column="6" selection-start="3356" selection-end="3356" vertical-scroll-proportion="-66.69231" vertical-offset="0" max-vertical-offset="2584">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#1;n#!!top" expanded="true" />
-          </folding>
+        <state line="155" column="0" selection-start="4920" selection-end="4920" vertical-scroll-proportion="0.41580757" vertical-offset="2393" max-vertical-offset="2975">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Landrive/RemoteMusicPlayer/LandriveRemoteMusicPlayerController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="81" selection-start="1870" selection-end="1870" vertical-scroll-proportion="1.54811" vertical-offset="0" max-vertical-offset="1071">
+        <state line="19" column="30" selection-start="390" selection-end="390" vertical-scroll-proportion="0.20672269" vertical-offset="166" max-vertical-offset="833">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/vendor/landrivebrowser/angular/partials/main/view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="19" selection-start="776" selection-end="776" vertical-scroll-proportion="-11.769231" vertical-offset="238" max-vertical-offset="1428">
-          <folding />
+        <state line="70" column="42" selection-start="1694" selection-end="1694" vertical-scroll-proportion="1.9318181" vertical-offset="0" max-vertical-offset="1751">
+          <folding>
+            <element signature="n#style#0;n#span#0;n#span#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#2;n#span#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Landrive/Driveapi/DriveController.php">
+    <entry file="file://$PROJECT_DIR$/public/landrivebrowser/appscripts/helpers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="16" selection-start="848" selection-end="848" vertical-scroll-proportion="0.29209623" vertical-offset="0" max-vertical-offset="2533">
-          <folding />
+        <state line="280" column="0" selection-start="8958" selection-end="8958" vertical-scroll-proportion="0.15264797" vertical-offset="1262" max-vertical-offset="1904">
+          <folding>
+            <element signature="e#128#946#0" expanded="false" />
+            <element signature="e#1045#1673#0" expanded="false" />
+            <element signature="e#1804#6765#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

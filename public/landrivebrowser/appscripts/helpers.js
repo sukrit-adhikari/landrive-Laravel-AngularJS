@@ -6,6 +6,7 @@ angular.module('landriveBrowser.Drive.REST', ['ngResource']).service('Drive', fu
         query:  {method:'GET' , params:{path: '@path'}, actions:{cache:$cacheFactory} , isArray:false},
         info:   {method:'GET' , params:{path: '@path', info:'y'}, actions:{cache:$cacheFactory} , isArray:false},
         content:{method:'GET' , params:{path: '@path', content:'y'}, actions:{cache:$cacheFactory} , isArray:false},
+        createFolder:{method:'{POST' , params:{path: '@path', type:'@directory' , name:'@name'}, actions:{cache:$cacheFactory} , isArray:false},
         post:   {method:'POST'},
         update: {method:'PUT'},
         remove: {method:'DELETE'},
@@ -36,13 +37,8 @@ angular.module('landriveBrowser.Authentication', []).factory('Authentication', f
     };
 });
 
-
-
-
 // Services
 // are singletons
-
-
 angular.module('landriveBrowser.Browser.Services', []).service('BrowseState', function($location){
 
         this.reverseSplit = function(path ,maximumSize ){
@@ -122,6 +118,7 @@ angular.module('landriveBrowser.Browser.Services', []).service('BrowseState', fu
                                         'log',
                                         'txt',
                                         'php',
+                                        'sql',
                                         'svg',
                                         'xml'
                                     ];
@@ -188,7 +185,15 @@ angular.module('landriveBrowser.Browser.Services', []).service('BrowseState', fu
             return downloadPath;
         }
 
+        this.getStreamPath = function(driveName , path){
+            return this.getDownloadPath(driveName,path);
+        }
+
         this.timeConverter = function(UNIX_timestamp){
+            if(UNIX_timestamp === undefined){
+                UNIX_timestamp = 4100720399;
+            }
+
             var a = new Date(UNIX_timestamp*1000);
             var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
             var year = a.getFullYear();
@@ -202,3 +207,101 @@ angular.module('landriveBrowser.Browser.Services', []).service('BrowseState', fu
         }
 
 });
+
+// Define a simple audio service
+angular.module('landriveBrowser.Music.Services', [])
+    .service('MusicPlayer',function ($document) {
+        var audioElement = $document[0].createElement('audio'); // <-- Magic trick here
+        return {
+            audioElement: audioElement,
+
+            play: function(path) {
+                audioElement.src = path;
+                audioElement.play();     //  <-- Thats all you need
+            }
+            // Exersise for the reader - extend this service to include other functions
+            // like pausing, etc, etc.
+        }
+    })
+    .service('RemoteMusicPlayerData',function ($http , BrowseState) {
+
+    })
+    .service('Remote',function ($http) {
+        var volume = 1;
+        var playposition = 0 ;
+        var seekposition = 0;
+        var playlistArray = [];
+
+        $http.get('/api/remotemusicplayer').
+            success(function(data, status, headers, config) {
+                // this callback will be called asynchronously
+                // when the response is available
+
+                var musicURL = [];
+                var remotemusicplayer = data.remotemusicplayer;
+                if(remotemusicplayer.length === 0){
+                    // There is not data in server
+                }else{
+
+                }
+
+            }).
+            error(function(data, status, headers, config) {
+                // called asynchronously if an error occurs
+                // or server returns response with an error status.
+            });
+
+        this.increaseVolume = function(){
+            if(volume < 1){
+                volume = volume + 1;
+            }
+
+            return volume;
+        }
+
+        this.decreaseVolume = function(){
+            if(volume > 0){
+                volume = volume - 1;
+            }
+
+            return volume;
+        }
+
+        this.addToPlaylist = function(driveName , path){
+            var newItem = {drive:driveName , path: path};
+            playlistArray.push(newItem);
+        }
+
+
+    })
+    .service('RemoteMusicPlayer',function ($http , $interval , MusicPlayer , RemoteMusicPlayerData , BrowseState) {
+        // This function is used by LISTENER
+
+        var on = false;
+
+        this.play = function(){
+            $interval(function(){
+                $http.get('/api/remotemusicplayer').
+                    success(function(data, status, headers, config) {
+                        // this callback will be called asynchronously
+                        // when the response is available
+
+                        var musicURL = [];
+                        var remotemusicplayer = data.remotemusicplayer;
+                        for(i = 0 ; i < remotemusicplayer.length ; i ++){
+                            playlist = JSON.parse(remotemusicplayer[i].playlist);
+                            for(j = 0 ; j < playlist.length ; j++){
+                                musicURL.push(BrowseState.getStreamPath(playlist[j].drive , playlist[j].path))
+                            }
+                            break;
+                        }
+                        MusicPlayer.play(musicURL[0])
+                    }).
+                    error(function(data, status, headers, config) {
+                        // called asynchronously if an error occurs
+                        // or server returns response with an error status.
+                    });
+            }, 2000 , 1 )
+        }
+
+    });

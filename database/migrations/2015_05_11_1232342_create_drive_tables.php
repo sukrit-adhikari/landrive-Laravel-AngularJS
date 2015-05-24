@@ -30,6 +30,7 @@ class CreateDriveTables extends Migration {
       $table->foreign('referencedrive')
         ->references('driveid')->on('drives')
         ->onDelete('cascade');
+      $table->timestamps();
     });
 
 

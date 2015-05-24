@@ -15,12 +15,14 @@
   <link rel="stylesheet" type="text/css" href="landrivebrowser/css/local.css" />
 
   <script type="text/javascript" src="landrivebrowser/js/jquery-1.10.2.min.js"></script>
-  <script type="text/javascript" src="landrivebrowser/js/jquery.slimscroll.min.js"></script>
+<!--  <script type="text/javascript" src="landrivebrowser/js/howler.js"></script>-->
+<!--  <script type="text/javascript" src="landrivebrowser/js/jquery.slimscroll.min.js"></script>-->
 
   <script type="text/javascript" src="landrivebrowser/angular/angular.js"></script>
   <script type="text/javascript" src="landrivebrowser/angular/angular-resource.js"></script>
   <script type="text/javascript" src="landrivebrowser/angular/angular-route.js"></script>
   <script type="text/javascript" src="landrivebrowser/angular/angular-cookies.js"></script>
+  <script type="text/javascript" src="landrivebrowser/angular/angular-animate.js"></script>
 
   <script type="text/javascript" src="landrivebrowser/appscripts/app.js"></script>
   <script type="text/javascript" src="landrivebrowser/appscripts/routes.js"></script>

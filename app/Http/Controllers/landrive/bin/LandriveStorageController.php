@@ -173,6 +173,9 @@ class LandriveStorageController extends Controller {
     }
 
     $filePath = LandriveSystemController::getFullSystemPath($drive,$path);
+
+//    LandriveSystemController::refreshSystemDrives();
+
     $tmpName = $filePath;
 
     header('Content-Description: File Transfer');
@@ -199,6 +202,7 @@ class LandriveStorageController extends Controller {
       echo $buffer;
       ob_flush();
       flush();
+//      usleep(200000); // Sleep for 200 millisecond
     }
 
   }
