@@ -1,1 +1,10 @@
 Accessing Files, Playing music, Checking pictures from server running in LAN.
+![Screenshot 1](https://github.com/sukrit-adhikari/landrive-Laravel-AngularJS-2015/blob/master/Landrive-Screenshot-1.png)
+![Screenshot 2](https://github.com/sukrit-adhikari/landrive-Laravel-AngularJS-2015/blob/master/Landrive-Screenshot-2.png)
+![Screenshot 3](https://github.com/sukrit-adhikari/landrive-Laravel-AngularJS-2015/blob/master/Landrive-Screenshot-3.png)
+![Screenshot 4](https://github.com/sukrit-adhikari/landrive-Laravel-AngularJS-2015/blob/master/Landrive-Screenshot-4.png)
+![Screenshot 5](https://github.com/sukrit-adhikari/landrive-Laravel-AngularJS-2015/blob/master/Landrive-Screenshot-5.png)
+![Screenshot 6](https://github.com/sukrit-adhikari/landrive-Laravel-AngularJS-2015/blob/master/Landrive-Screenshot-6.png)
+![Screenshot 7](https://github.com/sukrit-adhikari/landrive-Laravel-AngularJS-2015/blob/master/Landrive-Screenshot-7.png)
+![Screenshot 8](https://github.com/sukrit-adhikari/landrive-Laravel-AngularJS-2015/blob/master/Landrive-Screenshot-8.png)
+![Screenshot 9](https://github.com/sukrit-adhikari/landrive-Laravel-AngularJS-2015/blob/master/Landrive-Screenshot-9.png)
